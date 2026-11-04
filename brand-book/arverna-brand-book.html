@@ -2,441 +2,388 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Alexandria:wght@300..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Figtree:wght@400;500;600;700;800&family=El+Messiri:wght@500;600;700&family=Tajawal:wght@400;500;700;800&family=Archivo:wdth,wght@125,800&display=swap">
 <style>
-/* Layout: a lookbook in Hebron stone. Each chapter opens with the brand's own [ bracket ] label and an expanded headline; English and Arabic sit side by side, Arabic set true right-to-left. */
+/* Layout: a commercial fashion pitch deck that scrolls. Cherry and pink colour blocks open each chapter, mock-ups show the brand in use (Instagram, Stories, bag, WhatsApp, product card). Single light look on purpose: it shows the real brand colours. */
 :root{
-  --bg:#EEE8DC; --surface:#E4DCCD; --fg:#1D1A18; --muted:#6B625A; --line:#CDC2B1;
-  --accent:#4B1E2D; --rose:#C4868F; --glass:#1F5E8C;
-  --display:'Archivo','Helvetica Neue',Arial,sans-serif;
-  --ar:'Alexandria','Geeza Pro','Noto Sans Arabic',Tahoma,sans-serif;
-  --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#161412; --surface:#201C19; --fg:#EDE6D9; --muted:#A49A8E; --line:#3A332E;
-    --accent:#D99FA7; --rose:#C4868F; --glass:#5A9BCB; color-scheme:dark;
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#161412; --surface:#201C19; --fg:#EDE6D9; --muted:#A49A8E; --line:#3A332E;
-  --accent:#D99FA7; --rose:#C4868F; --glass:#5A9BCB; color-scheme:dark;
+  color-scheme:light;
+  --cream:#F8F2EA; --espresso:#2A1A15; --cherry:#B01E2E; --pink:#F4CDD2; --latte:#CDAE8F; --butter:#F4E39B;
+  --muted:#76625A; --line:#E6D9CB; --card:#FFFDF9;
+  --display:'Bodoni Moda','Didot','Bodoni 72',Georgia,serif;
+  --body:'Figtree','Helvetica Neue',Arial,sans-serif;
+  --ar-d:'El Messiri','Geeza Pro','Noto Naskh Arabic',serif;
+  --ar:'Tajawal','Geeza Pro','Noto Sans Arabic',Tahoma,sans-serif;
+  --logo:'Archivo','Helvetica Neue',Arial,sans-serif;
 }
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--fg);font-family:var(--display);font-stretch:100%;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{background:var(--cream);color:var(--espresso);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-section{border-top:1px solid var(--line)}
-section > .wrap{padding-block:clamp(56px,9vw,112px)}
-h1,h2,h3{font-family:var(--display);font-stretch:125%;text-wrap:balance;margin:0;line-height:1.05;letter-spacing:-.01em}
-h2{font-size:clamp(30px,5.2vw,58px);font-weight:800;text-transform:uppercase}
-h3{font-size:clamp(18px,2vw,22px);font-weight:700;text-transform:uppercase;letter-spacing:.01em}
-p{margin:0;max-width:64ch}
-.ar{font-family:var(--ar);direction:rtl;text-align:right;line-height:1.9}
-.mono,.label{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-.label::before{content:"[ "} .label::after{content:" ]"}
-.lead{font-size:clamp(19px,2.1vw,23px);line-height:1.5;max-width:58ch}
-.head{display:grid;gap:18px;margin-bottom:clamp(36px,5vw,60px)}
+section > .wrap{padding-block:clamp(56px,9vw,110px)}
+h1,h2,h3{margin:0;text-wrap:balance;line-height:1.02}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(36px,6vw,72px);letter-spacing:-.015em}
+h2 i{font-weight:500}
+h3{font-family:var(--body);font-weight:800;font-size:19px;letter-spacing:-.005em}
+p{margin:0;max-width:62ch}
+.ar{font-family:var(--ar);direction:rtl;text-align:right;line-height:1.85}
+.eyebrow{font-family:var(--body);font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--cherry)}
+.lead{font-size:clamp(19px,2.1vw,22px);line-height:1.5;max-width:56ch}
+.head{display:grid;gap:16px;margin-bottom:clamp(36px,5vw,56px)}
 .muted{color:var(--muted)}
-.grid{display:grid;gap:clamp(16px,2.4vw,28px)}
-.g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
-.g3{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
-.g4{grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.logo{font-family:var(--logo);font-stretch:125%;font-weight:800;letter-spacing:.04em}
+.grid{display:grid;gap:clamp(14px,2vw,24px)}
 .grid > *{min-width:0}
-.rule{height:1px;background:var(--line);border:0;margin:0}
-.tag{display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;padding:4px 9px;background:var(--rose);color:#1D1A18}
-a{color:inherit}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.chip{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px}
+:focus-visible{outline:2px solid var(--cherry);outline-offset:3px}
+.band-cherry{background:var(--cherry);color:var(--cream)}
+.band-pink{background:var(--pink)}
+.band-esp{background:var(--espresso);color:var(--cream)}
+.band-cherry .eyebrow,.band-esp .eyebrow{color:var(--pink)}
+.band-pink .eyebrow{color:var(--cherry)}
+
+/* Bubble device */
+.bubble{position:relative;display:inline-block;background:var(--cherry);color:var(--cream);border-radius:28px;padding:.32em .7em .4em;font-family:var(--display);font-style:italic;font-weight:600}
+.bubble::after{content:"";position:absolute;left:22%;bottom:-14px;border-left:16px solid transparent;border-right:4px solid transparent;border-top:16px solid var(--cherry)}
+.bubble.ar-b{font-family:var(--ar-d);font-style:normal}
+.bubble.ar-b::after{left:auto;right:22%;border-left:4px solid transparent;border-right:16px solid transparent}
+.bubble.cream{background:var(--cream);color:var(--cherry)}
+.bubble.cream::after{border-top-color:var(--cream)}
 
 /* Cover */
-.cover .wrap{padding-block:clamp(40px,7vw,88px) clamp(48px,8vw,96px)}
-.brackets{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px}
-.wordmark{font-family:var(--display);font-stretch:125%;font-weight:850;font-size:clamp(42px,12vw,150px);line-height:.9;letter-spacing:.02em;margin:clamp(36px,7vw,80px) 0 0;white-space:nowrap}
-.wordmark sup{font-size:.16em;font-weight:500;vertical-align:top;margin-left:.15em;position:relative;top:.35em}
-.cover-ar{font-family:var(--ar);font-weight:600;font-size:clamp(28px,5.5vw,64px);direction:rtl;text-align:left;margin-top:6px;color:var(--accent)}
-.cover-tag{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px;align-items:end;margin-top:clamp(40px,6vw,72px)}
-.tagline{font-stretch:125%;font-weight:800;font-size:clamp(24px,3.6vw,40px);text-transform:uppercase;line-height:1.05}
-.tagline .ar{display:block;font-family:var(--ar);font-weight:600;font-size:.85em;text-transform:none;text-align:left;margin-top:8px;color:var(--accent)}
-.cover-note{color:var(--muted);max-width:44ch}
-.roseline{height:10px;background:linear-gradient(90deg,var(--rose) 0 22%,var(--fg) 22% 100%);margin-top:clamp(36px,6vw,64px)}
+.cover .wrap{padding-block:clamp(36px,6vw,72px) clamp(56px,9vw,104px)}
+.cover-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.cover-top .logo{font-size:clamp(20px,2.4vw,26px)}
+.cover-top span:last-child{font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--pink)}
+.cover h1{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(54px,11vw,148px);letter-spacing:-.025em;line-height:.95;margin-top:clamp(40px,7vw,84px)}
+.cover .q-ar{font-family:var(--ar-d);font-weight:700;font-size:clamp(44px,8vw,104px);line-height:1.1;direction:rtl;text-align:right;margin-top:8px;color:var(--pink)}
+.cover .answer{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;margin-top:clamp(32px,5vw,56px)}
+.cover .answer .logo{font-size:clamp(34px,6vw,72px);color:var(--cream)}
+.cover .answer p{max-width:42ch;color:#F7D9DC}
 
-/* Name */
-.etym{display:flex;flex-wrap:wrap;align-items:stretch;gap:0;border:1px solid var(--fg)}
-.etym > div{flex:1 1 180px;padding:22px 20px;border-right:1px solid var(--fg);display:grid;gap:8px;align-content:start}
-.etym > div:last-child{border-right:0;background:var(--fg);color:var(--bg)}
-.etym .part{font-stretch:125%;font-weight:800;font-size:clamp(28px,4vw,44px);line-height:1}
-.etym .part em{font-style:normal;color:var(--rose)}
-.etym .gloss{font-family:var(--mono);font-size:12.5px;text-transform:uppercase;letter-spacing:.05em}
-.etym > div:last-child .gloss{color:var(--rose)}
-.footnote{font-size:13.5px;color:var(--muted);max-width:80ch}
-.trees{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:0;border-top:1px solid var(--fg);border-bottom:1px solid var(--fg)}
-.trees > div{padding:26px 0;display:grid;gap:10px}
-.trees > div + div{border-top:1px solid var(--line)}
-@media (min-width:700px){.trees > div + div{border-top:0;border-left:1px solid var(--line);padding-left:28px}.trees > div:first-child{padding-right:28px}}
-.big-q{font-stretch:125%;font-weight:800;font-size:clamp(22px,3vw,34px);line-height:1.15;text-transform:uppercase;max-width:30ch}
+/* Idea */
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:0;border-top:2px solid var(--espresso)}
+.why > div{padding:22px 22px 22px 0;display:grid;gap:8px;align-content:start;border-bottom:1px solid var(--line);min-width:0}
+.why .n{font-family:var(--display);font-weight:800;font-size:44px;line-height:1;color:var(--cherry)}
 
 /* Story */
-.story{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(28px,5vw,64px)}
-.story > div{min-width:0;display:grid;gap:18px;align-content:start}
-.story p{font-size:18px;line-height:1.75}
-.story .ar p{font-size:19px;line-height:2;max-width:none}
-.story .sign{font-stretch:125%;font-weight:800;text-transform:uppercase;font-size:20px;letter-spacing:.01em}
-.story .ar .sign{font-family:var(--ar);font-weight:700;text-transform:none;color:var(--accent)}
-.dropcap::first-letter{font-stretch:125%;font-weight:850;font-size:3.6em;float:left;line-height:.82;margin:.06em .12em 0 0;color:var(--accent)}
+.story{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:clamp(20px,3vw,32px)}
+.page{background:var(--card);padding:clamp(24px,4vw,44px);display:grid;gap:16px;align-content:start;min-width:0;border-radius:4px;box-shadow:0 20px 50px -34px rgba(42,26,21,.55)}
+.page p{font-size:17.5px;line-height:1.75}
+.page .open{font-family:var(--display);font-style:italic;font-weight:600;font-size:clamp(28px,3.4vw,38px);line-height:1.15;color:var(--cherry)}
+.page.ar p{font-size:19px;line-height:2;max-width:none}
+.page.ar .open{font-family:var(--ar-d);font-style:normal;font-weight:700}
+.page .end{font-weight:800;font-size:19px}
+.page.ar .end{font-family:var(--ar-d);font-size:22px;color:var(--cherry)}
 
-/* Pillars */
-.pillar{border-top:2px solid var(--fg);padding-top:18px;display:grid;gap:10px;align-content:start}
-.pillar .ar{font-size:15px;color:var(--muted)}
-.pillar .k{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.06em;text-transform:uppercase}
+/* Promises */
+.promise{background:var(--cream);border-radius:4px;padding:22px;display:grid;gap:10px;align-content:start}
+.promise .big{font-family:var(--display);font-weight:800;white-space:nowrap;font-size:clamp(26px,2.6vw,34px);line-height:1;color:var(--cherry)}
+.promise .ar{font-size:15px;color:var(--muted)}
 
-/* Muse comp card */
-.comp{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));border:1px solid var(--fg)}
-.comp > div{min-width:0}
-.comp-name{background:var(--fg);color:var(--bg);padding:clamp(24px,4vw,44px);display:grid;gap:14px;align-content:space-between;min-height:340px}
-.comp-name .n{font-stretch:125%;font-weight:850;font-size:clamp(64px,11vw,128px);line-height:.85;letter-spacing:.01em}
-.comp-name .nar{font-family:var(--ar);font-size:clamp(34px,5vw,54px);font-weight:600;color:var(--rose);direction:rtl;text-align:left;line-height:1.2}
-.comp-name .mono{color:var(--rose)}
-.comp-stats{padding:clamp(22px,3.5vw,40px);display:grid;gap:0;align-content:start}
-.stat{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:11px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
-.stat:last-child{border-bottom:0}
-.stat span:first-child{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:3px}
-.bio{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:clamp(24px,4vw,48px);margin-top:clamp(32px,5vw,56px)}
-.bio > div{min-width:0;display:grid;gap:14px;align-content:start}
-.look{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:0;border-top:1px solid var(--fg);margin-top:clamp(32px,5vw,56px)}
-.look > div{padding:20px 20px 22px 0;border-bottom:1px solid var(--line);display:grid;gap:6px;align-content:start;min-width:0}
-.look b{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
-.outfits{margin-top:clamp(36px,5vw,60px);display:grid;gap:14px}
-.outfit{display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr) auto;gap:8px 24px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}
-.outfit .when{font-stretch:125%;font-weight:750;text-transform:uppercase;font-size:15px}
-.outfit .price{font-family:var(--mono);font-size:14px;font-variant-numeric:tabular-nums;white-space:nowrap}
-@media (max-width:640px){.outfit{grid-template-columns:1fr auto}.outfit .items{grid-column:1 / -1;grid-row:2}}
-.dos{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(20px,3vw,36px);margin-top:clamp(36px,5vw,60px)}
-.dos ul{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:10px}
-.dos li{padding-left:26px;position:relative}
-.dos .yes li::before{content:"";position:absolute;left:0;top:.55em;width:12px;height:12px;background:var(--rose)}
-.dos .no li::before{content:"";position:absolute;left:0;top:.95em;width:12px;height:2px;background:var(--fg)}
-.note{background:var(--surface);padding:clamp(20px,3vw,30px);display:grid;gap:10px;margin-top:clamp(32px,5vw,52px)}
-
-/* Circle */
-.friend{border:1px solid var(--line);background:var(--surface);padding:clamp(20px,3vw,28px);display:grid;gap:12px;align-content:start}
-.friend .fn{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.friend .fn strong{font-stretch:125%;font-weight:850;font-size:clamp(34px,4vw,44px);text-transform:uppercase;line-height:1}
-.friend .fn span{font-family:var(--ar);font-size:26px;color:var(--accent)}
-.friend ul{margin:0;padding-left:18px;display:grid;gap:4px}
-.friend .series{font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;border-top:1px solid var(--line);padding-top:12px}
+/* Yara */
+.yara{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(24px,4vw,48px);align-items:start}
+.yara > div{min-width:0}
+.ig{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;display:grid;gap:16px;max-width:460px;box-shadow:0 24px 60px -40px rgba(42,26,21,.6);font-size:14.5px}
+.ig-top{display:flex;align-items:center;gap:18px}
+.avatar{flex:0 0 auto;width:86px;height:86px;border-radius:50%;padding:3px;background:conic-gradient(var(--cherry),var(--pink),var(--butter),var(--cherry))}
+.avatar span{display:grid;place-items:center;width:100%;height:100%;border-radius:50%;background:var(--cherry);color:var(--cream);font-family:var(--display);font-style:italic;font-weight:700;font-size:38px;border:3px solid #fff}
+.ig-stats{display:flex;gap:18px;flex-wrap:wrap;text-align:center;font-variant-numeric:tabular-nums}
+.ig-stats b{display:block;font-size:17px}
+.ig-name{font-weight:800}
+.ig-bio{line-height:1.5}
+.ig-bio .ar{font-size:14.5px;line-height:1.6}
+.ig-btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ig-btns span{background:#EFEFEF;border-radius:8px;text-align:center;padding:7px;font-weight:700;font-size:13.5px}
+.ig-btns span:first-child{background:var(--cherry);color:var(--cream)}
+.hl{display:flex;gap:12px;overflow-x:auto;padding-bottom:4px}
+.hl div{flex:0 0 auto;display:grid;gap:5px;justify-items:center;font-size:12px;width:62px;text-align:center}
+.hl i{display:grid;place-items:center;width:58px;height:58px;border-radius:50%;border:1.5px solid var(--line);font-style:normal;font-family:var(--display);font-weight:700;font-size:15px}
+.hl div:nth-child(1) i{background:var(--cherry);color:var(--cream)}
+.hl div:nth-child(2) i{background:var(--pink);color:var(--cherry)}
+.hl div:nth-child(3) i{background:var(--butter)}
+.hl div:nth-child(4) i{background:var(--latte)}
+.hl div:nth-child(5) i{background:var(--espresso);color:var(--cream)}
+.facts{display:grid;gap:0;border-top:2px solid var(--espresso)}
+.fact{display:grid;grid-template-columns:120px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+.fact span:first-child{font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--cherry);padding-top:3px}
+.quote{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(26px,3.4vw,40px);line-height:1.15;margin:clamp(36px,5vw,56px) 0 0;max-width:30ch}
+.looks{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:14px;margin-top:clamp(32px,5vw,52px)}
+.lk{background:var(--card);border-radius:4px;padding:20px;display:grid;gap:8px;align-content:start;border-top:4px solid var(--cherry)}
+.lk:nth-child(2){border-top-color:var(--pink)} .lk:nth-child(3){border-top-color:var(--latte)} .lk:nth-child(4){border-top-color:var(--butter)}
+.lk .t{font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:.1em;color:var(--muted)}
+.lk .pr{font-family:var(--display);font-weight:800;font-size:30px;line-height:1;font-variant-numeric:tabular-nums}
+.series{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:14px;margin-top:14px}
+.sr{border:1.5px solid var(--espresso);border-radius:4px;padding:18px;display:grid;gap:6px;align-content:start}
+.sr .d{font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--cherry)}
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(18px,3vw,32px);margin-top:clamp(36px,5vw,56px)}
+.split ul{margin:12px 0 0;padding-left:20px;display:grid;gap:8px}
+.cast{background:var(--espresso);color:var(--cream);border-radius:4px;padding:clamp(22px,3vw,32px);display:grid;gap:10px;margin-top:clamp(32px,5vw,52px)}
+.cast .eyebrow{color:var(--pink)}
 
 /* Palette */
 .sw-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:12px}
-.sw{min-height:300px;padding:22px;display:grid;grid-template-rows:auto 1fr auto;gap:12px;border:1px solid rgba(29,26,24,.14)}
-.sw .sn{font-stretch:125%;font-weight:800;font-size:22px;text-transform:uppercase;line-height:1.05}
-.sw .sar{font-family:var(--ar);font-size:20px;direction:rtl;text-align:left;display:block;margin-top:4px;font-weight:500}
+.sw{min-height:260px;border-radius:4px;padding:22px;display:grid;grid-template-rows:auto 1fr auto;gap:12px}
+.sw .sn{font-family:var(--display);font-weight:800;font-size:30px;line-height:1}
+.sw .sar{font-family:var(--ar-d);font-size:22px;font-weight:600;display:block;margin-top:4px}
 .sw p{font-size:14.5px;line-height:1.55}
-.sw .meta{display:flex;justify-content:space-between;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;font-variant-numeric:tabular-nums}
-.ratio{display:flex;height:56px;margin-top:28px;border:1px solid var(--line)}
-.ratio div{display:flex;align-items:flex-end;padding:6px 8px;font-family:var(--mono);font-size:11.5px;font-variant-numeric:tabular-nums;min-width:0;overflow:hidden;white-space:nowrap}
-.ratio-key{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:12px}
+.sw .meta{display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;font-variant-numeric:tabular-nums}
+.ratio{display:flex;height:54px;margin-top:22px;border-radius:4px;overflow:hidden;border:1px solid var(--line)}
+.ratio div{display:flex;align-items:flex-end;padding:6px 8px;font-weight:700;font-size:11.5px;letter-spacing:.06em;min-width:0;overflow:hidden;white-space:nowrap}
+.ratio-key{display:flex;flex-wrap:wrap;gap:6px 20px;margin-top:10px;font-weight:600;font-size:13px;color:var(--muted)}
 
-/* Type */
-.spec{border-top:1px solid var(--fg);padding:26px 0;display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:16px 32px}
-@media (max-width:700px){.spec{grid-template-columns:1fr}}
-.spec .sample-d{font-stretch:125%;font-weight:850;font-size:clamp(34px,6vw,72px);line-height:.95;text-transform:uppercase;overflow-wrap:anywhere}
-.spec .sample-ar{font-family:var(--ar);font-weight:600;font-size:clamp(30px,5vw,56px);direction:rtl;text-align:right;line-height:1.4}
-.spec .sample-b{font-size:18px;line-height:1.65;max-width:60ch}
-.spec .sample-m{font-family:var(--mono);font-size:clamp(14px,1.8vw,18px);letter-spacing:.04em}
+/* Mockups */
+.mocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:18px;margin-top:clamp(40px,6vw,64px)}
+.mock{display:grid;gap:12px;align-content:start;min-width:0}
+.mock .cap{font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.post{aspect-ratio:4/5;max-width:100%;background:var(--cherry);color:var(--cream);border-radius:6px;padding:26px;display:grid;grid-template-rows:auto 1fr auto;overflow:hidden}
+.post .logo{font-size:14px}
+.post .h{align-self:center;font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(40px,5vw,58px);line-height:.95}
+.post .h span{display:block;font-family:var(--ar-d);font-style:normal;font-weight:700;font-size:.8em;direction:rtl;text-align:right;color:var(--pink);margin-top:10px}
+.post .f{display:flex;justify-content:space-between;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--pink)}
+.story-m{aspect-ratio:9/16;max-width:300px;width:100%;background:var(--pink);border-radius:18px;padding:22px 18px;display:grid;grid-template-rows:auto 1fr auto;gap:12px;overflow:hidden}
+.story-m .bar{height:3px;border-radius:2px;background:linear-gradient(90deg,var(--espresso) 60%,rgba(42,26,21,.2) 60%)}
+.story-m .poll{align-self:center;background:#fff;border-radius:16px;padding:18px;display:grid;gap:10px;box-shadow:0 14px 30px -18px rgba(42,26,21,.5)}
+.story-m .poll b{font-family:var(--display);font-style:italic;font-size:22px;font-weight:600;line-height:1.1}
+.story-m .opt{display:flex;justify-content:space-between;border-radius:10px;padding:10px 12px;font-weight:700;font-size:14px;background:var(--cream)}
+.story-m .opt.win{background:var(--cherry);color:var(--cream)}
+.story-m .who{font-weight:700;font-size:13px;display:flex;align-items:center;gap:8px}
+.story-m .who i{width:26px;height:26px;border-radius:50%;background:var(--cherry);display:inline-block}
+.bag-stage{background:var(--latte);border-radius:6px;display:grid;place-items:center;padding:34px 18px 26px;min-height:360px}
+.bag{position:relative;width:min(100%,230px);aspect-ratio:.82;background:var(--cream);border-radius:3px 3px 6px 6px;box-shadow:0 26px 40px -26px rgba(42,26,21,.7);display:grid;place-items:center}
+.bag::before{content:"";position:absolute;top:-34px;left:50%;transform:translateX(-50%);width:44%;height:52px;border:6px solid var(--cherry);border-bottom:0;border-radius:40px 40px 0 0}
+.bag .logo{color:var(--cherry);font-size:clamp(18px,2.2vw,24px)}
+.bag .stk{position:absolute;right:-16px;bottom:22px;width:84px;height:84px;border-radius:50%;background:var(--pink);color:var(--cherry);display:grid;place-items:center;text-align:center;font-family:var(--ar-d);font-weight:700;font-size:18px;line-height:1.1;transform:rotate(-10deg);box-shadow:0 6px 14px -8px rgba(42,26,21,.6)}
+.pcard{background:#fff;border-radius:6px;overflow:hidden;max-width:300px;width:100%;box-shadow:0 20px 44px -32px rgba(42,26,21,.6)}
+.pcard .img{aspect-ratio:3/4;background:linear-gradient(160deg,#E7D5C2,var(--latte));position:relative;display:grid;place-items:center}
+.pcard .img::after{content:"";width:44%;height:70%;border-radius:40% 40% 8% 8%;background:rgba(255,255,255,.35)}
+.pcard .tag{position:absolute;top:12px;left:12px;background:var(--cherry);color:var(--cream)}
+.pcard .tag2{position:absolute;top:12px;right:12px;background:var(--butter);color:var(--espresso)}
+.pcard .b{padding:16px;display:grid;gap:6px}
+.pcard .nm{font-weight:700}
+.pcard .pr{font-weight:800;font-variant-numeric:tabular-nums}
+.pcard .sz{display:flex;gap:6px;flex-wrap:wrap}
+.pcard .sz span{border:1px solid var(--line);border-radius:6px;padding:3px 9px;font-size:13px;font-weight:600}
+.pcard .sz span.x{color:#B9A99D;text-decoration:line-through}
+.pcard .social{font-size:13px;color:var(--cherry);font-weight:600}
+.pcard .btn{background:var(--espresso);color:var(--cream);text-align:center;border-radius:999px;padding:11px;font-weight:700;margin-top:4px}
+.wa{background:#EFE7DD;border-radius:14px;padding:16px;display:grid;gap:10px;max-width:360px;width:100%}
+.wa-h{display:flex;align-items:center;gap:10px;font-weight:800;font-size:14.5px}
+.wa-h i{width:34px;height:34px;border-radius:50%;background:var(--cherry);display:grid;place-items:center;color:var(--cream);font-style:normal;font-family:var(--display);font-weight:700}
+.wa-h small{display:block;font-weight:500;color:var(--muted);font-size:12px}
+.msg{background:#fff;border-radius:4px 14px 14px 14px;padding:12px 14px;font-size:14.5px;line-height:1.55;font-family:var(--ar);direction:rtl;text-align:right;box-shadow:0 1px 0 rgba(0,0,0,.06)}
+.msg .tm{display:block;text-align:left;font-size:11px;color:var(--muted);margin-top:4px;font-family:var(--body);direction:ltr}
+.msg b{color:var(--cherry)}
 
-/* Marks */
-.marks{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:12px}
-.mark{background:var(--surface);padding:clamp(22px,3vw,32px);display:grid;gap:16px;align-content:start;min-width:0}
-.mark .stage{min-height:200px;display:grid;place-items:center;border:1px solid var(--line);background:var(--bg);padding:20px;overflow:hidden}
-.mark .stage.dark{background:#1D1A18;border-color:#1D1A18}
-.mini-wm{font-stretch:125%;font-weight:850;font-size:clamp(22px,2.6vw,32px);letter-spacing:.03em;white-space:nowrap}
-.drop-chip{font-family:var(--mono);font-size:15px;letter-spacing:.08em;display:grid;gap:10px;justify-items:center;color:#EDE6D9}
-.drop-chip .no{font-family:var(--display);font-stretch:125%;font-weight:850;font-size:54px;line-height:1;letter-spacing:.02em;color:#C4868F}
-.card-fr{width:min(100%,300px);aspect-ratio:1.586;background:#1F5E8C;color:#F3ECE1;padding:18px;display:grid;grid-template-rows:auto 1fr auto;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
-.card-fr .t{font-family:var(--display);font-stretch:125%;font-weight:850;font-size:22px;letter-spacing:.02em;align-self:end}
-.card-fr .t span{display:block;font-family:var(--ar);font-weight:600;font-size:16px;letter-spacing:0;text-transform:none;color:#F0C9CE}
+/* Identity */
+.idg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:14px}
+.id{background:var(--card);border-radius:4px;padding:clamp(20px,3vw,28px);display:grid;gap:14px;align-content:start;min-width:0}
+.id .stage{min-height:170px;border-radius:4px;display:grid;place-items:center;padding:18px;overflow:hidden}
+.typeline{display:grid;gap:4px}
+.typeline .a{font-family:var(--display);font-style:italic;font-weight:500;font-size:40px;line-height:1}
+.typeline .b{font-family:var(--ar-d);font-weight:700;font-size:34px;direction:rtl;line-height:1.3}
+.typeline .c{font-family:var(--body);font-weight:600;font-size:15px}
+.typeline .d{font-family:var(--ar);font-weight:500;font-size:16px;direction:rtl}
 
-/* Photo direction */
-.shotlist{counter-reset:s;display:grid;gap:0;border-top:1px solid var(--fg)}
-.shot{display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr);gap:8px 32px;padding:20px 0;border-bottom:1px solid var(--line)}
-@media (max-width:700px){.shot{grid-template-columns:1fr}}
-.shot h3{font-size:16px}
-
-/* Voice table */
-.tbl-wrap{overflow-x:auto;border-top:1px solid var(--fg)}
-table{border-collapse:collapse;width:100%;min-width:760px}
-th,td{text-align:left;vertical-align:top;padding:16px 18px 16px 0;border-bottom:1px solid var(--line);font-size:15px}
-th{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-td.old{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--rose);text-decoration-thickness:2px;width:26%}
-td.new{font-weight:600;width:34%}
-td.ar{width:34%;font-family:var(--ar);direction:rtl;text-align:right;padding-right:0;padding-left:0}
-
-/* Front Row */
-.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:0;border:1px solid var(--fg)}
-.tier{padding:clamp(22px,3vw,30px);display:grid;gap:12px;align-content:start;min-width:0;border-bottom:1px solid var(--fg)}
-@media (min-width:960px){.tier{border-bottom:0;border-right:1px solid var(--fg)}.tier:last-child{border-right:0}}
-.tier:last-child{border-bottom:0}
-.tier.top{background:var(--fg);color:var(--bg)}
-.tier.top .mono{color:var(--rose)}
-.tier .tn{font-stretch:125%;font-weight:850;font-size:26px;text-transform:uppercase;line-height:1}
-.tier .tar{font-family:var(--ar);font-size:20px;color:var(--accent)}
-.tier.top .tar{color:var(--rose)}
+/* Community */
+.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px}
+.tier{border-radius:6px;padding:clamp(22px,3vw,30px);display:grid;gap:12px;align-content:start;min-width:0}
+.tier .tn{font-family:var(--display);font-weight:800;font-size:38px;line-height:1}
+.tier .tar{font-family:var(--ar-d);font-weight:700;font-size:22px}
 .tier ul{margin:0;padding-left:18px;display:grid;gap:6px}
-.rituals{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(16px,2.4vw,28px);margin-top:clamp(40px,6vw,64px)}
-.ritual{display:grid;gap:8px;align-content:start;border-top:2px solid var(--fg);padding-top:16px}
-.ritual .when{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
-.packcard{margin-top:clamp(40px,6vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(20px,4vw,48px);align-items:center}
-.insert{background:#ECE4D6;color:#1D1A18;padding:clamp(26px,4vw,40px);border:1px solid #CDC2B1;display:grid;gap:16px;box-shadow:0 18px 40px -24px rgba(0,0,0,.45);transform:rotate(-1.2deg)}
-.insert .w{font-stretch:125%;font-weight:850;font-size:18px;letter-spacing:.06em}
-.insert .h{font-stretch:125%;font-weight:850;font-size:clamp(24px,3vw,32px);text-transform:uppercase;line-height:1.05}
-.insert .ar{color:#4B1E2D;font-size:20px;font-weight:600}
-.insert .foot{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6B625A;border-top:1px solid #CDC2B1;padding-top:12px;gap:10px;flex-wrap:wrap}
+.tier .req{font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.progs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:0;border-top:2px solid var(--espresso);margin-top:clamp(40px,6vw,64px)}
+.prog{padding:22px 22px 22px 0;border-bottom:1px solid var(--line);display:grid;gap:8px;align-content:start;min-width:0}
+.prog .k{font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--cherry)}
+.prog .ar{font-size:15px;color:var(--muted);line-height:1.6}
+.week{display:grid;grid-template-columns:repeat(7,minmax(130px,1fr));gap:8px;min-width:940px}
+.wk-wrap{overflow-x:auto;margin-top:16px;padding-bottom:6px}
+.day{background:var(--card);border-radius:4px;padding:14px;display:grid;gap:6px;align-content:start}
+.day b{font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.day.hot{background:var(--cherry);color:var(--cream)}
+.day.hot b{color:var(--pink)}
+.day span{font-size:14.5px;line-height:1.45}
 
 /* Plan */
-.plan{display:grid;gap:0;border-top:1px solid var(--fg)}
-.week{display:grid;grid-template-columns:minmax(0,160px) minmax(0,1fr);gap:8px 32px;padding:22px 0;border-bottom:1px solid var(--line)}
-.week .wk{font-stretch:125%;font-weight:850;font-size:20px;text-transform:uppercase}
-.week ul{margin:0;padding-left:18px;display:grid;gap:6px}
-@media (max-width:640px){.week{grid-template-columns:1fr}}
-
-footer .wrap{padding-block:48px 64px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.plan{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:14px}
+.wkc{background:rgba(248,242,234,.08);border:1px solid rgba(248,242,234,.22);border-radius:4px;padding:20px;display:grid;gap:10px;align-content:start}
+.wkc .w{font-family:var(--display);font-style:italic;font-weight:600;font-size:28px;color:var(--pink)}
+.wkc ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:15.5px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:0;margin-top:clamp(36px,5vw,56px);border-top:1px solid rgba(248,242,234,.3)}
+.kpi{padding:18px 18px 18px 0;border-bottom:1px solid rgba(248,242,234,.18);display:grid;gap:4px}
+.kpi b{font-family:var(--display);font-weight:800;font-size:34px;line-height:1;color:var(--pink);font-variant-numeric:tabular-nums}
+.kpi span{font-size:14.5px;color:#E9DCD3}
+footer .wrap{padding-block:40px 56px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 @media (prefers-reduced-motion:no-preference){
-  .wordmark{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
-  .cover-ar{animation:rise .9s .15s cubic-bezier(.2,.7,.2,1) both}
-  @keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+  .cover h1{animation:pop .8s cubic-bezier(.2,.8,.2,1) both}
+  .cover .q-ar{animation:pop .8s .12s cubic-bezier(.2,.8,.2,1) both}
+  @keyframes pop{from{transform:translateY(16px) scale(.985)}to{transform:none}}
 }
 </style>
 
 <!-- COVER -->
-<header class="cover">
+<header class="cover band-cherry">
   <div class="wrap">
-    <div class="brackets">
-      <span class="label">Hebron</span>
-      <span class="label">Brand book v1</span>
-      <span class="label">Nov 2026</span>
-      <span class="label">@arvernacom</span>
+    <div class="cover-top"><span class="logo">ARVERNA®</span><span>Brand book · v2 · Nov 2026</span></div>
+    <h1>Where's that from?</h1>
+    <div class="q-ar" lang="ar">من وين هاد؟</div>
+    <div class="answer">
+      <span class="bubble cream" style="font-size:clamp(22px,3vw,34px)">ARVERNA.</span>
+      <p>The question every girl asks her friends, and the answer we want her to give. A commercial brand idea, a character and a community system built around it.</p>
     </div>
-    <div class="wordmark" aria-label="ARVERNA">ARVERNA<sup>®</sup></div>
-    <div class="cover-ar" lang="ar">أرڤيرنا</div>
-    <div class="cover-tag">
-      <div class="tagline">Stand in front.<span class="ar" lang="ar">كوني في المقدّمة.</span></div>
-      <p class="cover-note">The story, the muse, the identity and the community system for ARVERNA's next chapter. Built on what the name already means and where the brand already lives.</p>
-    </div>
-    <div class="roseline" aria-hidden="true"></div>
   </div>
 </header>
 
-<!-- THE NAME -->
-<section id="name">
+<!-- THE IDEA -->
+<section id="idea">
   <div class="wrap">
     <div class="head">
-      <span class="label">01 · The name</span>
-      <h2>She who stands in front</h2>
-      <p class="lead">ARVERNA is a Latin word. It means a woman of the Arverni, the Gallic people who held the mountains of central France and faced down Julius Caesar at Gergovia in 52 BC. Their name carried a promise the brand can keep.</p>
+      <span class="eyebrow">The big idea</span>
+      <h2>One question <i>sells for us</i></h2>
+      <p class="lead">At a café, at an engagement, under a photo on Instagram, girls ask the same thing: <b>"من وين هاد؟"</b> We make ARVERNA the answer. Every outfit a customer wears turns into a recommendation to her friends.</p>
     </div>
-    <div class="etym" role="group" aria-label="Breaking down the word Arverna">
-      <div><span class="part">AR<em>E</em>–</span><span class="gloss">Celtic: before, in front of</span></div>
-      <div><span class="part">–VERN–</span><span class="gloss">Celtic: the alder tree</span></div>
-      <div><span class="part">–A</span><span class="gloss">Latin: she, the feminine</span></div>
-      <div><span class="part">ARVERNA</span><span class="gloss">She who stands in front</span></div>
+    <div class="why">
+      <div><span class="n">1</span><h3>It's already said</h3><p>We don't have to teach anyone a slogan. Customers say this line to each other every day.</p></div>
+      <div><span class="n">2</span><h3>It works as an ad</h3><p>Any try-on, tag or comment that answers "ARVERNA" is free advertising in front of the people who matter most: her friends.</p></div>
+      <div><span class="n">3</span><h3>It invites sharing</h3><p>The answer needs her to post, tag and talk. That's exactly the behaviour a community is made of.</p></div>
+      <div><span class="n">4</span><h3>It fits the business</h3><p>ARVERNA brings the trends girls see online home in 2–3 days. Being the answer to "where's that from?" is that model in one line.</p></div>
     </div>
-    <p class="footnote" style="margin-top:14px">Linguists reconstruct the tribe's name as <i>are-uernos</i>, "those before the alders," usually read as "the foremost ones." The brand line uses that reading.</p>
-
-    <div class="trees" style="margin-top:clamp(40px,6vw,64px)">
-      <div>
-        <span class="mono">Tree one · Auvergne</span>
-        <p class="big-q">The alder. The Arverni stood in front of it.</p>
-        <p class="muted">The name is about position: first in line, first to speak, first to try the new thing.</p>
-      </div>
-      <div>
-        <span class="mono">Tree two · Hebron</span>
-        <p class="big-q">The oak. Al-Khalil welcomed strangers under it.</p>
-        <p class="muted">Hebron is named for Ibrahim al-Khalil, "the friend." His old oak at Mamre is where, the story goes, strangers were welcomed as friends.</p>
-      </div>
-    </div>
-    <p class="lead" style="margin-top:clamp(28px,4vw,44px)"><b>Two trees, one woman.</b> She stands in front, and she keeps the door open. That's the whole brand in one line: confidence that brings people in rather than shutting them out.</p>
   </div>
 </section>
 
-<!-- THE STORY -->
-<section id="story">
+<!-- STORY -->
+<section id="story" class="band-pink">
   <div class="wrap">
     <div class="head">
-      <span class="label">02 · The story</span>
-      <h2>The brand story</h2>
-      <p class="muted">Use it in full on the About page, on the packaging insert and in the first Reel of the new era. Use one line of it everywhere else.</p>
+      <span class="eyebrow">The brand story</span>
+      <h2>It started with <i>one question</i></h2>
+      <p class="muted" style="color:#6A4A47">Use it on the About page, in the launch Reel (as a voiceover) and on the packaging card. The Arabic version is written in light Palestinian dialect, the way the customer actually talks.</p>
     </div>
     <div class="story">
-      <div lang="en">
-        <p class="dropcap">Two thousand years ago, in the mountains of Gaul, there lived a people called the Arverni. Their name meant <i>those who stand in front</i>. A woman of that people was called Arverna.</p>
-        <p>Today she lives in Hebron.</p>
-        <p>Her city is built from limestone that holds the warmth of the day. Its souq is older than anyone can remember. Grapes ripen on the rooftops every August. Its oldest tree, the story goes, sheltered strangers who were welcomed as friends, and the city still carries that name: al-Khalil, the friend.</p>
-        <p>She learned two things here. Stand in front: be the first to arrive, the first to try, the first to say yes to something new. And keep the door open, because the best outfit is the one your friends ask to borrow.</p>
-        <p>ARVERNA dresses her for the life she actually lives. Sets that go from a 9 a.m. lecture to a 9 p.m. engagement. Trench coats for Hebron's cold mornings. Lace for Eid. Denim for everything in between.</p>
-        <p>We take the best of what the world is wearing and cut it to her rhythm.</p>
-        <p class="sign">Hebron-born. Worn everywhere.<br>Stand in front.</p>
+      <div class="page" lang="en">
+        <p class="open">"Where's that from?"</p>
+        <p>Every girl has asked it. About a jacket she saw in a café, a dress at a friend's engagement, a look she saved at 2 a.m.</p>
+        <p>For a long time the answer was disappointing. Istanbul. Paris. A store that doesn't ship here. A three-week wait and a fit that's never quite right.</p>
+        <p>So we built a new answer: <b>ARVERNA.</b></p>
+        <p>The looks you save, at your door in 2–3 days. New pieces every Thursday, picked by girls who live your life: campus at 8, coffee at 4, an engagement at 9. Real prices, real sizes, real people answering your messages.</p>
+        <p>And from now on you choose with us. Vote on the next drop. Show us how you wear it. Tag your friends.</p>
+        <p class="end">So next time someone asks "where's that from?", you already know the answer.</p>
       </div>
-      <div class="ar" lang="ar" dir="rtl">
-        <p>قبل ألفي عام، في جبال بلاد الغال، عاش شعبٌ اسمه «الأرڤيرني». معنى اسمهم: <b>الذين يقفون في المقدّمة</b>. وكانت المرأة منهم تُسمّى «أرڤيرنا».</p>
-        <p>اليوم، تعيش أرڤيرنا في الخليل.</p>
-        <p>مدينتها مبنيّة من حجرٍ يحفظ دفء النهار، وسوقُها أقدم من ذاكرة الجميع، وعنبُها ينضج على الأسطح كلّ آب. ويُروى أنّ أقدم أشجارها ظلّلت غرباءَ استُقبلوا كأصدقاء، ولهذا ما زالت تحمل اسمها: الخليل، أي الصديق.</p>
-        <p>تعلّمت هنا أمرين: أن تقف في المقدّمة، فتكون أوّل من يصل وأوّل من يجرّب وأوّل من يقول «نعم» للجديد. وأن تُبقي بابها مفتوحًا، لأنّ أجمل إطلالة هي التي تطلب صديقاتُها استعارتها.</p>
-        <p>أرڤيرنا تُلبسها للحياة التي تعيشها فعلًا: أطقمٌ ترافقها من محاضرة التاسعة صباحًا إلى خطوبة التاسعة مساءً، ترانش لصباحات الخليل الباردة، دانتيل للعيد، ودنيم لكلّ ما بينهما.</p>
-        <p>نأخذ أجمل ما يرتديه العالم، ونفصّله على إيقاعها.</p>
-        <p class="sign">وُلدت في الخليل. تُلبَس في كلّ مكان.<br>كوني في المقدّمة.</p>
+      <div class="page ar" lang="ar" dir="rtl">
+        <p class="open">«من وين هاد؟»</p>
+        <p>كل بنت سألت هالسؤال. عن جاكيت شافته بكافيه، عن فستان بخطوبة صاحبتها، عن لوك حفظته الساعة ٢ بالليل.</p>
+        <p>ولفترة طويلة كان الجواب بيخيّب: من إسطنبول، من باريس، من محل ما بيوصّل لهون، أو بعد ثلاث أسابيع انتظار ومقاس مش مزبوط.</p>
+        <p>فعملنا جواب جديد: <b>أرڤيرنا.</b></p>
+        <p>اللوكات اللي بتحفظيها، بتوصل لباب بيتك خلال ٢–٣ أيام. قطع جديدة كل خميس، بتختارها بنات عايشات نفس حياتك: جامعة الساعة ٨، قهوة الساعة ٤، وخطوبة الساعة ٩. أسعار حقيقية، مقاسات حقيقية، وناس حقيقيين بيردّوا على رسايلك.</p>
+        <p>ومن هسّا، إنتِ بتختاري معنا: صوّتي على الدروب الجاي، فرجينا كيف بتلبسيها، واعملي تاغ لصاحباتك.</p>
+        <p class="end">وبالمرّة الجاي لمّا حدا يسألك «من وين هاد؟»، إنتِ بتعرفي الجواب.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PLATFORM -->
-<section id="platform">
+<!-- PROMISES -->
+<section id="promise">
   <div class="wrap">
     <div class="head">
-      <span class="label">03 · Brand platform</span>
-      <h2>One line, four pillars</h2>
+      <span class="eyebrow">What the answer promises</span>
+      <h2>Five reasons <i>to say ARVERNA</i></h2>
     </div>
-    <div class="grid g3" style="margin-bottom:clamp(36px,5vw,56px)">
-      <div class="pillar"><span class="k">Tagline</span><h3>Stand in front.</h3><p class="ar" lang="ar">كوني في المقدّمة.</p></div>
-      <div class="pillar"><span class="k">Descriptor</span><h3>Everyday, elevated.</h3><p class="ar" lang="ar">أناقة كلّ يوم، بلمسة أرقى.</p></div>
-      <div class="pillar"><span class="k">Positioning</span><h3>Hebron-born womenswear</h3><p>Europe-inspired, cut for the real week of a Palestinian woman: work, campus, cafés, engagements, Eid.</p></div>
-    </div>
-    <div class="grid g4">
-      <div class="pillar"><span class="k">Pillar · The Set</span><h3>One decision, a whole look</h3><p>The co-ord is ARVERNA's signature. It gets its own campaigns, its own pricing ("buy the full set") and its own name on the site.</p><p class="ar" lang="ar">الطقم: قرار واحد، إطلالة كاملة.</p></div>
-      <div class="pillar"><span class="k">Pillar · The Drop</span><h3>Numbered. Named. Gone.</h3><p>Every Thursday, 8 PM. Each drop has a number and a title. Sold-out pieces stay visible in the drop archive as proof of demand.</p><p class="ar" lang="ar">الإصدار: كلّ خميس، الثامنة مساءً.</p></div>
-      <div class="pillar"><span class="k">Pillar · Her City</span><h3>Our streets, our light</h3><p>Every campaign is shot locally: Hebron's old city, Ramallah cafés, the Haifa seafront. No supplier can copy that.</p><p class="ar" lang="ar">مدينتها: شوارعنا، وضوؤنا.</p></div>
-      <div class="pillar"><span class="k">Pillar · The Open Door</span><h3>Every woman, every way she dresses</h3><p>Modest styling, curve sizing and student budgets sit in the main story with everything else, not on a side page.</p><p class="ar" lang="ar">الباب المفتوح: لكلّ امرأة، بكلّ أسلوب.</p></div>
+    <div class="grid g3" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))">
+      <div class="promise" style="background:var(--card)"><span class="big">2–3 days</span><h3>Fast, everywhere</h3><p>West Bank and the 48 towns. Free delivery over 500 ₪.</p><p class="ar" lang="ar">توصيل خلال ٢–٣ أيام</p></div>
+      <div class="promise" style="background:var(--card)"><span class="big">Thursday</span><h3>New every week</h3><p>A fresh drop every Thursday at 8 PM. Members see it first.</p><p class="ar" lang="ar">جديد كل خميس</p></div>
+      <div class="promise" style="background:var(--card)"><span class="big">100–300 ₪</span><h3>Prices that make sense</h3><p>Trend pieces she can buy this month, not save for all year.</p><p class="ar" lang="ar">أسعار منطقية</p></div>
+      <div class="promise" style="background:var(--card)"><span class="big">Real fit</span><h3>No guessing sizes</h3><p>Model height, size worn and real measurements on every piece.</p><p class="ar" lang="ar">مقاسات واضحة</p></div>
+      <div class="promise" style="background:var(--card)"><span class="big">Her vote</span><h3>Picked with her</h3><p>The community votes on what drops next.</p><p class="ar" lang="ar">إنتِ بتختاري</p></div>
     </div>
   </div>
 </section>
 
-<!-- THE MUSE -->
-<section id="muse">
+<!-- YARA -->
+<section id="yara" class="band-pink">
   <div class="wrap">
     <div class="head">
-      <span class="label">04 · The muse</span>
-      <h2>Meet Arwa</h2>
-      <p class="lead">Arwa is the ARVERNA woman. Every photo, caption and product decision is checked against one question: <b>would Arwa wear it, and would she say it?</b></p>
+      <span class="eyebrow">The character</span>
+      <h2>Meet Yara, <i>the friend everyone asks</i></h2>
+      <p class="lead" style="color:#4A2E2A">Yara is the face and voice of ARVERNA. She's the girl in every friend group whose outfits get screenshotted, and she always answers "where's that from?" honestly: what it is, how it fits, how much it costs.</p>
     </div>
-
-    <div class="comp" aria-label="Arwa comp card">
-      <div class="comp-name">
-        <span class="mono">Comp card · ARVERNA muse</span>
-        <div>
-          <div class="n">ARWA</div>
-          <div class="nar" lang="ar">أروى</div>
+    <div class="yara">
+      <div>
+        <div class="ig" aria-label="Mock Instagram profile for Yara">
+          <div class="ig-top">
+            <div class="avatar"><span>Y</span></div>
+            <div style="display:grid;gap:8px">
+              <span class="ig-name">yara.wears · يارا</span>
+              <div class="ig-stats"><div><b>412</b>posts</div><div><b>48.2K</b>followers</div><div><b>390</b>following</div></div>
+            </div>
+          </div>
+          <div class="ig-bio">
+            <b>Yara 🍒</b><br>
+            The friend you ask "where's that from?"<br>
+            168 cm · size S · honest fit reviews<br>
+            Hebron · wearing @arvernacom
+            <div class="ar" lang="ar">كل لوك مع السعر والمقاس 💌</div>
+          </div>
+          <div class="ig-btns"><span>Follow</span><span>Message</span></div>
+          <div class="hl">
+            <div><i>Picks</i>Yara's Picks</div>
+            <div><i>Fit</i>Size Check</div>
+            <div><i>GRWM</i>GRWM</div>
+            <div><i>₪200</i>Under 200</div>
+            <div><i>Girls</i>Spotted</div>
+          </div>
         </div>
-        <span class="mono">She who stands in front</span>
-      </div>
-      <div class="comp-stats">
-        <div class="stat"><span>Age</span><span>26</span></div>
-        <div class="stat"><span>Height</span><span>168 cm · wears size S</span></div>
-        <div class="stat"><span>Based</span><span>Hebron, works in Ramallah twice a week</span></div>
-        <div class="stat"><span>Work</span><span>Junior architect restoring old-city stone houses</span></div>
-        <div class="stat"><span>Hair</span><span>Dark brown, long. Low sleek bun on workdays, soft blowout at night</span></div>
-        <div class="stat"><span>Signature</span><span>Black oval sunglasses, Jouri-rose lip</span></div>
-        <div class="stat"><span>Coffee</span><span>Qahwa with cardamom, never sugar</span></div>
-        <div class="stat"><span>Scent</span><span>Orange blossom and warm stone</span></div>
-      </div>
-    </div>
-
-    <div class="bio">
-      <div>
-        <h3>Why "Arwa"</h3>
-        <p>Arwa is a familiar Arabic name that opens with the same sound as ARVERNA, so the two names echo each other. It was also carried by Queen Arwa of Yemen, who ruled for decades and is still remembered for building rather than conquering. A woman who stood in front.</p>
+        <p class="muted" style="font-size:13.5px;margin-top:10px">Mock-up for direction. Follower numbers are illustrative, not a target.</p>
       </div>
       <div>
-        <h3>Her life</h3>
-        <p>She grew up between her grandmother's stone house and her mother's sewing machine. She studied architecture, then came back to Hebron to restore the old city. She dreams in Paris and lives at home on purpose. She's first to try every trend and edits it until it works for her real week. Her friends ask to borrow her clothes, and she usually says yes.</p>
+        <div class="facts">
+          <div class="fact"><span>Name</span><span>Yara (يارا). Easy in Arabic and English, popular with the age group, sounds friendly.</span></div>
+          <div class="fact"><span>Age</span><span>23</span></div>
+          <div class="fact"><span>From</span><span>Hebron. Final-year marketing student who goes to Ramallah on weekends.</span></div>
+          <div class="fact"><span>Height</span><span>168 cm, wears size S (matches the brand's current model specs)</span></div>
+          <div class="fact"><span>Personality</span><span>Fun, confident, generous with tips. Honest about fit ("this runs small, size up"). Smart with money.</span></div>
+          <div class="fact"><span>Her look</span><span>Glossy brown blowout or claw clip, soft-glam makeup, <b>cherry lip</b>, chunky gold hoops, mini shoulder bag, iced Spanish latte in hand.</span></div>
+          <div class="fact"><span>Her rule</span><span>One trend piece plus one basic. Always.</span></div>
+          <div class="fact"><span>Her line</span><span>"من وين؟ من أرڤيرنا 🍒"</span></div>
+        </div>
       </div>
     </div>
 
-    <div class="look">
-      <div><b>Face</b><p>Skin first: groomed brows, thin kohl line, rose-mauve lip. No heavy contour, no filters.</p></div>
-      <div><b>Hands</b><p>Three thin gold rings and her grandmother's small vintage watch. Short nails, nude or Jouri rose.</p></div>
-      <div><b>Bag</b><p>One structured mini bag in black or cream. On drop days, the ARVERNA kraft bag.</p></div>
-      <div><b>Shoes</b><p>Loafers, clean white sneakers, pointed slingbacks for the evening.</p></div>
-      <div><b>Posture</b><p>Mid-step, mid-laugh, looking straight at the camera. Never a pout, never a mirror.</p></div>
-      <div><b>Palette on her</b><p>Stone, qahwa, kohl. One rose or grape piece at a time.</p></div>
+    <p class="quote">"If my friends ask where it's from, it worked. If they ask to borrow it, it's a best seller."</p>
+
+    <div class="looks">
+      <div class="lk"><span class="t">Campus</span><h3>Avery Vintage Wash Balloon Jeans + Arverna Bow Lace Trim Top</h3><span class="pr">240 ₪</span></div>
+      <div class="lk"><span class="t">Coffee with the girls</span><h3>Sculpted Waist Knit Set, white sneakers, gold hoops</h3><span class="pr">160 ₪</span></div>
+      <div class="lk"><span class="t">Weekend</span><h3>Croc-Effect Cropped Bomber Jacket + Camouflage Wide-Leg Cargo Pants</h3><span class="pr">350 ₪</span></div>
+      <div class="lk"><span class="t">Engagement night</span><h3>Rouge Étoile Dress. Cherry dress, cherry lip.</h3><span class="pr">220 ₪</span></div>
     </div>
 
-    <div class="outfits">
-      <span class="label">Her week, from the current catalog</span>
-      <div class="outfit"><span class="when">Site visit</span><span class="items">Structured Trench Co-Ord Set, white sneakers, sunglasses on</span><span class="price">280 ₪</span></div>
-      <div class="outfit"><span class="when">Studio day</span><span class="items">Sculpted Waist Knit Set in cream, loafers, gold hoops</span><span class="price">160 ₪</span></div>
-      <div class="outfit"><span class="when">Café with the Circle</span><span class="items">Avery Vintage Wash Balloon Jeans, Arverna Lace Tie Draped Top, High-Neck Croc-Embossed Leather Jacket</span><span class="price">500 ₪</span></div>
-      <div class="outfit"><span class="when">Engagement night</span><span class="items">Rouge Étoile Dress, slingbacks, hair down for once</span><span class="price">220 ₪</span></div>
+    <h3 style="margin-top:clamp(40px,6vw,64px)">Her content series</h3>
+    <div class="series">
+      <div class="sr"><span class="d">Saturday</span><h3>Yara's Picks</h3><p>Her top 5 from Thursday's drop, with prices on screen.</p></div>
+      <div class="sr"><span class="d">Monday</span><h3>Size Check</h3><p>Honest try-on: "I'm 168 and wear S, this one runs small."</p></div>
+      <div class="sr"><span class="d">Wednesday</span><h3>Under 200 ₪</h3><p>A full outfit under 200 ₪, e.g. Milano Satin Touch Blouse + Elegant Satin Bias Skirt = 170 ₪.</p></div>
+      <div class="sr"><span class="d">Friday</span><h3>GRWM: Engagement edition</h3><p>Get ready with me for a real event, from outfit to lip.</p></div>
     </div>
 
-    <div class="dos">
-      <div class="yes"><h3>Arwa would</h3><ul>
-        <li>Wear the same set three ways in one week and say so.</li>
-        <li>Tell you her height and size before you ask.</li>
-        <li>Mix Arabic and English mid-sentence: "الطقم هاد oversized بس بزبط."</li>
-        <li>Lend her trench to a friend for an interview.</li>
-        <li>Post the photo where she's laughing, not the posed one.</li>
+    <div class="split">
+      <div><h3>Yara always</h3><ul>
+        <li>Says price, size and her height in the first 3 seconds.</li>
+        <li>Speaks dialect, mixing in English fashion words like her audience does.</li>
+        <li>Reposts customers who wore it better.</li>
+        <li>Replies to comments in her own voice, fast.</li>
       </ul></div>
-      <div class="no"><h3>Arwa wouldn't</h3><ul>
-        <li>Shoot a mirror selfie in someone else's photo studio.</li>
-        <li>Write "!!" or "Yes Please!" in a headline.</li>
-        <li>Wear a logo bigger than her face.</li>
-        <li>Put a new piece "on sale" the same week it drops.</li>
-        <li>Pretend to be anywhere other than home.</li>
+      <div><h3>Yara never</h3><ul>
+        <li>Pretends an item fits when it doesn't.</li>
+        <li>Uses supplier photos or another brand's shoot.</li>
+        <li>Writes "Yes Please!!" or fake small caps.</li>
+        <li>Posts without tagging the product.</li>
       </ul></div>
     </div>
 
-    <div class="note">
-      <span class="mono">How to bring her to life</span>
-      <p><b>Cast a real woman, not an AI influencer.</b> Arwa is an archetype that a real local model or creator plays consistently: same face, same styling, every drop. A real face builds the trust a community needs. Keep a line-drawn illustration of her (sunglasses, low bun, trench collar) for stickers, the packaging insert and the WhatsApp profile.</p>
-    </div>
-  </div>
-</section>
-
-<!-- THE CIRCLE -->
-<section id="circle">
-  <div class="wrap">
-    <div class="head">
-      <span class="label">05 · The circle</span>
-      <h2>Arwa never shops alone</h2>
-      <p class="lead">Three friends, three ways ARVERNA's customers actually dress. Together they make "The Open Door" visible. Each one hosts a recurring content series.</p>
-    </div>
-    <div class="grid g3">
-      <article class="friend">
-        <div class="fn"><strong>Leen</strong><span lang="ar">لين</span></div>
-        <span class="mono">24 · Pharmacist · Hebron · Size M</span>
-        <p>Wears hijab and is the best at layering in the group. She proves modest dressing can be the sharpest look in the room.</p>
-        <ul>
-          <li>Black Shawl Detailed Knitwear Soft Set · 150 ₪</li>
-          <li>Denim A-Line Maxi Skirt with the Heritage Check Trench · 400 ₪</li>
-          <li>Elegant Black with Bow Accents Abaya for Eid · 250 ₪</li>
-        </ul>
-        <p class="series">Series: "Ask Leen" · modest styling Q&amp;A</p>
-      </article>
-      <article class="friend">
-        <div class="fn"><strong>Tala</strong><span lang="ar">تالا</span></div>
-        <span class="mono">29 · Ceramicist · Haifa · Size XL</span>
-        <p>Runs a small ceramics studio by the sea. She loves grape and burgundy, and she says what's wrong with a cut before anyone else will.</p>
-        <ul>
-          <li>Celeste Burgundy Draped One-Shoulder Maxi · 150 ₪</li>
-          <li>Midnight Lace Corset Suit · 300 ₪</li>
-          <li>Elegant Satin Bias Skirt · 110 ₪</li>
-        </ul>
-        <p class="series">Series: "Tala Tries" · curve try-ons, measurements said aloud. She's also the reason to extend sizing to 3XL.</p>
-      </article>
-      <article class="friend">
-        <div class="fn"><strong>Jana</strong><span lang="ar">جنى</span></div>
-        <span class="mono">20 · Student · Hebron · Size S</span>
-        <p>The youngest. Racing jackets, cargos and a phone full of trend references. She shops the drop the minute it opens.</p>
-        <ul>
-          <li>ARVERNA Leather Vintage Crop Racing Jacket · 120 ₪</li>
-          <li>Racing Babe Long Sleeve Crop Top · 80 ₪</li>
-          <li>Camouflage Wide-Leg Cargo Pants · 130 ₪</li>
-        </ul>
-        <p class="series">Series: "Jana's Campus" · full looks under 350 ₪</p>
-      </article>
-    </div>
-    <div class="note">
-      <span class="mono">Signature format</span>
-      <p><b>"One Set, Four Ways."</b> Arwa, Leen, Tala and Jana style the same set in one Reel. Every viewer sees herself in it, the product looks versatile, and the community does the selling. Release one with every major drop.</p>
+    <div class="cast">
+      <span class="eyebrow">How to bring her to life</span>
+      <p><b>Cast a real local micro-creator</b> (roughly 10–50K followers, 20–25, Hebron or Ramallah) as Yara on a 6-month contract. She posts on her own account <i>and</i> appears on @arvernacom every week. A real person builds trust faster than an invented or AI character, and her audience becomes yours. Use "Yara" as the series name ("Yara's Picks") so the format survives if the creator changes.</p>
     </div>
   </div>
 </section>
@@ -445,250 +392,209 @@ footer .wrap{padding-block:48px 64px;display:flex;flex-wrap:wrap;justify-content
 <section id="palette">
   <div class="wrap">
     <div class="head">
-      <span class="label">06 · Palette</span>
-      <h2>Colours from her city</h2>
-      <p class="lead">Every colour is taken from something in Hebron you can touch. The ratios matter as much as the hues: mostly stone and kohl, with rose as the signature and glass blue kept rare.</p>
+      <span class="eyebrow">The palette</span>
+      <h2>Cherry, <i>cream</i> and espresso</h2>
+      <p class="lead">A bright, girly, confident palette that stands out in a feed and on a shopping bag. Cherry is the signature that people will recognise from across the room. The rest stays soft so the clothes, mostly beige, brown and black, look good next to it.</p>
     </div>
     <div class="sw-grid">
-      <div class="sw" style="background:#ECE4D6;color:#1D1A18">
-        <div><div class="sn">Hebron Stone</div><span class="sar" lang="ar">حجر الخليل</span></div>
-        <p>The limestone every house here is built from. It holds the heat of the day. Our ground: backgrounds, packaging and the packshot wall.</p>
-        <div class="meta"><span>#ECE4D6</span><span>50%</span></div>
+      <div class="sw" style="background:#B01E2E;color:#F8F2EA">
+        <div><div class="sn">Cherry</div><span class="sar" lang="ar">كرزي</span></div>
+        <p>The signature. Logo on the bag, buttons, NEW tags, the speech bubble, Yara's lip. When people see this red, they think ARVERNA.</p>
+        <div class="meta"><span>#B01E2E</span><span>12%</span></div>
       </div>
-      <div class="sw" style="background:#1D1A18;color:#ECE4D6">
-        <div><div class="sn">Kohl</div><span class="sar" lang="ar">كحل</span></div>
-        <p>The line around her eyes. Type, the wordmark and the print on the kraft bag. A warm black, never pure black.</p>
-        <div class="meta"><span>#1D1A18</span><span>25%</span></div>
+      <div class="sw" style="background:#F8F2EA;color:#2A1A15;border:1px solid #E6D9CB">
+        <div><div class="sn">Cream</div><span class="sar" lang="ar">كريمي</span></div>
+        <p>The base. Website background, bags, packaging card. Warmer and softer than white.</p>
+        <div class="meta"><span>#F8F2EA</span><span>45%</span></div>
       </div>
-      <div class="sw" style="background:#7B5B44;color:#F3ECE1">
-        <div><div class="sn">Qahwa</div><span class="sar" lang="ar">قهوة</span></div>
-        <p>Cardamom coffee, and the colour of the knits and leathers she lives in. Used for the product world and secondary surfaces.</p>
-        <div class="meta"><span>#7B5B44</span><span>10%</span></div>
+      <div class="sw" style="background:#2A1A15;color:#F8F2EA">
+        <div><div class="sn">Espresso</div><span class="sar" lang="ar">إسبريسو</span></div>
+        <p>Replaces black for text, the logo on cream and the "Add to bag" button. Richer and friendlier than pure black.</p>
+        <div class="meta"><span>#2A1A15</span><span>25%</span></div>
       </div>
-      <div class="sw" style="background:#C4868F;color:#1D1A18">
-        <div><div class="sn">Jouri Rose</div><span class="sar" lang="ar">ورد جوري</span></div>
-        <p>The Damask rose of Levantine gardens, and the "PAL" on the FW'26 poster. The signature: NEW tags, drop countdowns, tissue paper, her lipstick.</p>
-        <div class="meta"><span>#C4868F</span><span>8%</span></div>
+      <div class="sw" style="background:#F4CDD2;color:#2A1A15">
+        <div><div class="sn">Ballet Pink</div><span class="sar" lang="ar">زهري باليه</span></div>
+        <p>The community colour. Story backgrounds, tissue paper, member card, "ARVERNA Girls" posts.</p>
+        <div class="meta"><span>#F4CDD2</span><span>10%</span></div>
       </div>
-      <div class="sw" style="background:#4B1E2D;color:#F3ECE1">
-        <div><div class="sn">Hebron Grape</div><span class="sar" lang="ar">عنب الخليل</span></div>
-        <p>August on the rooftops. For evening, Eid and satin. It also replaces sale red, so sale stops looking like an alarm.</p>
-        <div class="meta"><span>#4B1E2D</span><span>5%</span></div>
+      <div class="sw" style="background:#CDAE8F;color:#2A1A15">
+        <div><div class="sn">Latte</div><span class="sar" lang="ar">لاتيه</span></div>
+        <p>The product world: photo backdrops, flat-lays, and the neutrals ARVERNA sells most.</p>
+        <div class="meta"><span>#CDAE8F</span><span>5%</span></div>
       </div>
-      <div class="sw" style="background:#1F5E8C;color:#F3ECE1">
-        <div><div class="sn">Hebron Glass</div><span class="sar" lang="ar">زجاج الخليل</span></div>
-        <p>The blue of the glass blown in the old city for centuries. A spark reserved for the Front Row: member card, early-access links, the drop-day message.</p>
-        <div class="meta"><span>#1F5E8C</span><span>2%</span></div>
+      <div class="sw" style="background:#F4E39B;color:#2A1A15">
+        <div><div class="sn">Butter</div><span class="sar" lang="ar">زبدي</span></div>
+        <p>Happy highlights: "Last sizes", "Back in stock", "Free delivery". Replaces sale red so deals feel cheerful, not urgent.</p>
+        <div class="meta"><span>#F4E39B</span><span>3%</span></div>
       </div>
     </div>
-    <div class="ratio" role="img" aria-label="Colour ratio: Stone 50%, Kohl 25%, Qahwa 10%, Jouri Rose 8%, Grape 5%, Glass 2%">
-      <div style="width:50%;background:#ECE4D6;color:#1D1A18">STONE 50</div>
-      <div style="width:25%;background:#1D1A18;color:#ECE4D6">KOHL 25</div>
-      <div style="width:10%;background:#7B5B44;color:#F3ECE1">10</div>
-      <div style="width:8%;background:#C4868F;color:#1D1A18">8</div>
-      <div style="width:5%;background:#4B1E2D;color:#F3ECE1"></div>
-      <div style="width:2%;background:#1F5E8C"></div>
+    <div class="ratio" role="img" aria-label="Colour ratio: Cream 45%, Espresso 25%, Cherry 12%, Ballet Pink 10%, Latte 5%, Butter 3%">
+      <div style="width:45%;background:#F8F2EA;color:#2A1A15">CREAM 45</div>
+      <div style="width:25%;background:#2A1A15;color:#F8F2EA">ESPRESSO 25</div>
+      <div style="width:12%;background:#B01E2E;color:#F8F2EA">12</div>
+      <div style="width:10%;background:#F4CDD2;color:#2A1A15">10</div>
+      <div style="width:5%;background:#CDAE8F"></div>
+      <div style="width:3%;background:#F4E39B"></div>
     </div>
-    <div class="ratio-key mono"><span>Qahwa 10</span><span>Jouri Rose 8</span><span>Grape 5</span><span>Glass 2</span></div>
-  </div>
-</section>
+    <div class="ratio-key"><span>Cherry 12</span><span>Ballet Pink 10</span><span>Latte 5</span><span>Butter 3</span></div>
 
-<!-- TYPE -->
-<section id="type">
-  <div class="wrap">
-    <div class="head">
-      <span class="label">07 · Typography</span>
-      <h2>Wide like the wordmark</h2>
-      <p class="lead">Three families replace the five the site uses today. The display face is set wide to match the logo. The Arabic face is geometric so the two scripts look like one brand. The mono keeps the bracket details from the FW'26 poster.</p>
-    </div>
-    <div class="spec">
-      <div><h3>Display</h3><p class="mono" style="margin-top:6px">Archivo · Expanded 125 · Weight 800</p><p class="muted" style="margin-top:8px;font-size:14.5px">Headlines, drop titles, campaign type. Always uppercase.</p></div>
-      <div class="sample-d">Drop 001<br>Stand in front</div>
-    </div>
-    <div class="spec">
-      <div><h3>Arabic</h3><p class="mono" style="margin-top:6px">Alexandria · 400 to 700</p><p class="muted" style="margin-top:8px;font-size:14.5px">Arabic headlines and UI. Geometric, Kufi-leaning, made to sit next to Latin.</p></div>
-      <div class="sample-ar" lang="ar">كوني في المقدّمة</div>
-    </div>
-    <div class="spec">
-      <div><h3>Body</h3><p class="mono" style="margin-top:6px">Archivo · Normal width · 400 / 600</p><p class="muted" style="margin-top:8px;font-size:14.5px">Product copy, policies, captions.</p></div>
-      <p class="sample-b">Relaxed fit, double zip, ribbed waist that holds its shape. Arwa is 168 cm and wears S. Free delivery over 500 ₪, at your door in 2–3 days.</p>
-    </div>
-    <div class="spec">
-      <div><h3>Detail</h3><p class="mono" style="margin-top:6px">IBM Plex Mono · 400 / 500</p><p class="muted" style="margin-top:8px;font-size:14.5px">Brackets, prices, drop numbers, labels.</p></div>
-      <p class="sample-m">[ HEBRON ]  [ DROP 001 ]  [ THU · 20:00 ]  [ 160 ₪ ]</p>
-    </div>
-  </div>
-</section>
-
-<!-- MARKS -->
-<section id="marks">
-  <div class="wrap">
-    <div class="head">
-      <span class="label">08 · Identity system</span>
-      <h2>Marks and devices</h2>
-    </div>
-    <div class="marks">
-      <div class="mark">
-        <div class="stage"><span class="mini-wm">ARVERNA<sup style="font-size:.3em">®</sup></span></div>
-        <h3>Wordmark</h3>
-        <p>Keep the current wide wordmark; it's the brand's strongest asset. Use it bigger: at least 120 px wide in the site header, and full-bleed on bags and campaign posters. Shown here in the display face as a stand-in.</p>
-      </div>
-      <div class="mark">
-        <div class="stage">
-          <svg viewBox="0 0 100 124" width="110" height="136" role="img" aria-label="Door A monogram">
-            <path fill="currentColor" d="M6 124 L6 62 Q6 20 50 0 Q94 20 94 62 L94 124 L68 124 L68 68 Q68 44 50 32 Q32 44 32 68 L32 124 Z"/>
-            <rect x="44" y="112" width="12" height="12" fill="#C4868F"/>
-          </svg>
+    <div class="mocks">
+      <div class="mock">
+        <span class="cap">Instagram post</span>
+        <div class="post">
+          <span class="logo">ARVERNA®</span>
+          <div class="h">Where's that from?<span lang="ar">من وين هاد؟</span></div>
+          <div class="f"><span>Drop 12 · Thu 8 PM</span><span>@arvernacom</span></div>
         </div>
-        <h3>The Door A</h3>
-        <p>A new monogram: the letter A drawn as the pointed stone doorway of Hebron's old city. The crossbar is missing on purpose, because the door stays open. The rose square is the threshold. Use it on labels, buttons, the favicon and the bag seal.</p>
       </div>
-      <div class="mark">
-        <div class="stage dark"><div class="drop-chip"><span>[ DROP ]</span><span class="no">001</span><span>STAND IN FRONT · THU 20:00</span></div></div>
-        <h3>Numbered drops</h3>
-        <p>Every release gets a number and a title. Restart at 001 to mark the new chapter. The number appears on the site, in Stories, on the tissue sticker and in the Arabic caption.</p>
+      <div class="mock">
+        <span class="cap">Story poll: the community picks the drop</span>
+        <div class="story-m">
+          <div class="bar"></div>
+          <div class="poll">
+            <b>Which one drops Thursday?</b>
+            <div class="opt win"><span>Cherry satin set</span><span>68%</span></div>
+            <div class="opt"><span>Butter knit set</span><span>32%</span></div>
+          </div>
+          <div class="who"><i></i>arvernacom · 2h</div>
+        </div>
       </div>
-      <div class="mark">
-        <div class="stage"><div class="card-fr"><span>[ Front Row ] · No. 0001</span><span class="t">ARVERNA<span lang="ar">الصف الأول</span></span><span>Member since Drop 001</span></div></div>
-        <h3>Front Row card</h3>
-        <p>The only place Hebron Glass blue appears in volume. It works as a digital card in Apple or Google Wallet and as a printed card in the first order.</p>
+      <div class="mock">
+        <span class="cap">Shopping bag</span>
+        <div class="bag-stage"><div class="bag"><span class="logo">ARVERNA</span><span class="stk" lang="ar">من<br>وين؟</span></div></div>
       </div>
-    </div>
-    <div class="note">
-      <span class="mono">The bracket device</span>
-      <p>The FW'26 poster already framed details like <span class="mono" style="color:inherit">[ info@arvernaps.com ]</span>. Make it the system: brackets around every utility label, on the site (<span class="mono" style="color:inherit">[ SIZE GUIDE ]</span>), on posters and on the packaging. It's small, cheap, and recognisable after a few drops.</p>
+      <div class="mock">
+        <span class="cap">Product card</span>
+        <div class="pcard">
+          <div class="img"><span class="chip tag">New</span><span class="chip tag2">Last sizes</span></div>
+          <div class="b">
+            <span class="nm">Sculpted Waist Knit Set</span>
+            <span class="pr">160 ₪</span>
+            <div class="sz"><span>XS</span><span>S</span><span class="x">M</span><span>L</span></div>
+            <span class="social">♥ 23 girls saved this today</span>
+            <span class="btn">Add to bag</span>
+          </div>
+        </div>
+      </div>
+      <div class="mock">
+        <span class="cap">WhatsApp: The Group Chat</span>
+        <div class="wa">
+          <div class="wa-h"><i>A</i><span>ARVERNA Girls<small>The Group Chat · community</small></span></div>
+          <div class="msg" lang="ar">بنات 💌 الدروب ١٢ نازل <b>الخميس الساعة ٨</b>. إنتو بتشوفوه قبل الكل بساعة. الطقم الكرزي اللي صوّتوا عليه موجود! 🍒<span class="tm">18:02</span></div>
+          <div class="msg" lang="ar">رابطك الخاص: arvernaps.com/girls<span class="tm">19:00</span></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PHOTOGRAPHY -->
-<section id="photo">
+<!-- IDENTITY -->
+<section id="identity" class="band-esp">
   <div class="wrap">
     <div class="head">
-      <span class="label">09 · Photography</span>
-      <h2>Shoot it like you own it</h2>
-      <p class="lead">Today most product photos come from suppliers, so customers can find the same images on other accounts. These five rules turn the imagery into something only ARVERNA has.</p>
+      <span class="eyebrow">Identity system</span>
+      <h2>Logo, type <i>and the bubble</i></h2>
     </div>
-    <div class="shotlist">
-      <div class="shot"><h3>The stone wall packshot</h3><p>Photograph every product against the same Hebron limestone wall, in the same morning light, at the same height. In a year the catalogue is recognisable from a single thumbnail. Choose one wall in the old city and treat it as the studio.</p></div>
-      <div class="shot"><h3>One face per drop</h3><p>Arwa, or one Circle member, wears the whole drop. Put the model's height and size in the first caption line and on the product page.</p></div>
-      <div class="shot"><h3>Real places, named</h3><p>Hebron old city, a Ramallah café, the Haifa seafront, a Bethlehem rooftop. Name the location in the caption. Stop using Istanbul trams and Paris boulevards that aren't ours.</p></div>
-      <div class="shot"><h3>Campaign grade</h3><p>Monochrome with grain, with one rose element left in colour (a lip, a bag, a ribbon). It's the FW'26 poster look turned into a repeatable rule.</p></div>
-      <div class="shot"><h3>Movement over poses</h3><p>Mid-step, turning, laughing with a friend. No mirror selfies, no heavy beauty filters, no forwarded WhatsApp files, no HEIC uploads.</p></div>
+    <div class="idg">
+      <div class="id" style="background:#3A2620">
+        <div class="stage" style="background:var(--cream)"><span class="logo" style="font-size:clamp(24px,3vw,34px);color:var(--cherry)">ARVERNA®</span></div>
+        <h3>Logo</h3>
+        <p style="color:#E9DCD3">Keep the current wide wordmark; it already looks like a real fashion brand. What changes is the colour: <b>cherry on cream</b> for bags and packaging, espresso on cream for the site, cream on cherry for social. Use it at least 120 px wide in the site header.</p>
+      </div>
+      <div class="id" style="background:#3A2620">
+        <div class="stage" style="background:var(--cream);color:var(--espresso)"><div class="typeline"><span class="a">Where's that from?</span><span class="b" lang="ar">من وين هاد؟</span><span class="c">Relaxed fit · 160 ₪ · free delivery over 500 ₪</span><span class="d" lang="ar">قصّة مريحة · ١٦٠ ₪ · توصيل مجاني</span></div></div>
+        <h3>Typography</h3>
+        <p style="color:#E9DCD3"><b>Bodoni Moda Italic</b> for campaign headlines (fashion-magazine glamour that contrasts with the wide logo). <b>El Messiri</b> for Arabic headlines. <b>Figtree</b> and <b>Tajawal</b> for everything else on the site. All free on Google Fonts. This replaces the five fonts the site uses now.</p>
+      </div>
+      <div class="id" style="background:#3A2620">
+        <div class="stage" style="background:var(--pink);gap:26px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center"><span class="bubble" style="font-size:28px">Where's it from?</span><span class="bubble ar-b" lang="ar" style="font-size:28px">من وين؟</span></div>
+        <h3>The speech bubble</h3>
+        <p style="color:#E9DCD3">The brand's graphic device, taken straight from the big idea. A cherry speech bubble frames questions, prices, "NEW" and Yara's quotes. It also echoes WhatsApp and comments, where the community lives. Use it as stickers, bag seals, story frames and the favicon.</p>
+      </div>
+    </div>
+    <div class="grid g2" style="margin-top:14px">
+      <div class="id" style="background:#3A2620"><h3>Photography</h3><p style="color:#E9DCD3">Bright, warm and real. Shoot on our own streets with Yara and real customers. One consistent cream or latte backdrop for product shots. Cherry appears in every campaign (a lip, a bag, a dress). Stop using supplier photos and mirror selfies from other studios.</p></div>
+      <div class="id" style="background:#3A2620"><h3>Packaging</h3><p style="color:#E9DCD3">A cream bag with the cherry logo and handle. Ballet-pink tissue. A round "من وين؟" sticker as the seal. Inside, a card reading "Welcome to the girls 💌" with a QR code to the size guide and to join the Group Chat. The unboxing should be worth filming.</p></div>
     </div>
   </div>
 </section>
 
-<!-- VOICE -->
-<section id="voice">
+<!-- COMMUNITY -->
+<section id="community">
   <div class="wrap">
     <div class="head">
-      <span class="label">10 · Voice</span>
-      <h2>How she talks</h2>
-      <p class="lead">Arabic first, English the way the customer actually mixes it in. Short sentences, specific facts, warm. Every line should sound like something Arwa would text a friend.</p>
-    </div>
-    <div class="tbl-wrap">
-      <table>
-        <thead><tr><th>On the site today</th><th>New, English</th><th style="text-align:right">جديد، عربي</th></tr></thead>
-        <tbody>
-          <tr><td class="old">Meet Your New Fall Obsession!</td><td class="new">Drop 001. Cold mornings, warm stone.</td><td class="ar" lang="ar">الإصدار ٠٠١. صباحات باردة، حجرٌ دافئ.</td></tr>
-          <tr><td class="old">Found: The Looks Everyone's Talking About!!</td><td class="new">What the Front Row bought this week</td><td class="ar" lang="ar">اختيارات الصفّ الأوّل هذا الأسبوع</td></tr>
-          <tr><td class="old">ᴘʀᴇᴍɪᴇʀ ǫᴜᴀʟɪᴛʏ · Dress with Confidence: Our Quality Reflects Your Style</td><td class="new">Fabric, fit and real measurements on every piece.</td><td class="ar" lang="ar">الخامة والقصّة والقياسات الحقيقية على كلّ قطعة.</td></tr>
-          <tr><td class="old">fa$t $hipping · Your Order Will Reach You In Just 2-3 Days!</td><td class="new">At your door in 2–3 days. Free over 500 ₪.</td><td class="ar" lang="ar">يصلكِ خلال ٢–٣ أيام. التوصيل مجاني فوق ٥٠٠ ₪.</td></tr>
-          <tr><td class="old">cu$tomer $ervice · A Creative Team Committed to Your Fashion Needs</td><td class="new">Real people on WhatsApp, Saturday to Thursday.</td><td class="ar" lang="ar">فريق حقيقي على واتساب، من السبت إلى الخميس.</td></tr>
-          <tr><td class="old">More Looks? Yes Please!</td><td class="new">Shop the full set</td><td class="ar" lang="ar">تسوّقي الطقم كاملًا</td></tr>
-          <tr><td class="old">SALE UP TO 50% OFFF</td><td class="new">The Edit: last sizes</td><td class="ar" lang="ar">آخر المقاسات</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- FRONT ROW -->
-<section id="front-row">
-  <div class="wrap">
-    <div class="head">
-      <span class="label">11 · Community</span>
-      <h2>The Front Row</h2>
-      <p class="lead">The name does three jobs at once. It's what ARVERNA means (those who stand in front), it's fashion's most wanted seat, and it's the actual perk: members see every drop first. <span class="ar" lang="ar" style="display:inline">الصفّ الأوّل</span>.</p>
+      <span class="eyebrow">The community</span>
+      <h2>ARVERNA Girls <i>بنات أرڤيرنا</i></h2>
+      <p class="lead">A simple, commercial community: one WhatsApp home (<b>The Group Chat</b>), three levels that reward buying and sharing, and programmes that turn customers into the brand's marketing team.</p>
     </div>
     <div class="tiers">
-      <div class="tier">
-        <span class="mono">Free · join on WhatsApp or the site</span>
-        <div><div class="tn">Front Row</div><div class="tar" lang="ar">الصفّ الأوّل</div></div>
-        <ul>
-          <li>Drop link one hour before everyone else</li>
-          <li>Restock alerts for your size</li>
-          <li>Digital member card in Hebron Glass blue</li>
-          <li>A birthday message from Arwa</li>
-        </ul>
+      <div class="tier" style="background:var(--card)">
+        <span class="req" style="color:var(--muted)">Free · join on WhatsApp or the site</span>
+        <div><div class="tn">Girl</div><div class="tar" lang="ar" style="color:var(--cherry)">بنت أرڤيرنا</div></div>
+        <ul><li>Drop link 1 hour before everyone</li><li>Vote on what drops next</li><li>Restock alerts for your size</li><li>1 point for every 1 ₪</li></ul>
       </div>
-      <div class="tier">
-        <span class="mono">After 3 orders or 750 ₪ a year</span>
-        <div><div class="tn">Inner Circle</div><div class="tar" lang="ar">الدائرة المقرّبة</div></div>
-        <ul>
-          <li>One free exchange on every order</li>
-          <li>Early access to The Edit</li>
-          <li>A members-only colourway of one set each season</li>
-          <li>Invitations to "Under the Oak" evenings</li>
-        </ul>
+      <div class="tier" style="background:var(--pink)">
+        <span class="req" style="color:var(--cherry)">After 3 orders or 750 ₪ a year</span>
+        <div><div class="tn">Bestie</div><div class="tar" lang="ar" style="color:var(--cherry)">البيستي</div></div>
+        <ul><li>Free delivery on every order</li><li>Birthday gift: 50 ₪ voucher</li><li>One free exchange per order</li><li>Points count double during Eid</li></ul>
       </div>
-      <div class="tier top">
-        <span class="mono">30 women a year, nominated by the community</span>
-        <div><div class="tn">The Muses</div><div class="tar" lang="ar">المُلهِمات</div></div>
-        <ul>
-          <li>Featured in a campaign shoot</li>
-          <li>Co-name one drop each year</li>
-          <li>Cast as Circle members in Reels</li>
-          <li>Their "Stand in Front" story on the site</li>
-        </ul>
+      <div class="tier" style="background:var(--cherry);color:var(--cream)">
+        <span class="req" style="color:var(--pink)">Top 100 customers or creators</span>
+        <div><div class="tn">Icon</div><div class="tar" lang="ar" style="color:var(--pink)">الأيقونة</div></div>
+        <ul><li>Free pieces from every major drop</li><li>Invites to shoots and events</li><li>Featured on the site and Instagram</li><li>Personal styling on WhatsApp</li></ul>
       </div>
     </div>
 
-    <div class="rituals">
-      <div class="ritual"><span class="when">Every Thursday · 20:00</span><h3>Front Row Thursdays</h3><p>The drop. Countdown in Stories from noon, early link to members at 19:00, public at 20:00. Thursday night is the eve of the weekend, when people are scrolling.</p></div>
-      <div class="ritual"><span class="when">Monthly</span><h3>Stand in Front stories</h3><p>One real member who was first at something: first in her family to graduate, opened a shop, ran a marathon. Told in her words and photographed by ARVERNA in the clothes she chose.</p></div>
-      <div class="ritual"><span class="when">Each season</span><h3>Under the Oak</h3><p>A styling evening and pop-up in Hebron, Ramallah and Haifa: tea, try-ons and the Circle styling guests. Named after the tree where strangers became friends: <span lang="ar" style="font-family:var(--ar)">تحت البلّوطة</span>.</p></div>
-      <div class="ritual"><span class="when">Before Eid</span><h3>Eid Night</h3><p>A late-night Eid edit with live styling on Instagram and priority delivery for orders before the cutoff.</p></div>
+    <div class="progs">
+      <div class="prog"><span class="k">Co-creation</span><h3>You pick, we drop</h3><p>Weekly Story poll between two styles. The winner drops on Thursday. Girls feel ownership, and you test demand before buying stock.</p><p class="ar" lang="ar">إنتِ بتختاري، إحنا بننزّل</p></div>
+      <div class="prog"><span class="k">UGC</span><h3>#منوين Spotted</h3><p>Customers post wearing ARVERNA with #منوين or tag @arvernacom. Best looks go on a "Spotted" wall on the site and in Stories. One monthly winner gets a 200 ₪ voucher.</p><p class="ar" lang="ar">لابستها؟ صوّريها واعملي تاغ</p></div>
+      <div class="prog"><span class="k">Referral</span><h3>Bring your bestie</h3><p>Share your link: your friend gets 30 ₪ off her first order, and you get 30 ₪ when she buys. It's the commercial version of "where's that from?"</p><p class="ar" lang="ar">جيبي صاحبتك وخذوا ٣٠ ₪</p></div>
+      <div class="prog"><span class="k">Growth</span><h3>Campus Reps</h3><p>Two reps per university (Hebron, Birzeit, An-Najah, Bethlehem, Arab American, Polytechnic). Each gets a personal code, a monthly outfit and commission on sales.</p><p class="ar" lang="ar">سفيرات أرڤيرنا بالجامعات</p></div>
+      <div class="prog"><span class="k">Events</span><h3>Girls' Night</h3><p>A pop-up each season in Hebron, Ramallah and Nazareth: try-ons, a photo wall with the cherry bubble, Yara styling live. Pre-Eid edition is the biggest one.</p><p class="ar" lang="ar">سهرة البنات</p></div>
+      <div class="prog"><span class="k">Recognition</span><h3>Girl of the Month</h3><p>A member's story and her favourite looks, shot by ARVERNA and posted on the 1st of every month. Nominated by the community.</p><p class="ar" lang="ar">بنت الشهر</p></div>
     </div>
 
-    <div class="packcard">
-      <div>
-        <h3>The packaging insert</h3>
-        <p style="margin-top:12px">Printed on stone-coloured card, wrapped in Jouri-rose tissue and sealed with the Door A sticker. It's the first thing the customer touches, so it carries the story, the invitation and the size guide QR code.</p>
-        <p class="muted" style="margin-top:12px">Hashtags: #StandInFront · #ARVERNAFrontRow</p>
-      </div>
-      <div class="insert" lang="en">
-        <span class="w">ARVERNA®</span>
-        <span class="h">Welcome to the Front Row.</span>
-        <span class="ar" lang="ar">أهلًا بكِ في الصفّ الأوّل.</span>
-        <p style="font-size:15px">Our name means <i>she who stands in front</i>. Wear it like it's yours, and lend it to a friend.</p>
-        <div class="foot"><span>[ Drop 001 ]</span><span>[ Scan: size guide · exchanges ]</span><span>[ Hebron ]</span></div>
+    <h3 style="margin-top:clamp(44px,6vw,68px)">A week in the community</h3>
+    <div class="wk-wrap">
+      <div class="week">
+        <div class="day"><b>Sat</b><span>Yara's Picks Reel from Thursday's drop</span></div>
+        <div class="day"><b>Sun</b><span>"Spotted" repost of customer looks</span></div>
+        <div class="day"><b>Mon</b><span>Size Check try-on with Yara</span></div>
+        <div class="day"><b>Tue</b><span>"You pick, we drop" poll opens</span></div>
+        <div class="day"><b>Wed</b><span>Poll winner revealed, countdown starts. Under 200 ₪ Reel.</span></div>
+        <div class="day hot"><b>Thu</b><span>7 PM Group Chat early access. 8 PM drop goes live for everyone.</span></div>
+        <div class="day"><b>Fri</b><span>GRWM for the weekend or an engagement</span></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- LAUNCH -->
-<section id="launch">
+<section id="launch" class="band-esp">
   <div class="wrap">
     <div class="head">
-      <span class="label">12 · Launch</span>
-      <h2>The first 30 days</h2>
-      <p class="lead">The FW'26 poster already says "this season marks a new chapter for ARVERNA." This plan makes that true.</p>
+      <span class="eyebrow">Launch plan</span>
+      <h2>The first <i>30 days</i></h2>
     </div>
     <div class="plan">
-      <div class="week"><span class="wk">Week 1</span><ul><li>Approve the story, the tagline, the palette and the three typefaces.</li><li>Publish the bilingual About page with the name story.</li><li>Replace every line in the voice table on the site.</li></ul></div>
-      <div class="week"><span class="wk">Week 2</span><ul><li>Cast Arwa, then Leen, Tala and Jana (ideally from your own customers).</li><li>Choose the stone wall and shoot Drop 001 packshots against it.</li><li>Draw the Door A monogram properly with a designer and order the stickers.</li></ul></div>
-      <div class="week"><span class="wk">Week 3</span><ul><li>Open the Front Row: a WhatsApp broadcast list plus a Klaviyo signup form, with the member card.</li><li>Print the packaging insert and the Jouri-rose tissue.</li><li>Rebuild the Instagram highlights: Story, Size, Order, Delivery, Exchange, Front Row.</li></ul></div>
-      <div class="week"><span class="wk">Week 4</span><ul><li>Release Drop 001 "Stand in Front" on Thursday at 20:00, an hour earlier for members.</li><li>Post the first "One Set, Four Ways" Reel.</li><li>Open nominations for the first Muses.</li></ul></div>
+      <div class="wkc"><span class="w">Week 1</span><ul><li>Approve the idea, palette and fonts</li><li>Shortlist 3 creators to play Yara</li><li>Update the site: cherry logo, new copy, About page with the story</li></ul></div>
+      <div class="wkc"><span class="w">Week 2</span><ul><li>Sign Yara and shoot her first 8 Reels</li><li>Order bags, pink tissue and the "من وين؟" stickers</li><li>Set up the loyalty and referral apps on Shopify</li></ul></div>
+      <div class="wkc"><span class="w">Week 3</span><ul><li>Open "The Group Chat" on WhatsApp</li><li>Teaser: "Where's that from?" posts with no product</li><li>Recruit the first Campus Reps</li></ul></div>
+      <div class="wkc"><span class="w">Week 4</span><ul><li>First "You pick, we drop" poll</li><li>Launch drop on Thursday at 8 PM, early for the Group Chat</li><li>Launch #منوين with the first 200 ₪ prize</li></ul></div>
     </div>
+    <div class="kpis">
+      <div class="kpi"><b>2,000</b><span>Group Chat members in 90 days</span></div>
+      <div class="kpi"><b>100+</b><span>customer posts with #منوين each month</span></div>
+      <div class="kpi"><b>15%</b><span>of orders from referral or rep codes</span></div>
+      <div class="kpi"><b>35%</b><span>repeat customers within 6 months</span></div>
+    </div>
+    <p style="margin-top:14px;font-size:13.5px;color:#C9B9AE">Targets are starting suggestions to measure against, not forecasts.</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span class="label">ARVERNA · Brand book v1</span>
-    <span class="label">Stand in front · كوني في المقدّمة</span>
+    <span>ARVERNA · Brand book v2</span>
+    <span>Where's that from? · من وين هاد؟</span>
   </div>
 </footer>
