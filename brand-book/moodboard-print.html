@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ARVERNA Moodboard</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Figtree:wght@400;500;600;700;800&family=El+Messiri:wght@500;600;700&family=Tajawal:wght@400;500;700&family=Archivo:wdth,wght@125,800&display=swap">
+<style>
+@page{size:1600px 1000px;margin:0}
+:root{--cream:#FAF3EC;--nude:#DDBFA8;--rose:#D4899A;--cocoa:#4E342C;--gold:#C8A45D;--muted:#8A6E62;--line:#E8DCCF;--paper:#FFFCF8;
+--display:'Bodoni Moda',Georgia,serif;--body:'Figtree',Arial,sans-serif;--ar-d:'El Messiri',serif;--ar:'Tajawal',sans-serif;--logo:'Archivo',Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--cream);color:var(--cocoa);font-family:var(--body);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:1600px;height:1000px;overflow:hidden;position:relative;page-break-after:always;break-after:page;background:var(--cream);padding:56px 64px;display:flex;flex-direction:column;gap:24px}
+.page:last-child{page-break-after:auto;break-after:auto}
+.bar{display:flex;justify-content:space-between;align-items:baseline;gap:20px}
+.bar h2{font-family:var(--display);font-style:italic;font-weight:500;font-size:64px;line-height:1;letter-spacing:-.02em}
+.bar .n{font-weight:800;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--rose)}
+.bar .r{font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.logo{font-family:var(--logo);font-stretch:125%;font-weight:800;letter-spacing:.06em}
+.foot{position:absolute;left:64px;right:64px;bottom:26px;display:flex;justify-content:space-between;font-weight:700;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.g{flex:1;display:grid;gap:12px;min-height:0}
+.t{position:relative;overflow:hidden;border-radius:3px;min-width:0;min-height:0}
+.t img{width:100%;height:100%;object-fit:cover;display:block}
+.lbl{position:absolute;left:12px;bottom:12px;background:rgba(250,243,236,.92);font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:6px 9px;border-radius:2px;color:var(--cocoa)}
+.cap{font-size:15px;line-height:1.45;color:var(--muted)}
+.bubble{position:relative;display:inline-block;background:var(--rose);color:var(--cocoa);border-radius:26px;padding:.3em .75em .42em;font-family:var(--display);font-style:italic;font-weight:600}
+.bubble::after{content:"";position:absolute;left:22%;bottom:-13px;border-left:15px solid transparent;border-right:4px solid transparent;border-top:15px solid var(--rose)}
+.bubble.ar-b{font-family:var(--ar-d);font-style:normal}
+.bubble.ar-b::after{left:auto;right:22%;border-left:4px solid transparent;border-right:15px solid transparent}
+.bubble.cocoa{background:var(--cocoa);color:var(--cream)}.bubble.cocoa::after{border-top-color:var(--cocoa)}
+.tag{display:inline-flex;align-items:center;font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+.btn{display:inline-flex;justify-content:center;align-items:center;border-radius:999px;padding:12px 24px;font-weight:700;font-size:15px}
+.btn.p{background:var(--cocoa);color:var(--cream)}.btn.s{border:1.5px solid var(--cocoa)}.btn.r{background:var(--rose)}
+
+/* 1 cover */
+.cover{padding:0;flex-direction:row;gap:0}
+.cover .l{width:640px;background:var(--cocoa);color:var(--cream);padding:64px;display:flex;flex-direction:column;justify-content:space-between}
+.cover .l .logo{font-size:30px}
+.cover .l .k{font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--nude)}
+.cover .l h1{font-family:var(--display);font-style:italic;font-weight:500;font-size:108px;line-height:.92;letter-spacing:-.02em;margin-top:18px}
+.cover .l .ar{font-family:var(--ar-d);font-weight:700;font-size:52px;color:var(--rose);direction:rtl;text-align:left;margin-top:14px}
+.cover .l ol{list-style:none;display:grid;gap:8px;font-size:16px;color:#EADBD0;counter-reset:c}
+.cover .l li{counter-increment:c;display:flex;gap:14px}
+.cover .l li::before{content:"0" counter(c);font-weight:800;color:var(--rose);width:24px}
+.cover .r{flex:1;position:relative}
+.cover .r img{width:100%;height:100%;object-fit:cover}
+.cover .r .q{position:absolute;right:56px;bottom:56px}
+
+/* 4 palette */
+.pal{flex:1;display:grid;grid-template-columns:repeat(5,1fr);gap:12px;min-height:0}
+.sw{border-radius:3px;display:flex;flex-direction:column;justify-content:space-between;padding:26px;min-height:0}
+.sw .nm{font-family:var(--display);font-style:italic;font-weight:600;font-size:46px;line-height:1}
+.sw .ar{font-family:var(--ar-d);font-weight:700;font-size:28px;margin-top:6px;display:block}
+.sw .d{display:grid;gap:6px;font-size:14px;line-height:1.4}
+.sw .d b{font-weight:800;font-size:12px;letter-spacing:.14em}
+.sw code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px}
+.ratio{display:flex;height:40px;border-radius:3px;overflow:hidden;border:1px solid var(--line)}
+.ratio div{display:flex;align-items:center;padding:0 12px;font-weight:800;font-size:11px;letter-spacing:.12em}
+.pairs{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.pair{border-radius:3px;padding:14px 16px;display:grid;gap:4px;height:96px;align-content:space-between}
+.pair .x{font-family:var(--display);font-style:italic;font-weight:600;font-size:24px;line-height:1}
+.pair small{font-weight:800;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase}
+
+/* 5 type */
+.tg{flex:1;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr 1fr;gap:12px;min-height:0}
+.tc{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:24px 28px;display:flex;flex-direction:column;gap:10px;min-height:0;overflow:hidden}
+.tc .m{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.tc .m .f{font-weight:800;font-size:20px}
+.tc .m code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--muted)}
+.tc .u{font-size:13.5px;color:var(--muted)}
+.wm{grid-column:1 / -1;flex-direction:row;align-items:center;justify-content:space-between}
+.wm .logo{font-size:64px;line-height:1}
+
+/* 6 in use */
+.ug{flex:1;display:grid;grid-template-columns:330px 1fr 300px 1fr;grid-template-rows:1fr 1fr;gap:12px;min-height:0}
+.post{grid-row:1 / 3;background:var(--cocoa);color:var(--cream);border-radius:3px;padding:26px;display:flex;flex-direction:column;justify-content:space-between}
+.post .h{font-family:var(--display);font-style:italic;font-weight:500;font-size:56px;line-height:.95}
+.post .h span{display:block;font-family:var(--ar-d);font-style:normal;font-weight:700;font-size:38px;direction:rtl;text-align:right;color:var(--rose);margin-top:12px}
+.post .f{display:flex;justify-content:space-between;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--nude)}
+.pdp{grid-row:1 / 3;background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:28px;display:flex;flex-direction:column;gap:12px}
+.pdp .c{font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.pdp .nm{font-family:var(--display);font-style:italic;font-weight:500;font-size:40px;line-height:1}
+.pdp .nmar{font-family:var(--ar-d);font-weight:700;font-size:28px;direction:rtl;text-align:right;color:var(--rose)}
+.pdp .pr{font-weight:800;font-size:24px}
+.pdp .fit{font-size:15px;color:var(--muted)}
+.story{grid-row:1 / 3;background:var(--rose);border-radius:18px;padding:22px 18px;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center}
+.story .b{height:3px;width:100%;border-radius:2px;background:linear-gradient(90deg,var(--cocoa) 55%,rgba(78,52,44,.25) 55%)}
+.story .t1{font-family:var(--display);font-style:italic;font-weight:500;font-size:48px;line-height:.95}
+.story .t2{font-family:var(--ar-d);font-weight:700;font-size:28px;color:var(--cream)}
+.story .cd{display:flex;gap:6px;font-weight:800;font-size:24px}
+.story .cd span{background:var(--cream);border-radius:8px;padding:6px 10px}
+.el{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:18px;display:flex;flex-direction:column;gap:10px;min-height:0;overflow:hidden}
+.el h3{font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.el .st{flex:1;display:flex;flex-wrap:wrap;gap:18px 12px;align-items:center;justify-content:center;background:var(--cream);border-radius:3px;padding:14px;min-height:0}
+.el img{flex:1;min-height:0;width:100%;object-fit:contain;background:var(--cream);border-radius:3px}
+
+/* 7 words */
+.wg{flex:1;display:grid;grid-template-columns:1.2fr 1fr;gap:12px;min-height:0}
+.wb{border-radius:3px;padding:40px;display:flex;flex-direction:column;gap:24px}
+.wb h3{font-family:var(--display);font-style:italic;font-weight:500;font-size:48px;line-height:1}
+.wl{display:flex;flex-wrap:wrap;gap:10px}
+.wl span{border-radius:999px;padding:10px 18px;font-weight:600;font-size:19px}
+.close{display:flex;justify-content:space-between;align-items:center;gap:24px;background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:26px 32px}
+.close .q{font-family:var(--display);font-style:italic;font-weight:500;font-size:44px;line-height:1}
+.close .qa{font-family:var(--ar-d);font-weight:700;font-size:36px;color:var(--rose)}
+</style>
+</head>
+<body>
+
+<!-- 1 COVER -->
+<section class="page cover">
+  <div class="l">
+    <span class="logo">ARVERNA®</span>
+    <div>
+      <span class="k">Moodboard · 2026</span>
+      <h1>Tied in rose.</h1>
+      <div class="ar" lang="ar">مربوطة بالوردي</div>
+    </div>
+    <ol>
+      <li>The mood</li><li>The icon in use</li><li>The palette</li><li>The type</li><li>Type and details in use</li><li>Feels like / not like</li>
+    </ol>
+  </div>
+  <div class="r">
+    <img src="assets/a-bow-icon.jpg" alt="">
+    <span class="q bubble" style="font-size:34px">Where's that from?</span>
+  </div>
+</section>
+
+<!-- 2 MOOD -->
+<section class="page">
+  <div class="bar"><div><div class="n">01 · The mood</div><h2>Soft glam, real life</h2></div><span class="r">Satin · nude knit · iced latte · girls' night</span></div>
+  <div class="g" style="grid-template-columns:1.1fr 1fr 1.1fr 1fr;grid-template-rows:1fr 1fr 1fr">
+    <div class="t" style="grid-row:1 / 4"><img src="assets/m-cafe.jpg" alt=""><span class="lbl">Her everyday</span></div>
+    <div class="t"><img src="assets/m-satin.jpg" alt=""><span class="lbl">Satin</span></div>
+    <div class="t" style="grid-row:1 / 3"><img src="assets/m-girls-night.jpg" alt=""><span class="lbl">Girls' night</span></div>
+    <div class="t" style="grid-row:1 / 3"><img src="assets/m-roses.jpg" alt=""><span class="lbl">Romance</span></div>
+    <div class="t" style="grid-row:2 / 4"><img src="assets/m-beauty.jpg" alt=""><span class="lbl">Soft glam</span></div>
+    <div class="t"><img src="assets/m-texture.jpg" alt=""><span class="lbl">Textures</span></div>
+    <div class="t" style="background:var(--rose);padding:22px;display:flex;flex-direction:column;justify-content:center;gap:8px"><div style="font-family:var(--display);font-style:italic;font-weight:500;font-size:40px;line-height:.95">Where's that from?</div><div style="font-family:var(--ar-d);font-weight:700;font-size:30px;color:var(--cream);text-align:right" lang="ar">من وين هاد؟</div></div>
+  </div>
+  <div class="foot"><span>ARVERNA · Moodboard</span><span>02</span></div>
+</section>
+
+<!-- 3 ICON -->
+<section class="page">
+  <div class="bar"><div><div class="n">02 · The icon in use</div><h2>The A-Bow, everywhere</h2></div><span class="r">Logo · merch · events · social · packaging</span></div>
+  <div class="g" style="grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:1fr 1fr">
+    <div class="t" style="grid-row:1 / 3"><img src="assets/a-bow-hair.jpg" alt=""><span class="lbl">The free bow</span></div>
+    <div class="t" style="grid-row:1 / 3"><img src="assets/a-bow-popup-wall.jpg" alt=""><span class="lbl">The bow wall</span></div>
+    <div class="t"><img src="assets/teaser-post.jpg" alt="" style="object-position:center 40%"><span class="lbl">Teaser</span></div>
+    <div class="t"><img src="assets/a-bow-bag-charm.jpg" alt=""><span class="lbl">Collectible charm</span></div>
+    <div class="t"><img src="assets/packaging-flatlay.jpg" alt=""><span class="lbl">Unboxing</span></div>
+    <div class="t"><img src="assets/sticker-sheet.jpg" alt=""><span class="lbl">Story stickers</span></div>
+  </div>
+  <div class="foot"><span>ARVERNA · Moodboard</span><span>03</span></div>
+</section>
+
+<!-- 4 PALETTE -->
+<section class="page">
+  <div class="bar"><div><div class="n">03 · The palette</div><h2>Cream, nude, rose, cocoa</h2></div><span class="r">Four colours · one finish</span></div>
+  <div class="pal">
+    <div class="sw" style="background:#FAF3EC;border:1px solid var(--line)"><div><div class="nm">Cream</div><span class="ar" lang="ar">كريمي</span></div><div class="d"><b>50% · BASE</b><code>#FAF3EC</code><code>RGB 250 243 236</code><span>Backgrounds, website, cards</span></div></div>
+    <div class="sw" style="background:#DDBFA8"><div><div class="nm">Nude</div><span class="ar" lang="ar">نيود</span></div><div class="d"><b>22% · WARMTH</b><code>#DDBFA8</code><code>RGB 221 191 168</code><span>Bags, backdrops, sections</span></div></div>
+    <div class="sw" style="background:#D4899A"><div><div class="nm">Rose</div><span class="ar" lang="ar">وردي</span></div><div class="d"><b>16% · SIGNATURE</b><code>#D4899A</code><code>RGB 212 137 154</code><span>The A-Bow, ribbon, tags, bubbles</span></div></div>
+    <div class="sw" style="background:#4E342C;color:#FAF3EC"><div><div class="nm">Cocoa</div><span class="ar" lang="ar">كاكاو</span></div><div class="d"><b>12% · DEPTH</b><code>#4E342C</code><code>RGB 78 52 44</code><span>Text, wordmark, buttons</span></div></div>
+    <div class="sw" style="background:linear-gradient(135deg,#EAD49C,#C8A45D 45%,#9C7A3C)"><div><div class="nm">Gold</div><span class="ar" lang="ar">ذهبي</span></div><div class="d"><b>FINISH ONLY</b><code>#C8A45D</code><span>Foil, charms, clips, hardware. Never a flat fill.</span></div></div>
+  </div>
+  <div class="ratio"><div style="width:50%;background:#FAF3EC">CREAM 50</div><div style="width:22%;background:#DDBFA8">NUDE 22</div><div style="width:16%;background:#D4899A">ROSE 16</div><div style="width:12%;background:#4E342C;color:#FAF3EC">COCOA 12</div></div>
+  <div class="pairs">
+    <div class="pair" style="background:#FFFCF8;border:1px solid var(--line)"><span class="x">Cocoa on cream</span><small>Main · site and text</small></div>
+    <div class="pair" style="background:#DDBFA8"><span class="x">Cocoa on nude</span><small>Bags · packaging</small></div>
+    <div class="pair" style="background:#D4899A"><span class="x">Cocoa on rose</span><small>Stickers · Stories</small></div>
+    <div class="pair" style="background:#4E342C;color:#FAF3EC"><span class="x">Cream on cocoa</span><small>Teasers · social</small></div>
+    <div class="pair" style="background:#4E342C;color:#D4899A"><span class="x">Rose on cocoa</span><small>Big headlines only</small></div>
+    <div class="pair" style="background:#FFFCF8;color:#D4899A;outline:2px dashed #4E342C;outline-offset:-6px"><span class="x">Rose on cream</span><small style="color:#4E342C">Avoid for text</small></div>
+  </div>
+  <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>04</span></div>
+</section>
+
+<!-- 5 TYPE -->
+<section class="page">
+  <div class="bar"><div><div class="n">04 · The type</div><h2>Magazine glam, easy reading</h2></div><span class="r">All free on Google Fonts</span></div>
+  <div class="tg">
+    <div class="tc wm"><span class="logo">ARVERNA®</span><div style="text-align:right"><div style="font-weight:800;font-size:18px">Logo only · keep the existing wordmark</div><div class="u">Shown in Archivo Expanded 800 as a stand-in. Never used for headlines.</div></div></div>
+    <div class="tc">
+      <div class="m"><span class="f">Bodoni Moda · Display</span><code>Italic 500 · Bold 800</code></div>
+      <div style="font-family:var(--display);font-style:italic;font-weight:500;font-size:80px;line-height:.95;letter-spacing:-.02em">Where's that from?</div>
+      <div style="font-family:var(--display);font-style:italic;font-size:19px;line-height:1.45">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz 0123456789 ₪</div>
+      <div class="u">Campaign headlines, product names, quotes.</div>
+    </div>
+    <div class="tc">
+      <div class="m"><span class="f">El Messiri · Arabic display</span><code>Bold 700 · SemiBold 600</code></div>
+      <div style="font-family:var(--ar-d);font-weight:700;font-size:80px;line-height:1.2;direction:rtl;text-align:right" lang="ar">من وين هاد؟</div>
+      <div style="font-family:var(--ar-d);font-size:22px;direction:rtl;text-align:right;line-height:1.6" lang="ar">ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي ٠١٢٣٤٥٦٧٨٩</div>
+      <div class="u">Arabic headlines and campaign lines.</div>
+    </div>
+    <div class="tc">
+      <div class="m"><span class="f">Figtree · Text</span><code>Regular 400 · SemiBold 600 · ExtraBold 800</code></div>
+      <div style="display:flex;gap:24px;font-size:26px"><span>Regular</span><span style="font-weight:600">SemiBold</span><span style="font-weight:800">ExtraBold</span></div>
+      <div style="font-size:19px;line-height:1.6">Relaxed fit with a ribbed waist that holds its shape. Yara is 168 cm and wears S. At your door in 2–3 days, free delivery over 500 ₪.</div>
+      <div class="u">Website, product details, prices, buttons, captions.</div>
+    </div>
+    <div class="tc">
+      <div class="m"><span class="f">Tajawal · Arabic text</span><code>Regular 400 · Medium 500 · Bold 700</code></div>
+      <div style="font-family:var(--ar);font-weight:700;font-size:26px;direction:rtl;text-align:right" lang="ar">عادي · متوسط · عريض</div>
+      <div style="font-family:var(--ar);font-size:21px;line-height:1.85;direction:rtl;text-align:right" lang="ar">قصّة مريحة وخصر مضلّع بيحافظ على شكله. يارا طولها ١٦٨ سم ولابسة مقاس S. بيوصلك خلال ٢–٣ أيام، والتوصيل مجاني فوق ٥٠٠ ₪.</div>
+      <div class="u">Arabic descriptions, captions, WhatsApp graphics.</div>
+    </div>
+  </div>
+  <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>05</span></div>
+</section>
+
+<!-- 6 IN USE -->
+<section class="page">
+  <div class="bar"><div><div class="n">05 · Type and details in use</div><h2>How it comes together</h2></div><span class="r">Post · product page · Story · elements</span></div>
+  <div class="ug">
+    <div class="post"><span class="logo" style="font-size:14px">ARVERNA®</span><div class="h">Tied in rose.<span lang="ar">مربوطة بالوردي</span></div><div class="f"><span>Drop 12 · Thu 8 PM</span><span>@arvernacom</span></div></div>
+    <div class="pdp">
+      <span class="c">New in · Sets</span>
+      <span class="nm">Sculpted Waist Knit Set</span>
+      <span class="nmar" lang="ar">طقم تريكو بخصر محدّد</span>
+      <span class="pr">160 ₪</span>
+      <span class="fit">Yara is 168 cm and wears S · Runs true to size</span>
+      <div style="display:flex;gap:8px"><span class="tag" style="background:#D4899A">New</span><span class="tag" style="background:#DDBFA8">Last sizes</span></div>
+      <span class="btn p">Add to bag</span><span class="btn s">Size guide</span>
+      <div style="margin-top:auto;display:flex;gap:18px;align-items:center;flex-wrap:wrap"><span class="bubble" style="font-size:22px">Where's it from?</span><span class="bubble ar-b" style="font-size:22px" lang="ar">من وين؟</span></div>
+    </div>
+    <div class="story"><div class="b"></div><div style="display:grid;gap:14px;justify-items:center"><span class="t1">Drop day</span><span class="t2" lang="ar">الدروب نازل الليلة</span><div class="cd"><span>02</span><span>14</span><span>36</span></div><span class="btn p" style="font-size:13px;padding:9px 16px">Remind me</span></div><span style="font-weight:800;font-size:11px;letter-spacing:.14em">ARVERNA · 8 PM</span></div>
+    <div class="el"><h3>Logo lockups</h3><img src="assets/a-bow-logo-sheet.jpg" alt=""></div>
+    <div class="el"><h3>Tags, buttons, highlights</h3><div class="st"><span class="tag" style="background:#D4899A">New</span><span class="tag" style="background:#DDBFA8">Last sizes</span><span class="tag" style="background:#4E342C;color:#FAF3EC">Sold out</span><span class="btn p" style="padding:10px 18px;font-size:14px">Add to bag</span><span class="btn r" style="padding:10px 18px;font-size:14px">Join the girls</span><span class="bubble cocoa" style="font-size:18px">Sold out</span></div></div>
+  </div>
+  <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>06</span></div>
+</section>
+
+<!-- 7 WORDS -->
+<section class="page">
+  <div class="bar"><div><div class="n">06 · Feels like / not like</div><h2>The vibe check</h2></div><span class="r">Use this before every shoot and post</span></div>
+  <div class="wg">
+    <div class="wb" style="background:var(--rose)">
+      <h3>ARVERNA feels like</h3>
+      <div class="wl"><span style="background:#FAF3EC">Soft glam</span><span style="background:#FAF3EC">Satin ribbon</span><span style="background:#4E342C;color:#FAF3EC">Iced Spanish latte</span><span style="background:#FAF3EC">Gold hoops</span><span style="background:#DDBFA8">Coquette, but grown up</span><span style="background:#FAF3EC">Nude knit sets</span><span style="background:#4E342C;color:#FAF3EC">Thursday drop</span><span style="background:#FAF3EC">Golden-hour light</span><span style="background:#DDBFA8">Girls' night</span><span style="background:#FAF3EC">Real laughs</span><span style="background:#FAF3EC">Unboxing on camera</span><span style="background:#DDBFA8">Pink roses</span></div>
+    </div>
+    <div class="wb" style="background:var(--cocoa);color:var(--cream)">
+      <h3>ARVERNA is not</h3>
+      <div class="wl"><span style="border:1.5px solid #8A6E62">Neon colours</span><span style="border:1.5px solid #8A6E62">Harsh pure black</span><span style="border:1.5px solid #8A6E62">Red "SALE!!" banners</span><span style="border:1.5px solid #8A6E62">Heavy beauty filters</span><span style="border:1.5px solid #8A6E62">Supplier photos</span><span style="border:1.5px solid #8A6E62">Mirror selfies</span><span style="border:1.5px solid #8A6E62">Fake small caps</span><span style="border:1.5px solid #8A6E62">Cartoonish cute</span></div>
+    </div>
+  </div>
+  <div class="close"><span class="q">Where's that from? <span class="logo" style="font-style:normal;font-size:30px">ARVERNA.</span></span><span class="qa" lang="ar">من وين؟ من أرڤيرنا</span></div>
+  <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>07</span></div>
+</section>
+
+</body>
+</html>
