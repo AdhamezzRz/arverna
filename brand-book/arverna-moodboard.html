@@ -1,0 +1,331 @@
+<title>ARVERNA Moodboard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Figtree:wght@400;500;600;700;800&family=El+Messiri:wght@500;600;700&family=Tajawal:wght@400;500;700&family=Archivo:wdth,wght@125,800&display=swap">
+<style>
+/* Layout: a pinned moodboard. A dense collage grid of photos, swatches and type tiles comes first; the type, palette and elements sheets follow as clean reference boards. Single light look on purpose: it shows the real brand colours. */
+:root{
+  color-scheme:light;
+  --cream:#FAF3EC; --nude:#DDBFA8; --rose:#D4899A; --cocoa:#4E342C; --gold:#C8A45D;
+  --ink:#4E342C; --muted:#8A6E62; --line:#E8DCCF; --paper:#FFFCF8;
+  --display:'Bodoni Moda','Didot','Bodoni 72',Georgia,serif;
+  --body:'Figtree','Helvetica Neue',Arial,sans-serif;
+  --ar-d:'El Messiri','Geeza Pro','Noto Naskh Arabic',serif;
+  --ar:'Tajawal','Geeza Pro','Noto Sans Arabic',Tahoma,sans-serif;
+  --logo:'Archivo','Helvetica Neue',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{background:var(--cream);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+section > .wrap{padding-block:clamp(48px,7vw,96px)}
+h1,h2,h3{margin:0;text-wrap:balance;line-height:1}
+h2{font-family:var(--display);font-weight:500;font-style:italic;font-size:clamp(40px,6vw,76px);letter-spacing:-.02em}
+h3{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+p{margin:0;max-width:62ch}
+.eyebrow{font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--rose)}
+.logo{font-family:var(--logo);font-stretch:125%;font-weight:800;letter-spacing:.06em}
+.head{display:flex;justify-content:space-between;align-items:end;gap:16px 32px;flex-wrap:wrap;margin-bottom:clamp(24px,4vw,40px)}
+.head p{color:var(--muted);max-width:46ch}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+
+/* Top bar */
+.top .wrap{padding-block:22px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.top .logo{font-size:20px}
+.top span:last-child{font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* Collage */
+.board{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:clamp(64px,7.4vw,92px);grid-auto-flow:dense;gap:10px}
+.t{position:relative;overflow:hidden;border-radius:3px;min-width:0}
+.t img{width:100%;height:100%;object-fit:cover;display:block}
+.t .lbl{position:absolute;left:10px;bottom:10px;background:rgba(250,243,236,.9);color:var(--cocoa);font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:5px 8px;border-radius:2px}
+.w2{grid-column:span 2}.w3{grid-column:span 3}.w1{grid-column:span 1}
+.h2{grid-row:span 2}.h3{grid-row:span 3}.h4{grid-row:span 4}.h5{grid-row:span 5}
+.title-t{background:var(--cocoa);color:var(--cream);padding:clamp(18px,2.4vw,28px);display:flex;flex-direction:column;justify-content:space-between;gap:10px}
+.title-t .logo{font-size:clamp(22px,2.6vw,34px)}
+.title-t .big{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(34px,4.4vw,60px);line-height:.95}
+.title-t .ar{font-family:var(--ar-d);font-weight:700;font-size:clamp(22px,2.4vw,30px);color:var(--rose);direction:rtl;text-align:left}
+.title-t small{font-weight:600;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--nude)}
+.chip-t{padding:12px;display:flex;flex-direction:column;justify-content:space-between;font-weight:700;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase}
+.chip-t b{font-family:var(--display);font-style:italic;font-weight:600;font-size:clamp(18px,1.8vw,24px);letter-spacing:0;text-transform:none}
+.quote-t{background:var(--rose);color:var(--cocoa);padding:clamp(16px,2vw,24px);display:flex;flex-direction:column;justify-content:center;gap:8px}
+.quote-t .q{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(28px,3.4vw,46px);line-height:.98}
+.quote-t .qa{font-family:var(--ar-d);font-weight:700;font-size:clamp(22px,2.6vw,34px);direction:rtl;text-align:right;color:var(--cream)}
+.aa-t{background:var(--paper);border:1px solid var(--line);padding:14px;display:flex;flex-direction:column;justify-content:space-between}
+.aa-t .aa{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(56px,7vw,96px);line-height:.9}
+.aa-t .aar{font-family:var(--ar-d);font-weight:700;font-size:clamp(40px,4.6vw,64px);line-height:1;direction:rtl;text-align:right;color:var(--rose)}
+.aa-t span{font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.words-t{background:var(--nude);padding:clamp(14px,2vw,22px);display:flex;flex-wrap:wrap;align-content:center;gap:6px}
+.words-t span{background:var(--cream);color:var(--cocoa);border-radius:999px;padding:5px 12px;font-weight:600;font-size:13px}
+.words-t span.r{background:var(--rose)} .words-t span.c{background:var(--cocoa);color:var(--cream)}
+.bubble-t{background:var(--cream);border:1px solid var(--line);display:grid;place-items:center}
+@media (max-width:760px){
+  .board{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:84px}
+  .w3,.w2{grid-column:span 2}.w1{grid-column:span 1}
+  .h5{grid-row:span 4}
+}
+
+/* Bubble */
+.bubble{position:relative;display:inline-block;background:var(--rose);color:var(--cocoa);border-radius:26px;padding:.3em .75em .42em;font-family:var(--display);font-style:italic;font-weight:600}
+.bubble::after{content:"";position:absolute;left:22%;bottom:-13px;border-left:15px solid transparent;border-right:4px solid transparent;border-top:15px solid var(--rose)}
+.bubble.ar-b{font-family:var(--ar-d);font-style:normal}
+.bubble.ar-b::after{left:auto;right:22%;border-left:4px solid transparent;border-right:15px solid transparent}
+.bubble.cocoa{background:var(--cocoa);color:var(--cream)}
+.bubble.cocoa::after{border-top-color:var(--cocoa)}
+
+/* Palette */
+.pal{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px}
+.sw{border-radius:3px;overflow:hidden;background:var(--paper);border:1px solid var(--line);display:grid;grid-template-rows:200px auto}
+.sw .c{display:flex;align-items:flex-end;padding:16px;font-family:var(--display);font-style:italic;font-weight:600;font-size:34px;line-height:1}
+.sw .d{padding:16px;display:grid;gap:4px;font-size:14px}
+.sw .d .ar{font-family:var(--ar-d);font-weight:700;font-size:20px;color:var(--cocoa)}
+.sw .d code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:var(--muted)}
+.sw .d .use{color:var(--muted);margin-top:6px;line-height:1.45}
+.pct{font-weight:800;font-size:12px;letter-spacing:.12em}
+.pairs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:10px;margin-top:22px}
+.pair{border-radius:3px;padding:18px 16px;display:grid;gap:6px;min-height:110px;align-content:space-between}
+.pair .x{font-family:var(--display);font-style:italic;font-weight:600;font-size:26px;line-height:1}
+.pair small{font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.pair.no{outline:2px dashed var(--cocoa);outline-offset:-6px}
+.ratio{display:flex;height:46px;border-radius:3px;overflow:hidden;margin-top:22px;border:1px solid var(--line)}
+.ratio div{display:flex;align-items:center;padding:0 10px;font-weight:700;font-size:11px;letter-spacing:.1em;white-space:nowrap;overflow:hidden}
+
+/* Type */
+.tsheet{display:grid;gap:12px}
+.tcard{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:clamp(20px,3vw,32px);display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:16px 36px}
+@media (max-width:760px){.tcard{grid-template-columns:1fr}}
+.tmeta{display:grid;gap:8px;align-content:start}
+.tmeta .fam{font-size:22px;font-weight:800}
+.tmeta .use{color:var(--muted);font-size:14.5px}
+.tmeta code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;color:var(--muted)}
+.spec{display:grid;gap:14px;min-width:0}
+.spec .s1{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(46px,7vw,92px);line-height:.95;letter-spacing:-.02em}
+.spec .s1r{font-family:var(--display);font-weight:800;font-size:clamp(28px,3.6vw,44px);line-height:1}
+.spec .abc{font-size:clamp(17px,1.8vw,22px);line-height:1.5;overflow-wrap:anywhere;color:var(--cocoa)}
+.spec .s2{font-family:var(--ar-d);font-weight:700;font-size:clamp(44px,6vw,80px);line-height:1.15;direction:rtl;text-align:right}
+.spec .abc-ar{font-family:var(--ar-d);font-size:clamp(20px,2.2vw,28px);direction:rtl;text-align:right;line-height:1.6;color:var(--cocoa)}
+.spec .s3{font-size:18px;line-height:1.65;max-width:58ch}
+.spec .s4{font-family:var(--ar);font-size:19px;line-height:1.9;direction:rtl;text-align:right}
+.weights{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:20px}
+.spec .wm{font-family:var(--logo);font-stretch:125%;font-weight:800;letter-spacing:.06em;font-size:clamp(34px,6vw,72px);line-height:1;white-space:nowrap;overflow:hidden}
+.scale{width:100%;border-collapse:collapse;min-width:640px}
+.scale-wrap{overflow-x:auto;background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:8px clamp(14px,2vw,24px)}
+.scale td{padding:14px 12px 14px 0;border-bottom:1px solid var(--line);vertical-align:middle}
+.scale tr:last-child td{border-bottom:0}
+.scale td:first-child{width:120px;font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--rose)}
+.scale td:nth-child(2){width:230px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;color:var(--muted)}
+.inuse{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:12px;margin-top:12px}
+.post{aspect-ratio:4/5;background:var(--cocoa);color:var(--cream);border-radius:3px;padding:24px;display:grid;grid-template-rows:auto 1fr auto;max-width:100%}
+.post .logo{font-size:13px}
+.post .h{align-self:center;font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(38px,4.4vw,54px);line-height:.95}
+.post .h span{display:block;font-family:var(--ar-d);font-style:normal;font-weight:700;font-size:.72em;direction:rtl;text-align:right;color:var(--rose);margin-top:10px}
+.post .f{display:flex;justify-content:space-between;font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--nude)}
+.pdp{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:24px;display:grid;gap:12px;align-content:start}
+.pdp .crumb{font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.pdp .nm{font-family:var(--display);font-style:italic;font-weight:500;font-size:34px;line-height:1}
+.pdp .nmar{font-family:var(--ar-d);font-weight:700;font-size:24px;direction:rtl;text-align:right;color:var(--rose)}
+.pdp .pr{font-weight:800;font-size:20px;font-variant-numeric:tabular-nums}
+.pdp .fit{font-size:14.5px;color:var(--muted)}
+.btn{display:inline-flex;justify-content:center;align-items:center;border-radius:999px;padding:12px 22px;font-weight:700;font-size:14.5px}
+.btn.p{background:var(--cocoa);color:var(--cream)}
+.btn.s{border:1.5px solid var(--cocoa);color:var(--cocoa)}
+.btn.r{background:var(--rose);color:var(--cocoa)}
+.story{aspect-ratio:9/16;max-width:100%;width:100%;max-height:520px;background:var(--rose);border-radius:16px;padding:22px 18px;display:grid;grid-template-rows:auto 1fr auto;justify-self:center}
+.story .bar{height:3px;border-radius:2px;background:linear-gradient(90deg,var(--cocoa) 55%,rgba(78,52,44,.25) 55%)}
+.story .mid{align-self:center;display:grid;gap:14px;justify-items:center;text-align:center}
+.story .mid .t1{font-family:var(--display);font-style:italic;font-weight:500;font-size:40px;line-height:.95;color:var(--cocoa)}
+.story .mid .t2{font-family:var(--ar-d);font-weight:700;font-size:26px;color:var(--cream)}
+.story .cd{display:flex;gap:6px;font-weight:800;font-size:22px;color:var(--cocoa);font-variant-numeric:tabular-nums}
+.story .cd span{background:var(--cream);border-radius:8px;padding:6px 10px}
+.story .ft{font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--cocoa);text-align:center}
+
+/* Elements */
+.els{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:12px}
+.el{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:20px;display:grid;gap:14px;align-content:start;min-width:0}
+.el .stage{min-height:170px;display:flex;flex-wrap:wrap;gap:22px 14px;align-items:center;justify-content:center;background:var(--cream);border-radius:3px;padding:20px;overflow:hidden}
+.el img{width:100%;height:auto;display:block;border-radius:3px}
+.el p{color:var(--muted);font-size:14.5px}
+.tag{display:inline-flex;align-items:center;font-weight:800;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
+
+/* Words */
+.words{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:12px}
+.wbox{border-radius:3px;padding:clamp(20px,3vw,30px);display:grid;gap:16px;align-content:start}
+.wlist{display:flex;flex-wrap:wrap;gap:8px}
+.wlist span{border-radius:999px;padding:7px 14px;font-weight:600;font-size:15px}
+footer .wrap{padding-block:36px 52px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line)}
+</style>
+
+<header class="top"><div class="wrap"><span class="logo">ARVERNA®</span><span>Moodboard · Tied in rose · 2026</span></div></header>
+
+<!-- COLLAGE -->
+<section id="board">
+  <div class="wrap" style="padding-block:clamp(20px,3vw,32px) clamp(48px,7vw,88px)">
+    <div class="board">
+      <div class="t title-t w2 h4">
+        <span class="logo">ARVERNA</span>
+        <div>
+          <div class="big">Tied in rose.</div>
+          <div class="ar" lang="ar">مربوطة بالوردي</div>
+        </div>
+        <small>Soft glam · satin · nude · cocoa</small>
+      </div>
+      <div class="t w2 h4"><img src="assets/a-bow-icon.jpg" alt="Rose satin ribbon tied into the letter A"><span class="lbl">The A-Bow</span></div>
+      <div class="t w2 h5"><img src="assets/m-cafe.jpg" alt="Girl in a nude knit set holding an iced latte in a café, rose bow in her hair"><span class="lbl">Her everyday</span></div>
+      <div class="t chip-t w1 h2" style="background:#D4899A;color:#4E342C"><b>Rose</b><span>#D4899A</span></div>
+      <div class="t chip-t w1 h2" style="background:#DDBFA8;color:#4E342C"><b>Nude</b><span>#DDBFA8</span></div>
+      <div class="t w2 h3"><img src="assets/m-satin.jpg" alt="Macro close-up of rose satin ribbon folds"><span class="lbl">Satin</span></div>
+      <div class="t w2 h4"><img src="assets/a-bow-hair.jpg" alt="Long brown hair tied with a rose satin A-Bow"><span class="lbl">The free bow</span></div>
+      <div class="t quote-t w2 h3"><div class="q">Where's that from?</div><div class="qa" lang="ar">من وين هاد؟</div></div>
+      <div class="t chip-t w1 h2" style="background:#FAF3EC;color:#4E342C;border:1px solid #E8DCCF"><b>Cream</b><span>#FAF3EC</span></div>
+      <div class="t chip-t w1 h2" style="background:#4E342C;color:#FAF3EC"><b>Cocoa</b><span>#4E342C</span></div>
+      <div class="t w2 h3"><img src="assets/m-beauty.jpg" alt="Flat lay of rose lipstick, gold hoops, pearl claw clip and rose bow clip"><span class="lbl">Soft glam</span></div>
+      <div class="t w2 h5"><img src="assets/m-girls-night.jpg" alt="Three friends laughing on a cream sofa, tying a rose bow in hair"><span class="lbl">Girls' night</span></div>
+      <div class="t aa-t w1 h3"><div class="aa">Aa</div><div class="aar" lang="ar">أب</div><span>Bodoni · Messiri</span></div>
+      <div class="t w1 h3"><img src="assets/m-texture.jpg" alt="Nude ribbed knit next to cocoa leather with a gold buckle"></div>
+      <div class="t w2 h4"><img src="assets/a-bow-popup-wall.jpg" alt="Two girls taking a selfie at a giant A-Bow wall"><span class="lbl">The bow wall</span></div>
+      <div class="t w2 h4"><img src="assets/teaser-post.jpg" alt="Teaser: Something new is being tied"><span class="lbl">Teaser</span></div>
+      <div class="t w2 h3"><img src="assets/m-roses.jpg" alt="Pale pink roses in a cream vase beside a nude satin blouse and rose ribbon"><span class="lbl">Romance</span></div>
+      <div class="t words-t w2 h3">
+        <span class="r">soft glam</span><span>satin ribbon</span><span class="c">iced latte</span><span>gold hoops</span><span class="r">coquette, grown up</span><span>nude knit</span><span class="c">drop day</span><span>warm light</span><span class="r">girls' night</span><span>real &amp; candid</span>
+      </div>
+      <div class="t w2 h3"><img src="assets/a-bow-bag-charm.jpg" alt="Rose enamel and gold A-Bow charm on a brown leather bag"><span class="lbl">Charm</span></div>
+      <div class="t w2 h3"><img src="assets/packaging-flatlay.jpg" alt="Unboxing flat lay with nude bag, rose tissue and A-Bow seal"><span class="lbl">Unboxing</span></div>
+      <div class="t bubble-t w2 h3"><span class="bubble" style="font-size:clamp(22px,2.4vw,30px)">Where's it from?</span></div>
+      <div class="t w2 h3"><img src="assets/sticker-sheet.jpg" alt="Story sticker sheet"><span class="lbl">Stickers</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PALETTE -->
+<section id="palette" style="background:var(--paper);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head"><div style="display:grid;gap:10px"><span class="eyebrow">Colour</span><h2>The palette</h2></div><p>Four colours and one finish. Cream is the canvas, nude and rose make it girly and warm, cocoa makes it premium and readable.</p></div>
+    <div class="pal">
+      <div class="sw"><div class="c" style="background:#FAF3EC;color:#4E342C">Cream</div><div class="d"><span class="ar" lang="ar">كريمي</span><code>#FAF3EC · RGB 250 243 236</code><span class="pct">50% · BASE</span><span class="use">Backgrounds, website, cards, product pages.</span></div></div>
+      <div class="sw"><div class="c" style="background:#DDBFA8;color:#4E342C">Nude</div><div class="d"><span class="ar" lang="ar">نيود</span><code>#DDBFA8 · RGB 221 191 168</code><span class="pct">22% · WARMTH</span><span class="use">Bags, photo backdrops, section blocks.</span></div></div>
+      <div class="sw"><div class="c" style="background:#D4899A;color:#4E342C">Rose</div><div class="d"><span class="ar" lang="ar">وردي</span><code>#D4899A · RGB 212 137 154</code><span class="pct">16% · SIGNATURE</span><span class="use">The A-Bow, ribbon, tissue, tags, bubbles.</span></div></div>
+      <div class="sw"><div class="c" style="background:#4E342C;color:#FAF3EC">Cocoa</div><div class="d"><span class="ar" lang="ar">كاكاو</span><code>#4E342C · RGB 78 52 44</code><span class="pct">12% · DEPTH</span><span class="use">Text, wordmark, buttons, rope handles.</span></div></div>
+      <div class="sw"><div class="c" style="background:linear-gradient(135deg,#E9D29A,#C8A45D 45%,#9C7A3C);color:#4E342C">Gold</div><div class="d"><span class="ar" lang="ar">ذهبي</span><code>#C8A45D · finish only</code><span class="pct">ACCENT · MATERIAL</span><span class="use">Foil, charms, clips, hardware. Never a flat fill.</span></div></div>
+    </div>
+    <div class="ratio" role="img" aria-label="Ratio: Cream 50%, Nude 22%, Rose 16%, Cocoa 12%">
+      <div style="width:50%;background:#FAF3EC;color:#4E342C">CREAM 50</div>
+      <div style="width:22%;background:#DDBFA8;color:#4E342C">NUDE 22</div>
+      <div style="width:16%;background:#D4899A;color:#4E342C">ROSE 16</div>
+      <div style="width:12%;background:#4E342C;color:#FAF3EC">COCOA 12</div>
+    </div>
+    <h3 style="margin-top:36px">Colour pairs</h3>
+    <div class="pairs">
+      <div class="pair" style="background:#FAF3EC;color:#4E342C;border:1px solid #E8DCCF"><span class="x">Cocoa on cream</span><small>Main · text and site</small></div>
+      <div class="pair" style="background:#DDBFA8;color:#4E342C"><span class="x">Cocoa on nude</span><small>Bags · packaging</small></div>
+      <div class="pair" style="background:#D4899A;color:#4E342C"><span class="x">Cocoa on rose</span><small>Stickers · Stories</small></div>
+      <div class="pair" style="background:#4E342C;color:#FAF3EC"><span class="x">Cream on cocoa</span><small>Teasers · social</small></div>
+      <div class="pair" style="background:#4E342C;color:#D4899A"><span class="x">Rose on cocoa</span><small>Big headlines only</small></div>
+      <div class="pair no" style="background:#FAF3EC;color:#D4899A"><span class="x">Rose on cream</span><small style="color:#4E342C">Avoid for text · too light</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPE -->
+<section id="type" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head"><div style="display:grid;gap:10px"><span class="eyebrow">Typography</span><h2>The type</h2></div><p>Glamorous italic headlines like a fashion magazine, clean friendly text for shopping, and Arabic faces that match. All free on Google Fonts.</p></div>
+    <div class="tsheet">
+      <div class="tcard">
+        <div class="tmeta"><span class="eyebrow">Logo only</span><span class="fam">Wide grotesk</span><span class="use">Keep the existing ARVERNA wordmark. Shown here in Archivo Expanded as a stand-in. Never type headlines in it.</span><code>Archivo · width 125 · 800</code></div>
+        <div class="spec"><div class="wm">ARVERNA®</div></div>
+      </div>
+      <div class="tcard">
+        <div class="tmeta"><span class="eyebrow">Display · English</span><span class="fam">Bodoni Moda</span><span class="use">Campaign headlines, product names, quotes. Use the italic for the voice; the roman bold for short labels.</span><code>Italic 500 · Bold 800</code></div>
+        <div class="spec">
+          <div class="s1">Where's that from?</div>
+          <div class="s1r">TIED IN ROSE</div>
+          <div class="abc" style="font-family:var(--display);font-style:italic">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz &nbsp;0123456789 ₪</div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tmeta"><span class="eyebrow">Display · Arabic</span><span class="fam">El Messiri</span><span class="use">Arabic headlines and campaign lines. Elegant and soft, pairs with Bodoni's contrast.</span><code>Bold 700 · SemiBold 600</code></div>
+        <div class="spec">
+          <div class="s2" lang="ar">من وين هاد؟</div>
+          <div class="abc-ar" lang="ar">ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي &nbsp;٠١٢٣٤٥٦٧٨٩</div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tmeta"><span class="eyebrow">Text · English</span><span class="fam">Figtree</span><span class="use">Website, product details, prices, buttons, captions. Friendly and very readable on phones.</span><code>Regular 400 · SemiBold 600 · ExtraBold 800</code></div>
+        <div class="spec">
+          <div class="weights"><span style="font-weight:400">Regular</span><span style="font-weight:600">SemiBold</span><span style="font-weight:800">ExtraBold</span></div>
+          <p class="s3">Relaxed fit with a ribbed waist that holds its shape. Yara is 168 cm and wears S. At your door in 2–3 days, free delivery over 500 ₪.</p>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tmeta"><span class="eyebrow">Text · Arabic</span><span class="fam">Tajawal</span><span class="use">Arabic product descriptions, WhatsApp graphics, captions and the website.</span><code>Regular 400 · Medium 500 · Bold 700</code></div>
+        <div class="spec"><p class="s4" lang="ar">قصّة مريحة وخصر مضلّع بيحافظ على شكله. يارا طولها ١٦٨ سم ولابسة مقاس S. بيوصلك خلال ٢–٣ أيام، والتوصيل مجاني فوق ٥٠٠ ₪.</p></div>
+      </div>
+    </div>
+
+    <h3 style="margin:36px 0 12px">Type scale</h3>
+    <div class="scale-wrap">
+      <table class="scale">
+        <tr><td>Hero</td><td>Bodoni italic 500 · 72 / 0.95</td><td style="font-family:var(--display);font-style:italic;font-size:clamp(34px,5vw,60px);line-height:.95">Drop day</td></tr>
+        <tr><td>Title</td><td>Bodoni italic 500 · 44 / 1</td><td style="font-family:var(--display);font-style:italic;font-size:36px;line-height:1">Sculpted Waist Knit Set</td></tr>
+        <tr><td>Arabic title</td><td>El Messiri 700 · 36 / 1.3</td><td style="font-family:var(--ar-d);font-weight:700;font-size:30px;direction:rtl;text-align:right" lang="ar">طقم تريكو بخصر محدّد</td></tr>
+        <tr><td>Label</td><td>Figtree 800 · 13 · tracking 14%</td><td style="font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase">New in · Last sizes · Drop 12</td></tr>
+        <tr><td>Body</td><td>Figtree 400 · 17 / 1.6</td><td style="font-size:17px">Ribbed knit, relaxed fit, wide leg.</td></tr>
+        <tr><td>Price</td><td>Figtree 800 · 20 · tabular</td><td style="font-weight:800;font-size:20px;font-variant-numeric:tabular-nums">160 ₪</td></tr>
+      </table>
+    </div>
+
+    <h3 style="margin:36px 0 0">Type in use</h3>
+    <div class="inuse">
+      <div class="post"><span class="logo">ARVERNA®</span><div class="h">Tied in rose.<span lang="ar">مربوطة بالوردي</span></div><div class="f"><span>Drop 12 · Thu 8 PM</span><span>@arvernacom</span></div></div>
+      <div class="pdp">
+        <span class="crumb">New in · Sets</span>
+        <span class="nm">Sculpted Waist Knit Set</span>
+        <span class="nmar" lang="ar">طقم تريكو بخصر محدّد</span>
+        <span class="pr">160 ₪</span>
+        <span class="fit">Yara is 168 cm and wears S · Runs true to size</span>
+        <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="tag" style="background:#D4899A;color:#4E342C">New</span><span class="tag" style="background:#DDBFA8;color:#4E342C">Last sizes</span></div>
+        <span class="btn p">Add to bag</span>
+        <span class="btn s">Size guide</span>
+      </div>
+      <div class="story"><div class="bar"></div><div class="mid"><span class="t1">Drop day</span><span class="t2" lang="ar">الدروب نازل الليلة</span><div class="cd"><span>02</span><span>:</span><span>14</span><span>:</span><span>36</span></div><span class="btn p" style="font-size:13px;padding:9px 16px">Remind me</span></div><div class="ft">ARVERNA · 8 PM</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ELEMENTS -->
+<section id="elements" style="background:var(--paper);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head"><div style="display:grid;gap:10px"><span class="eyebrow">Graphic elements</span><h2>The details</h2></div><p>Small pieces that repeat everywhere, so every touchpoint feels like the same girl made it.</p></div>
+    <div class="els">
+      <div class="el"><img src="assets/a-bow-logo-sheet.jpg" alt="A-Bow logo lockups in three colourways"><h3>Logo lockups</h3><p>A-Bow mark over the wordmark. Rose on cream, cream on cocoa, cocoa on nude.</p></div>
+      <div class="el"><div class="stage"><span class="bubble" style="font-size:24px">Where's it from?</span><span class="bubble ar-b" lang="ar" style="font-size:24px">من وين؟</span><span class="bubble cocoa" style="font-size:20px">Sold out</span></div><h3>Speech bubbles</h3><p>Rose or cocoa, always with a tail. For questions, quotes, prices and drop news.</p></div>
+      <div class="el"><div class="stage"><span class="tag" style="background:#D4899A;color:#4E342C">New</span><span class="tag" style="background:#DDBFA8;color:#4E342C">Last sizes</span><span class="tag" style="background:#4E342C;color:#FAF3EC">Sold out</span><span class="tag" style="background:#FAF3EC;color:#4E342C;border:1px solid #E8DCCF">Back in stock</span><span class="btn p">Add to bag</span><span class="btn s">Size guide</span><span class="btn r">Join the girls</span></div><h3>Tags and buttons</h3><p>Fully rounded pills. Cocoa for buying, rose for community, outline for help.</p></div>
+      <div class="el"><img src="assets/sticker-sheet.jpg" alt="Sticker sheet"><h3>Stickers</h3><p>For Stories, packaging seals and orders. Upload them as a GIPHY pack.</p></div>
+      <div class="el"><img src="assets/highlight-covers.jpg" alt="Instagram highlight covers in rose, nude and cocoa"><h3>Highlight covers</h3><p>Rose, nude and cocoa circles with thin cream line icons.</p></div>
+      <div class="el"><img src="assets/m-texture.jpg" alt="Nude knit and cocoa leather with gold buckle"><h3>Textures</h3><p>Satin, ribbed knit, soft leather, kraft paper, gold hardware. Show texture up close in every drop.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WORDS -->
+<section id="words" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head"><div style="display:grid;gap:10px"><span class="eyebrow">Mood</span><h2>Feels like / not like</h2></div></div>
+    <div class="words">
+      <div class="wbox" style="background:var(--rose)">
+        <h3>ARVERNA feels like</h3>
+        <div class="wlist">
+          <span style="background:#FAF3EC">Soft glam</span><span style="background:#FAF3EC">Satin ribbon</span><span style="background:#4E342C;color:#FAF3EC">Iced Spanish latte</span><span style="background:#FAF3EC">Gold hoops</span><span style="background:#DDBFA8">Coquette, but grown up</span><span style="background:#FAF3EC">Nude knit sets</span><span style="background:#4E342C;color:#FAF3EC">Thursday drop</span><span style="background:#FAF3EC">Golden-hour light</span><span style="background:#DDBFA8">Girls' night</span><span style="background:#FAF3EC">Real laughs</span><span style="background:#FAF3EC">Unboxing on camera</span><span style="background:#DDBFA8">Pink roses</span>
+        </div>
+      </div>
+      <div class="wbox" style="background:var(--cocoa);color:var(--cream)">
+        <h3>ARVERNA is not</h3>
+        <div class="wlist">
+          <span style="border:1.5px solid #8A6E62">Neon colours</span><span style="border:1.5px solid #8A6E62">Harsh pure black</span><span style="border:1.5px solid #8A6E62">Red "SALE!!" banners</span><span style="border:1.5px solid #8A6E62">Heavy beauty filters</span><span style="border:1.5px solid #8A6E62">Supplier photos</span><span style="border:1.5px solid #8A6E62">Mirror selfies in other studios</span><span style="border:1.5px solid #8A6E62">Fake small caps</span><span style="border:1.5px solid #8A6E62">Cartoonish cute</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>ARVERNA · Moodboard</span><span>Tied in rose · مربوطة بالوردي</span></div></footer>
