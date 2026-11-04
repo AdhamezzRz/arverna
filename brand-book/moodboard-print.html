@@ -3,303 +3,263 @@
 <head>
 <meta charset="utf-8">
 <title>ARVERNA Moodboard</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Figtree:wght@400;500;600;700;800&family=El+Messiri:wght@500;600;700&family=Tajawal:wght@400;500;700&family=Archivo:wdth,wght@125,800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Figtree:wght@400;500;600;700&family=El+Messiri:wght@500;600;700&family=Tajawal:wght@400;500;700&family=Archivo:wdth,wght@125,800&family=Reenie+Beanie&family=Aref+Ruqaa:wght@400;700&family=Courier+Prime:wght@400;700&display=swap">
 <style>
 @page{size:1600px 1000px;margin:0}
-:root{--cream:#FAF3EC;--nude:#DDBFA8;--rose:#D4899A;--cocoa:#4E342C;--gold:#C8A45D;--muted:#8A6E62;--line:#E8DCCF;--paper:#FFFCF8;
---display:'Bodoni Moda',Georgia,serif;--body:'Figtree',Arial,sans-serif;--ar-d:'El Messiri',serif;--ar:'Tajawal',sans-serif;--logo:'Archivo',Arial,sans-serif}
+:root{--paper:#F2EADF;--cream:#FAF3EC;--nude:#DDBFA8;--rose:#D4899A;--cocoa:#4E342C;--gold:#C8A45D;--pencil:#5B4A42;--muted:#8A7469;
+--display:'Bodoni Moda',Georgia,serif;--body:'Figtree',Arial,sans-serif;--ar-d:'El Messiri',serif;--ar:'Tajawal',sans-serif;--logo:'Archivo',Arial,sans-serif;
+--hand:'Reenie Beanie',cursive;--ruqaa:'Aref Ruqaa',serif;--type:'Courier Prime','Courier New',monospace}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{background:var(--cream);color:var(--cocoa);font-family:var(--body);-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.page{width:1600px;height:1000px;overflow:hidden;position:relative;page-break-after:always;break-after:page;background:var(--cream);padding:56px 64px;display:flex;flex-direction:column;gap:24px}
-.page:last-child{page-break-after:auto;break-after:auto}
-.bar{display:flex;justify-content:space-between;align-items:baseline;gap:20px}
-.bar h2{font-family:var(--display);font-style:italic;font-weight:500;font-size:64px;line-height:1;letter-spacing:-.02em}
-.bar .n{font-weight:800;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--rose)}
-.bar .r{font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+html,body{background:var(--paper);color:var(--cocoa);font-family:var(--body);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:1600px;height:1000px;position:relative;overflow:hidden;break-after:page;page-break-after:always;background-color:var(--paper);
+background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='320'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .32  0 0 0 0 .24  0 0 0 0 .19  0 0 0 .10 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.page:last-child{break-after:auto;page-break-after:auto}
+.a{position:absolute}
+.folio{position:absolute;left:72px;top:58px;font-family:var(--type);font-size:14px;letter-spacing:.08em;color:var(--muted)}
+.ttl{position:absolute;left:72px;top:82px;font-family:var(--display);font-weight:500;font-size:56px;line-height:1;letter-spacing:-.015em}
+.ttl i{font-weight:400}
+.pno{position:absolute;right:64px;bottom:40px;font-family:var(--type);font-size:13px;color:var(--muted)}
+.mark{position:absolute;left:64px;bottom:40px;font-family:var(--logo);font-stretch:125%;font-weight:800;font-size:12px;letter-spacing:.12em;color:var(--muted)}
+.pr{position:absolute;background:#FBF8F3;padding:9px;box-shadow:0 1px 1px rgba(60,40,30,.18),0 14px 26px -16px rgba(60,40,30,.55);transform:rotate(var(--r,0deg))}
+.pr.pol{padding-bottom:34px}
+.pr .ph{width:100%;height:100%;overflow:hidden;position:relative;background:#e9e0d4}
+.pr.pol .ph{height:100%}
+.pr img{width:100%;height:100%;object-fit:cover;display:block}
+.pr .cap{position:absolute;left:12px;bottom:8px;font-family:var(--type);font-size:12px;color:var(--muted)}
+.tape::before{content:"";position:absolute;z-index:2;top:-14px;left:50%;width:110px;height:30px;transform:translateX(-50%) rotate(var(--tr,-3deg));background:rgba(236,224,203,.8);box-shadow:0 1px 2px rgba(60,40,30,.12);border-left:1px dashed rgba(180,160,130,.35);border-right:1px dashed rgba(180,160,130,.35)}
+.tape.tl::before{left:14%}.tape.tr::before{left:84%}
+.pin::after{content:"";position:absolute;z-index:2;top:8px;left:50%;width:14px;height:14px;border-radius:50%;transform:translateX(-50%);background:radial-gradient(circle at 35% 35%,#e9a9b6,#b9687a 70%);box-shadow:0 3px 4px -1px rgba(60,40,30,.45)}
+.hand{position:absolute;font-family:var(--hand);font-size:34px;line-height:.95;color:var(--pencil);transform:rotate(var(--r,-2deg));white-space:nowrap}
+.hand.sm{font-size:28px}
+.ruq{position:absolute;font-family:var(--ruqaa);font-weight:700;font-size:34px;color:#A9606F;direction:rtl;transform:rotate(var(--r,-2deg));white-space:nowrap}
+.arrow{position:absolute;overflow:visible}
+.arrow path{fill:none;stroke:var(--pencil);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.card{position:absolute;background:#FBF8F3;padding:20px 22px;box-shadow:0 1px 1px rgba(60,40,30,.18),0 12px 22px -14px rgba(60,40,30,.5);transform:rotate(var(--r,0deg))}
+.card.lined{background-image:repeating-linear-gradient(#FBF8F3 0 29px,#E4D6C6 29px 30px);background-color:#FBF8F3;padding-top:14px}
+.typed{font-family:var(--type);font-size:15px;line-height:1.75;color:var(--cocoa)}
+.typed b{font-weight:700}
+.stamp{display:inline-block;font-family:var(--type);font-weight:700;font-size:12px;letter-spacing:.14em;color:#A9606F;border:2px solid #A9606F;padding:3px 8px;transform:rotate(-6deg);opacity:.85}
+.chip{position:absolute;width:236px;height:320px;background:#FBF8F3;box-shadow:0 1px 1px rgba(60,40,30,.18),0 14px 24px -16px rgba(60,40,30,.55);transform:rotate(var(--r,0deg));display:flex;flex-direction:column}
+.chip .c{height:200px}
+.chip .d{padding:12px 14px;display:grid;gap:2px}
+.chip .nm{font-family:var(--display);font-weight:500;font-size:28px;line-height:1}
+.chip .ar{font-family:var(--ar-d);font-weight:700;font-size:18px;color:var(--muted)}
+.chip code{font-family:var(--type);font-size:12.5px;color:var(--muted)}
+.pr .ph.crop img{position:absolute;max-width:none;height:auto}
+.proof{position:absolute;background:#FBF8F3;box-shadow:0 1px 1px rgba(60,40,30,.18),0 14px 26px -16px rgba(60,40,30,.55);transform:rotate(var(--r,0deg))}
 .logo{font-family:var(--logo);font-stretch:125%;font-weight:800;letter-spacing:.06em}
-.foot{position:absolute;left:64px;right:64px;bottom:26px;display:flex;justify-content:space-between;font-weight:700;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-.g{flex:1;display:grid;gap:12px;min-height:0}
-.t{position:relative;overflow:hidden;border-radius:3px;min-width:0;min-height:0}
-.t img{width:100%;height:100%;object-fit:cover;display:block}
-.lbl{position:absolute;left:12px;bottom:12px;background:rgba(250,243,236,.92);font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:6px 9px;border-radius:2px;color:var(--cocoa)}
-.cap{font-size:15px;line-height:1.45;color:var(--muted)}
-.bubble{position:relative;display:inline-block;background:var(--rose);color:var(--cocoa);border-radius:26px;padding:.3em .75em .42em;font-family:var(--display);font-style:italic;font-weight:600}
-.bubble::after{content:"";position:absolute;left:22%;bottom:-13px;border-left:15px solid transparent;border-right:4px solid transparent;border-top:15px solid var(--rose)}
-.bubble.ar-b{font-family:var(--ar-d);font-style:normal}
-.bubble.ar-b::after{left:auto;right:22%;border-left:4px solid transparent;border-right:15px solid transparent}
-.bubble.cocoa{background:var(--cocoa);color:var(--cream)}.bubble.cocoa::after{border-top-color:var(--cocoa)}
-.tag{display:inline-flex;align-items:center;font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
-.btn{display:inline-flex;justify-content:center;align-items:center;border-radius:999px;padding:12px 24px;font-weight:700;font-size:15px}
-.btn.p{background:var(--cocoa);color:var(--cream)}.btn.s{border:1.5px solid var(--cocoa)}.btn.r{background:var(--rose)}
-
-/* 1 cover */
-.cover{padding:0;flex-direction:row;gap:0}
-.cover .l{width:640px;background:var(--cocoa);color:var(--cream);padding:64px;display:flex;flex-direction:column;justify-content:space-between}
-.cover .l .logo{font-size:30px}
-.cover .l .k{font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--nude)}
-.cover .l h1{font-family:var(--display);font-style:italic;font-weight:500;font-size:108px;line-height:.92;letter-spacing:-.02em;margin-top:18px}
-.cover .l .ar{font-family:var(--ar-d);font-weight:700;font-size:52px;color:var(--rose);direction:rtl;text-align:left;margin-top:14px}
-.cover .l ol{list-style:none;display:grid;gap:8px;font-size:16px;color:#EADBD0;counter-reset:c}
-.cover .l li{counter-increment:c;display:flex;gap:14px}
-.cover .l li::before{content:"0" counter(c);font-weight:800;color:var(--rose);width:24px}
-.cover .r{flex:1;position:relative}
-.cover .r img{width:100%;height:100%;object-fit:cover}
-.cover .r .q{position:absolute;right:56px;bottom:56px}
-
-/* 4 palette */
-.pal{flex:1;display:grid;grid-template-columns:repeat(5,1fr);gap:12px;min-height:0}
-.sw{border-radius:3px;display:flex;flex-direction:column;justify-content:space-between;padding:26px;min-height:0}
-.sw .nm{font-family:var(--display);font-style:italic;font-weight:600;font-size:46px;line-height:1}
-.sw .ar{font-family:var(--ar-d);font-weight:700;font-size:28px;margin-top:6px;display:block}
-.sw .d{display:grid;gap:6px;font-size:14px;line-height:1.4}
-.sw .d b{font-weight:800;font-size:12px;letter-spacing:.14em}
-.sw code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px}
-.ratio{display:flex;height:40px;border-radius:3px;overflow:hidden;border:1px solid var(--line)}
-.ratio div{display:flex;align-items:center;padding:0 12px;font-weight:800;font-size:11px;letter-spacing:.12em}
-.pairs{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
-.pair{border-radius:3px;padding:14px 16px;display:grid;gap:4px;height:96px;align-content:space-between}
-.pair .x{font-family:var(--display);font-style:italic;font-weight:600;font-size:24px;line-height:1}
-.pair small{font-weight:800;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase}
-
-/* 5 type */
-.tg{flex:1;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr 1fr;gap:12px;min-height:0}
-.tc{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:24px 28px;display:flex;flex-direction:column;gap:10px;min-height:0;overflow:hidden}
-.tc .m{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
-.tc .m .f{font-weight:800;font-size:20px}
-.tc .m code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--muted)}
-.tc .u{font-size:13.5px;color:var(--muted)}
-.wm{grid-column:1 / -1;flex-direction:row;align-items:center;justify-content:space-between}
-.wm .logo{font-size:64px;line-height:1}
-
-/* 6 in use */
-.ug{flex:1;display:grid;grid-template-columns:330px 1fr 300px 1fr;grid-template-rows:1fr 1fr;gap:12px;min-height:0}
-.post{grid-row:1 / 3;background:var(--cocoa);color:var(--cream);border-radius:3px;padding:26px;display:flex;flex-direction:column;justify-content:space-between}
-.post .h{font-family:var(--display);font-style:italic;font-weight:500;font-size:56px;line-height:.95}
-.post .h span{display:block;font-family:var(--ar-d);font-style:normal;font-weight:700;font-size:38px;direction:rtl;text-align:right;color:var(--rose);margin-top:12px}
-.post .f{display:flex;justify-content:space-between;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--nude)}
-.pdp{grid-row:1 / 3;background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:28px;display:flex;flex-direction:column;gap:12px}
-.pdp .c{font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.pdp .nm{font-family:var(--display);font-style:italic;font-weight:500;font-size:40px;line-height:1}
-.pdp .nmar{font-family:var(--ar-d);font-weight:700;font-size:28px;direction:rtl;text-align:right;color:var(--rose)}
-.pdp .pr{font-weight:800;font-size:24px}
-.pdp .fit{font-size:15px;color:var(--muted)}
-.story{grid-row:1 / 3;background:var(--rose);border-radius:18px;padding:22px 18px;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center}
-.story .b{height:3px;width:100%;border-radius:2px;background:linear-gradient(90deg,var(--cocoa) 55%,rgba(78,52,44,.25) 55%)}
-.story .t1{font-family:var(--display);font-style:italic;font-weight:500;font-size:48px;line-height:.95}
-.story .t2{font-family:var(--ar-d);font-weight:700;font-size:28px;color:var(--cream)}
-.story .cd{display:flex;gap:6px;font-weight:800;font-size:24px}
-.story .cd span{background:var(--cream);border-radius:8px;padding:6px 10px}
-.el{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:18px;display:flex;flex-direction:column;gap:10px;min-height:0;overflow:hidden}
-.el h3{font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
-.el .st{flex:1;display:flex;flex-wrap:wrap;gap:18px 12px;align-items:center;justify-content:center;background:var(--cream);border-radius:3px;padding:14px;min-height:0}
-.el img{flex:1;min-height:0;width:100%;object-fit:contain;background:var(--cream);border-radius:3px}
-
-/* 7 words */
-.wg{flex:1;display:grid;grid-template-columns:1.2fr 1fr;gap:12px;min-height:0}
-.wb{border-radius:3px;padding:40px;display:flex;flex-direction:column;gap:24px}
-.wb h3{font-family:var(--display);font-style:italic;font-weight:500;font-size:48px;line-height:1}
-.wl{display:flex;flex-wrap:wrap;gap:10px}
-.wl span{border-radius:999px;padding:10px 18px;font-weight:600;font-size:19px}
-.close{display:flex;justify-content:space-between;align-items:center;gap:24px;background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:26px 32px}
-.close .q{font-family:var(--display);font-style:italic;font-weight:500;font-size:44px;line-height:1}
-.close .qa{font-family:var(--ar-d);font-weight:700;font-size:36px;color:var(--rose)}
-/* stickers */
-.sg{flex:1;display:grid;grid-template-columns:1fr 1fr 1fr 330px;gap:12px;min-height:0}
-.sk{display:flex;flex-direction:column;gap:10px;min-height:0}
-.sk .im{flex:1;min-height:0;border-radius:3px;overflow:hidden;background:#F4EDE3;display:flex;align-items:center}
-.sk .im img{width:100%;height:100%;object-fit:contain;display:block}
-.sk h3{font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
-.sk p{font-size:14px;line-height:1.4;color:var(--muted)}
-.side{background:var(--cocoa);color:var(--cream);border-radius:3px;padding:26px;display:flex;flex-direction:column;gap:14px}
-.side h3{font-family:var(--display);font-style:italic;font-weight:500;font-size:34px;line-height:1}
-.side ul{list-style:none;display:grid;gap:10px;font-size:14.5px;line-height:1.4;color:#EADBD0}
-.side li b{color:var(--rose);display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
-.sp{flex:1;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr auto;gap:12px;min-height:0}
-.sp .t{grid-row:1}
-.mech{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:18px 18px 20px;display:grid;gap:6px;align-content:start}
-.mech .k{font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose)}
-.mech h3{font-family:var(--display);font-style:italic;font-weight:500;font-size:28px;line-height:1}
-.mech p{font-size:14px;line-height:1.45;color:var(--muted)}
+.btn{display:inline-flex;justify-content:center;align-items:center;border-radius:999px;padding:11px 22px;font-weight:700;font-size:14px}
+.tag{display:inline-flex;font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
 </style>
 </head>
 <body>
 
 <!-- 1 COVER -->
-<section class="page cover">
-  <div class="l">
-    <span class="logo">ARVERNA®</span>
-    <div>
-      <span class="k">Moodboard · 2026</span>
-      <h1>Tied in rose.</h1>
-      <div class="ar" lang="ar">مربوطة بالوردي</div>
-    </div>
-    <ol>
-      <li>The mood</li><li>The icon in use</li><li>The palette</li><li>The type</li><li>Type and details in use</li><li>The sticker pack</li><li>How stickers spread</li><li>Feels like / not like</li>
-    </ol>
+<section class="page">
+  <span class="a logo" style="left:72px;top:62px;font-size:26px">ARVERNA®</span>
+  <span class="a typed" style="right:72px;top:66px;font-size:14px;letter-spacing:.08em;color:var(--muted)">MOODBOARD — SEASON 01 — HEBRON, NOV 2026</span>
+  <div class="a" style="left:66px;top:250px;font-family:var(--display);font-weight:500;font-size:168px;line-height:.86;letter-spacing:-.03em">Tied<br><i style="font-weight:400">in rose.</i></div>
+  <div class="ruq" style="left:80px;top:610px;font-size:62px;--r:-1deg">مربوطة بالوردي</div>
+  <div class="pr tape" style="left:880px;top:120px;width:560px;height:650px;--r:2.4deg"><div class="ph"><img src="assets/film/a-bow-icon.jpg" alt=""></div></div>
+  <div class="pr tape tl" style="left:690px;top:96px;width:230px;height:180px;--r:-6deg;--tr:4deg"><div class="ph"><img src="assets/film/m-satin.jpg" alt=""></div></div>
+  <div class="hand" style="left:700px;top:800px;--r:-4deg">the bow is our A ♡</div>
+  <svg class="arrow" style="left:930px;top:735px" width="120" height="70"><path d="M8 62 C 40 58, 80 40, 104 10"/><path d="M90 12 L104 10 L102 24"/></svg>
+  <div class="a typed" style="left:72px;top:800px;font-size:14px;line-height:1.9;color:var(--muted)">
+    01 mood &nbsp;·&nbsp; 02 the bow &nbsp;·&nbsp; 03 colour &nbsp;·&nbsp; 04 type &nbsp;·&nbsp; 05 in use<br>06–08 stickers &nbsp;·&nbsp; 09 yes / no
   </div>
-  <div class="r">
-    <img src="assets/a-bow-icon.jpg" alt="">
-    <span class="q bubble" style="font-size:34px">Where's that from?</span>
-  </div>
+  <span class="a stamp" style="left:1340px;top:820px">DRAFT 02</span>
 </section>
 
 <!-- 2 MOOD -->
 <section class="page">
-  <div class="bar"><div><div class="n">01 · The mood</div><h2>Soft glam, real life</h2></div><span class="r">Satin · nude knit · iced latte · girls' night</span></div>
-  <div class="g" style="grid-template-columns:1.1fr 1fr 1.1fr 1fr;grid-template-rows:1fr 1fr 1fr">
-    <div class="t" style="grid-row:1 / 4"><img src="assets/m-cafe.jpg" alt=""><span class="lbl">Her everyday</span></div>
-    <div class="t"><img src="assets/m-satin.jpg" alt=""><span class="lbl">Satin</span></div>
-    <div class="t" style="grid-row:1 / 3"><img src="assets/m-girls-night.jpg" alt=""><span class="lbl">Girls' night</span></div>
-    <div class="t" style="grid-row:1 / 3"><img src="assets/m-roses.jpg" alt=""><span class="lbl">Romance</span></div>
-    <div class="t" style="grid-row:2 / 4"><img src="assets/m-beauty.jpg" alt=""><span class="lbl">Soft glam</span></div>
-    <div class="t"><img src="assets/m-texture.jpg" alt=""><span class="lbl">Textures</span></div>
-    <div class="t" style="background:var(--rose);padding:22px;display:flex;flex-direction:column;justify-content:center;gap:8px"><div style="font-family:var(--display);font-style:italic;font-weight:500;font-size:40px;line-height:.95">Where's that from?</div><div style="font-family:var(--ar-d);font-weight:700;font-size:30px;color:var(--cream);text-align:right" lang="ar">من وين هاد؟</div></div>
-  </div>
-  <div class="foot"><span>ARVERNA · Moodboard</span><span>02</span></div>
+  <span class="folio">01 — MOOD</span>
+  <h2 class="ttl">Soft glam, <i>real life</i></h2>
+  <div class="pr pol tape" style="left:72px;top:180px;width:380px;height:580px;--r:-2deg"><div class="ph"><img src="assets/film/m-cafe.jpg" alt=""></div><span class="cap">ref. 01 — her tuesday</span></div>
+  <div class="pr pol pin" style="left:480px;top:150px;width:420px;height:390px;--r:1.6deg"><div class="ph"><img src="assets/film/m-girls-night.jpg" alt=""></div><span class="cap">ref. 02 — girls' night</span></div>
+  <div class="pr tape tr" style="left:930px;top:168px;width:290px;height:370px;--r:-1.2deg"><div class="ph"><img src="assets/film/m-roses.jpg" alt=""></div></div>
+  <div class="pr tape" style="left:1255px;top:140px;width:270px;height:230px;--r:3deg"><div class="ph"><img src="assets/film/m-satin.jpg" alt=""></div></div>
+  <div class="pr pol tape" style="left:1190px;top:440px;width:340px;height:440px;--r:-2.6deg"><div class="ph"><img src="assets/film/m-beauty.jpg" alt=""></div><span class="cap">ref. 05 — getting ready</span></div>
+  <div class="pr pin" style="left:520px;top:590px;width:290px;height:290px;--r:2.2deg"><div class="ph"><img src="assets/film/m-texture.jpg" alt=""></div></div>
+  <div class="card lined" style="left:860px;top:610px;width:290px;--r:-1.5deg"><div class="typed" style="line-height:30px">satin, not plastic shine<br>nude knit, chunky<br>iced spanish latte<br>gold hoops, thin rings<br>warm lamp light<br>friends, not models</div></div>
+  <div class="hand" style="left:96px;top:800px;--r:-3deg">this light. always.</div>
+  <svg class="arrow" style="left:300px;top:760px" width="70" height="50"><path d="M6 44 C 20 30, 40 18, 58 6"/><path d="M45 6 L58 6 L54 19"/></svg>
+  <div class="hand sm" style="left:1258px;top:390px;--r:2deg">satin, never shiny-cheap</div>
+  <div class="ruq" style="left:1240px;top:905px;font-size:30px;--r:-2deg">عفوية، مش تمثيل</div>
+  <span class="mark">ARVERNA</span><span class="pno">02</span>
 </section>
 
-<!-- 3 ICON -->
+<!-- 3 THE BOW -->
 <section class="page">
-  <div class="bar"><div><div class="n">02 · The icon in use</div><h2>The A-Bow, everywhere</h2></div><span class="r">Logo · merch · events · social · packaging</span></div>
-  <div class="g" style="grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:1fr 1fr">
-    <div class="t" style="grid-row:1 / 3"><img src="assets/a-bow-hair.jpg" alt=""><span class="lbl">The free bow</span></div>
-    <div class="t" style="grid-row:1 / 3"><img src="assets/a-bow-popup-wall.jpg" alt=""><span class="lbl">The bow wall</span></div>
-    <div class="t"><img src="assets/teaser-post.jpg" alt="" style="object-position:center 40%"><span class="lbl">Teaser</span></div>
-    <div class="t"><img src="assets/a-bow-bag-charm.jpg" alt=""><span class="lbl">Collectible charm</span></div>
-    <div class="t"><img src="assets/packaging-flatlay.jpg" alt=""><span class="lbl">Unboxing</span></div>
-    <div class="t"><img src="assets/sticker-sheet.jpg" alt=""><span class="lbl">Story stickers</span></div>
-  </div>
-  <div class="foot"><span>ARVERNA · Moodboard</span><span>03</span></div>
+  <span class="folio">02 — THE BOW</span>
+  <h2 class="ttl">The A-Bow</h2>
+  <div class="pr pol tape" style="left:72px;top:175px;width:360px;height:540px;--r:-1.6deg"><div class="ph"><img src="assets/film/a-bow-hair.jpg" alt=""></div><span class="cap">free in every first order</span></div>
+  <div class="pr tape" style="left:465px;top:150px;width:380px;height:510px;--r:2deg"><div class="ph"><img src="assets/film/a-bow-popup-wall.jpg" alt=""></div></div>
+  <div class="pr pin" style="left:880px;top:160px;width:290px;height:362px;--r:-2.4deg"><div class="ph"><img src="assets/film/teaser-post.jpg" alt=""></div></div>
+  <div class="pr pol tape" style="left:1215px;top:140px;width:315px;height:345px;--r:1.6deg"><div class="ph"><img src="assets/film/a-bow-bag-charm.jpg" alt=""></div><span class="cap">ref. 09 — charm</span></div>
+  <div class="pr tape tl" style="left:1010px;top:570px;width:340px;height:340px;--r:2.2deg"><div class="ph"><img src="assets/film/packaging-flatlay.jpg" alt=""></div></div>
+  <div class="pr" style="left:480px;top:705px;width:420px;height:250px;--r:-1deg"><div class="ph"><img src="assets/a-bow-logo-sheet.jpg" alt=""></div></div>
+  <div class="hand" style="left:870px;top:575px;--r:-5deg">← the photo<br>&nbsp;&nbsp;&nbsp;spot</div>
+  <div class="hand sm" style="left:1385px;top:520px;--r:3deg">collect<br>them all</div>
+  <div class="hand sm" style="left:1370px;top:860px;--r:-2deg">untie to<br>unbox</div>
+  <div class="hand sm" style="left:120px;top:752px;--r:-2deg">logo = flat bow, redraw as vector →</div>
+  <div class="ruq" style="left:150px;top:820px;font-size:36px;--r:-3deg">الشعار = فيونكة</div>
+  <span class="mark">ARVERNA</span><span class="pno">03</span>
 </section>
 
-<!-- 4 PALETTE -->
+<!-- 4 COLOUR -->
 <section class="page">
-  <div class="bar"><div><div class="n">03 · The palette</div><h2>Cream, nude, rose, cocoa</h2></div><span class="r">Four colours · one finish</span></div>
-  <div class="pal">
-    <div class="sw" style="background:#FAF3EC;border:1px solid var(--line)"><div><div class="nm">Cream</div><span class="ar" lang="ar">كريمي</span></div><div class="d"><b>50% · BASE</b><code>#FAF3EC</code><code>RGB 250 243 236</code><span>Backgrounds, website, cards</span></div></div>
-    <div class="sw" style="background:#DDBFA8"><div><div class="nm">Nude</div><span class="ar" lang="ar">نيود</span></div><div class="d"><b>22% · WARMTH</b><code>#DDBFA8</code><code>RGB 221 191 168</code><span>Bags, backdrops, sections</span></div></div>
-    <div class="sw" style="background:#D4899A"><div><div class="nm">Rose</div><span class="ar" lang="ar">وردي</span></div><div class="d"><b>16% · SIGNATURE</b><code>#D4899A</code><code>RGB 212 137 154</code><span>The A-Bow, ribbon, tags, bubbles</span></div></div>
-    <div class="sw" style="background:#4E342C;color:#FAF3EC"><div><div class="nm">Cocoa</div><span class="ar" lang="ar">كاكاو</span></div><div class="d"><b>12% · DEPTH</b><code>#4E342C</code><code>RGB 78 52 44</code><span>Text, wordmark, buttons</span></div></div>
-    <div class="sw" style="background:linear-gradient(135deg,#EAD49C,#C8A45D 45%,#9C7A3C)"><div><div class="nm">Gold</div><span class="ar" lang="ar">ذهبي</span></div><div class="d"><b>FINISH ONLY</b><code>#C8A45D</code><span>Foil, charms, clips, hardware. Never a flat fill.</span></div></div>
+  <span class="folio">03 — COLOUR</span>
+  <h2 class="ttl">Colour, taken from <i>things she touches</i></h2>
+
+  <div class="pr" style="left:80px;top:180px;width:236px;height:200px;--r:-2deg"><div class="ph"><img src="assets/film/m-satin.jpg" alt=""></div></div>
+  <div class="chip" style="left:80px;top:400px;--r:1deg"><div class="c" style="background:#D4899A"></div><div class="d"><span class="nm">Rose</span><span class="ar">وردي</span><code>#D4899A · 212 137 154</code></div></div>
+
+  <div class="pr" style="left:372px;top:186px;width:236px;height:200px;--r:1.6deg"><div class="ph crop"><img src="assets/film/m-texture.jpg" alt="" style="width:222%;left:0;top:-50%"></div></div>
+  <div class="chip" style="left:372px;top:406px;--r:-1.4deg"><div class="c" style="background:#DDBFA8"></div><div class="d"><span class="nm">Nude</span><span class="ar">نيود</span><code>#DDBFA8 · 221 191 168</code></div></div>
+
+  <div class="pr" style="left:664px;top:178px;width:236px;height:200px;--r:-1deg"><div class="ph crop"><img src="assets/film/m-roses.jpg" alt="" style="width:400%;left:-225%;top:-275%"></div></div>
+  <div class="chip" style="left:664px;top:398px;--r:.8deg"><div class="c" style="background:#FAF3EC;border-bottom:1px solid #E8DCCF"></div><div class="d"><span class="nm">Cream</span><span class="ar">كريمي</span><code>#FAF3EC · 250 243 236</code></div></div>
+
+  <div class="pr" style="left:956px;top:184px;width:236px;height:200px;--r:2deg"><div class="ph crop"><img src="assets/film/m-texture.jpg" alt="" style="width:250%;left:-150%;top:-160%"></div></div>
+  <div class="chip" style="left:956px;top:404px;--r:-1deg"><div class="c" style="background:#4E342C"></div><div class="d"><span class="nm">Cocoa</span><span class="ar">كاكاو</span><code>#4E342C · 78 52 44</code></div></div>
+
+  <div class="pr" style="left:1248px;top:180px;width:236px;height:200px;--r:-1.8deg"><div class="ph crop"><img src="assets/film/m-beauty.jpg" alt="" style="width:250%;left:-125%;top:-20%"></div></div>
+  <div class="chip" style="left:1248px;top:400px;--r:1.4deg"><div class="c" style="background:linear-gradient(135deg,#EAD49C,#C8A45D 45%,#9C7A3C)"></div><div class="d"><span class="nm">Gold</span><span class="ar">ذهبي</span><code>finish only · #C8A45D</code></div></div>
+
+  <div class="hand sm" style="left:84px;top:745px;--r:-2deg">dusty. never bubblegum.</div>
+  <div class="hand sm" style="left:380px;top:752px;--r:1deg">skin warmth — bags</div>
+  <div class="hand sm" style="left:670px;top:744px;--r:-1deg">the paper it sits on</div>
+  <div class="hand sm" style="left:962px;top:750px;--r:2deg">instead of black. always.</div>
+  <div class="hand sm" style="left:1254px;top:744px;--r:-2deg">metal only, not a fill</div>
+
+  <div class="a" style="left:80px;top:830px;width:1404px;height:46px;display:flex;box-shadow:0 10px 18px -14px rgba(60,40,30,.5);transform:rotate(-.4deg)">
+    <div style="width:50%;background:#FAF3EC"></div><div style="width:22%;background:#DDBFA8"></div><div style="width:16%;background:#D4899A"></div><div style="width:12%;background:#4E342C"></div>
   </div>
-  <div class="ratio"><div style="width:50%;background:#FAF3EC">CREAM 50</div><div style="width:22%;background:#DDBFA8">NUDE 22</div><div style="width:16%;background:#D4899A">ROSE 16</div><div style="width:12%;background:#4E342C;color:#FAF3EC">COCOA 12</div></div>
-  <div class="pairs">
-    <div class="pair" style="background:#FFFCF8;border:1px solid var(--line)"><span class="x">Cocoa on cream</span><small>Main · site and text</small></div>
-    <div class="pair" style="background:#DDBFA8"><span class="x">Cocoa on nude</span><small>Bags · packaging</small></div>
-    <div class="pair" style="background:#D4899A"><span class="x">Cocoa on rose</span><small>Stickers · Stories</small></div>
-    <div class="pair" style="background:#4E342C;color:#FAF3EC"><span class="x">Cream on cocoa</span><small>Teasers · social</small></div>
-    <div class="pair" style="background:#4E342C;color:#D4899A"><span class="x">Rose on cocoa</span><small>Big headlines only</small></div>
-    <div class="pair" style="background:#FFFCF8;color:#D4899A;outline:2px dashed #4E342C;outline-offset:-6px"><span class="x">Rose on cream</span><small style="color:#4E342C">Avoid for text</small></div>
-  </div>
-  <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>04</span></div>
+  <div class="a typed" style="left:80px;top:886px;width:1404px;display:flex;font-size:13px;color:var(--muted)"><span style="width:50%">cream 50</span><span style="width:22%">nude 22</span><span style="width:16%">rose 16</span><span style="width:12%">cocoa 12</span></div>
+  <span class="mark">ARVERNA</span><span class="pno">04</span>
 </section>
 
 <!-- 5 TYPE -->
 <section class="page">
-  <div class="bar"><div><div class="n">04 · The type</div><h2>Magazine glam, easy reading</h2></div><span class="r">All free on Google Fonts</span></div>
-  <div class="tg">
-    <div class="tc wm"><span class="logo">ARVERNA®</span><div style="text-align:right"><div style="font-weight:800;font-size:18px">Logo only · keep the existing wordmark</div><div class="u">Shown in Archivo Expanded 800 as a stand-in. Never used for headlines.</div></div></div>
-    <div class="tc">
-      <div class="m"><span class="f">Bodoni Moda · Display</span><code>Italic 500 · Bold 800</code></div>
-      <div style="font-family:var(--display);font-style:italic;font-weight:500;font-size:80px;line-height:.95;letter-spacing:-.02em">Where's that from?</div>
-      <div style="font-family:var(--display);font-style:italic;font-size:19px;line-height:1.45">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz 0123456789 ₪</div>
-      <div class="u">Campaign headlines, product names, quotes.</div>
-    </div>
-    <div class="tc">
-      <div class="m"><span class="f">El Messiri · Arabic display</span><code>Bold 700 · SemiBold 600</code></div>
-      <div style="font-family:var(--ar-d);font-weight:700;font-size:80px;line-height:1.2;direction:rtl;text-align:right" lang="ar">من وين هاد؟</div>
-      <div style="font-family:var(--ar-d);font-size:22px;direction:rtl;text-align:right;line-height:1.6" lang="ar">ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي ٠١٢٣٤٥٦٧٨٩</div>
-      <div class="u">Arabic headlines and campaign lines.</div>
-    </div>
-    <div class="tc">
-      <div class="m"><span class="f">Figtree · Text</span><code>Regular 400 · SemiBold 600 · ExtraBold 800</code></div>
-      <div style="display:flex;gap:24px;font-size:26px"><span>Regular</span><span style="font-weight:600">SemiBold</span><span style="font-weight:800">ExtraBold</span></div>
-      <div style="font-size:19px;line-height:1.6">Relaxed fit with a ribbed waist that holds its shape. Yara is 168 cm and wears S. At your door in 2–3 days, free delivery over 500 ₪.</div>
-      <div class="u">Website, product details, prices, buttons, captions.</div>
-    </div>
-    <div class="tc">
-      <div class="m"><span class="f">Tajawal · Arabic text</span><code>Regular 400 · Medium 500 · Bold 700</code></div>
-      <div style="font-family:var(--ar);font-weight:700;font-size:26px;direction:rtl;text-align:right" lang="ar">عادي · متوسط · عريض</div>
-      <div style="font-family:var(--ar);font-size:21px;line-height:1.85;direction:rtl;text-align:right" lang="ar">قصّة مريحة وخصر مضلّع بيحافظ على شكله. يارا طولها ١٦٨ سم ولابسة مقاس S. بيوصلك خلال ٢–٣ أيام، والتوصيل مجاني فوق ٥٠٠ ₪.</div>
-      <div class="u">Arabic descriptions, captions, WhatsApp graphics.</div>
-    </div>
+  <span class="folio">04 — TYPE</span>
+  <h2 class="ttl">Magazine glam, <i>easy reading</i></h2>
+  <div class="proof tape" style="left:72px;top:180px;width:700px;height:360px;--r:-1deg;padding:28px 32px">
+    <div class="typed" style="font-size:12px;color:var(--muted)">DISPLAY — BODONI MODA — ITALIC 400 / 500</div>
+    <div style="font-family:var(--display);font-style:italic;font-weight:400;font-size:92px;line-height:.95;letter-spacing:-.02em;margin-top:14px">Where's that from?</div>
+    <div style="font-family:var(--display);font-style:italic;font-size:19px;line-height:1.5;margin-top:16px;color:var(--pencil)">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz 0123456789 ₪</div>
   </div>
-  <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>05</span></div>
+  <div class="proof tape tr" style="left:820px;top:200px;width:700px;height:330px;--r:1.2deg;padding:28px 32px">
+    <div class="typed" style="font-size:12px;color:var(--muted)">ARABIC DISPLAY — EL MESSIRI — 700</div>
+    <div style="font-family:var(--ar-d);font-weight:700;font-size:92px;line-height:1.25;direction:rtl;text-align:right;margin-top:6px" lang="ar">من وين هاد؟</div>
+    <div style="font-family:var(--ar-d);font-size:22px;direction:rtl;text-align:right;color:var(--pencil)" lang="ar">ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي ٠١٢٣٤٥٦٧٨٩</div>
+  </div>
+  <div class="proof" style="left:110px;top:590px;width:640px;height:270px;--r:1deg;padding:26px 30px">
+    <div class="typed" style="font-size:12px;color:var(--muted)">TEXT — FIGTREE — 400 / 600 / 700</div>
+    <div style="font-size:26px;margin-top:10px;display:flex;gap:22px"><span>Regular</span><span style="font-weight:600">SemiBold</span><span style="font-weight:700">Bold</span></div>
+    <p style="font-size:18px;line-height:1.6;margin-top:12px">Relaxed fit with a ribbed waist that holds its shape. Yara is 168 cm and wears S. At your door in 2–3 days, free delivery over 500 ₪.</p>
+  </div>
+  <div class="proof" style="left:850px;top:580px;width:640px;height:270px;--r:-1.4deg;padding:26px 30px">
+    <div class="typed" style="font-size:12px;color:var(--muted)">ARABIC TEXT — TAJAWAL — 400 / 500 / 700</div>
+    <div style="font-family:var(--ar);font-weight:700;font-size:26px;direction:rtl;text-align:right;margin-top:10px" lang="ar">عادي · متوسط · عريض</div>
+    <p style="font-family:var(--ar);font-size:20px;line-height:1.85;direction:rtl;text-align:right;margin-top:8px" lang="ar">قصّة مريحة وخصر مضلّع بيحافظ على شكله. يارا طولها ١٦٨ سم ولابسة مقاس S. بيوصلك خلال ٢–٣ أيام، والتوصيل مجاني فوق ٥٠٠ ₪.</p>
+  </div>
+  <div class="hand" style="left:500px;top:548px;--r:-3deg">italic = her voice</div>
+  <div class="hand sm" style="left:1200px;top:540px;--r:2deg">Arabic first on social</div>
+  <div class="hand sm" style="left:130px;top:892px;--r:-1deg">logo stays our wide wordmark, never for headlines →</div>
+  <span class="a logo" style="left:760px;top:892px;font-size:30px;color:var(--pencil);transform:rotate(-1deg)">ARVERNA®</span>
+  <span class="mark" style="display:none">ARVERNA</span><span class="pno">05</span>
 </section>
 
 <!-- 6 IN USE -->
 <section class="page">
-  <div class="bar"><div><div class="n">05 · Type and details in use</div><h2>How it comes together</h2></div><span class="r">Post · product page · Story · elements</span></div>
-  <div class="ug">
-    <div class="post"><span class="logo" style="font-size:14px">ARVERNA®</span><div class="h">Tied in rose.<span lang="ar">مربوطة بالوردي</span></div><div class="f"><span>Drop 12 · Thu 8 PM</span><span>@arvernacom</span></div></div>
-    <div class="pdp">
-      <span class="c">New in · Sets</span>
-      <span class="nm">Sculpted Waist Knit Set</span>
-      <span class="nmar" lang="ar">طقم تريكو بخصر محدّد</span>
-      <span class="pr">160 ₪</span>
-      <span class="fit">Yara is 168 cm and wears S · Runs true to size</span>
-      <div style="display:flex;gap:8px"><span class="tag" style="background:#D4899A">New</span><span class="tag" style="background:#DDBFA8">Last sizes</span></div>
-      <span class="btn p">Add to bag</span><span class="btn s">Size guide</span>
-      <div style="margin-top:auto;display:flex;gap:18px;align-items:center;flex-wrap:wrap"><span class="bubble" style="font-size:22px">Where's it from?</span><span class="bubble ar-b" style="font-size:22px" lang="ar">من وين؟</span></div>
-    </div>
-    <div class="story"><div class="b"></div><div style="display:grid;gap:14px;justify-items:center"><span class="t1">Drop day</span><span class="t2" lang="ar">الدروب نازل الليلة</span><div class="cd"><span>02</span><span>14</span><span>36</span></div><span class="btn p" style="font-size:13px;padding:9px 16px">Remind me</span></div><span style="font-weight:800;font-size:11px;letter-spacing:.14em">ARVERNA · 8 PM</span></div>
-    <div class="el"><h3>Logo lockups</h3><img src="assets/a-bow-logo-sheet.jpg" alt=""></div>
-    <div class="el"><h3>Tags, buttons, highlights</h3><div class="st"><span class="tag" style="background:#D4899A">New</span><span class="tag" style="background:#DDBFA8">Last sizes</span><span class="tag" style="background:#4E342C;color:#FAF3EC">Sold out</span><span class="btn p" style="padding:10px 18px;font-size:14px">Add to bag</span><span class="btn r" style="padding:10px 18px;font-size:14px">Join the girls</span><span class="bubble cocoa" style="font-size:18px">Sold out</span></div></div>
+  <span class="folio">05 — IN USE</span>
+  <h2 class="ttl">Proofs</h2>
+  <div class="proof tape" style="left:80px;top:175px;width:380px;height:475px;--r:-2deg;background:#4E342C;color:#FAF3EC;padding:26px;display:flex;flex-direction:column;justify-content:space-between">
+    <span class="logo" style="font-size:13px">ARVERNA®</span>
+    <div><div style="font-family:var(--display);font-style:italic;font-size:62px;line-height:.92">Tied in rose.</div><div style="font-family:var(--ar-d);font-weight:700;font-size:38px;color:#D4899A;direction:rtl;text-align:right;margin-top:12px" lang="ar">مربوطة بالوردي</div></div>
+    <div style="display:flex;justify-content:space-between;font-family:var(--type);font-size:12px;color:#DDBFA8"><span>DROP 12 · THU 8 PM</span><span>@arvernacom</span></div>
   </div>
-  <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>06</span></div>
+  <div class="proof tape tl" style="left:510px;top:190px;width:470px;height:620px;--r:1.2deg;padding:30px;display:flex;flex-direction:column;gap:12px">
+    <span class="typed" style="font-size:12px;color:var(--muted)">NEW IN — SETS</span>
+    <span style="font-family:var(--display);font-style:italic;font-size:42px;line-height:1">Sculpted Waist Knit Set</span>
+    <span style="font-family:var(--ar-d);font-weight:700;font-size:28px;color:#B8707F;direction:rtl;text-align:right" lang="ar">طقم تريكو بخصر محدّد</span>
+    <span style="font-weight:700;font-size:24px">160 ₪</span>
+    <span style="font-size:15px;color:var(--muted)">Yara is 168 cm and wears S · true to size</span>
+    <div style="display:flex;gap:8px"><span class="tag" style="background:#D4899A">New</span><span class="tag" style="background:#DDBFA8">Last sizes</span></div>
+    <span class="btn" style="background:#4E342C;color:#FAF3EC;margin-top:6px">Add to bag</span>
+    <span class="btn" style="border:1.5px solid #4E342C">Size guide</span>
+    <span class="typed" style="font-size:13px;color:var(--muted);margin-top:auto">free delivery over 500 ₪ · 2–3 days</span>
+  </div>
+  <div class="proof pin" style="left:1030px;top:170px;width:300px;height:534px;--r:-1.6deg;background:#D4899A;border-radius:18px;padding:22px 18px;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center">
+    <div style="height:3px;width:100%;margin-top:14px;background:linear-gradient(90deg,#4E342C 55%,rgba(78,52,44,.25) 55%)"></div>
+    <div style="display:grid;gap:14px;justify-items:center"><span style="font-family:var(--display);font-style:italic;font-size:50px;line-height:.95">Drop day</span><span style="font-family:var(--ar-d);font-weight:700;font-size:28px;color:#FAF3EC" lang="ar">الدروب نازل الليلة</span><div style="display:flex;gap:6px;font-weight:700;font-size:24px"><span style="background:#FAF3EC;border-radius:8px;padding:6px 10px">02</span><span style="background:#FAF3EC;border-radius:8px;padding:6px 10px">14</span><span style="background:#FAF3EC;border-radius:8px;padding:6px 10px">36</span></div></div>
+    <span class="typed" style="font-size:12px">ARVERNA · 8 PM</span>
+  </div>
+  <div class="pr tape" style="left:1360px;top:420px;width:190px;height:190px;--r:4deg"><div class="ph"><img src="assets/highlight-covers.jpg" alt=""></div></div>
+  <div class="hand" style="left:110px;top:690px;--r:-3deg">post — cocoa + rose</div>
+  <div class="hand sm" style="left:1040px;top:735px;--r:2deg">story countdown, every Thursday</div>
+  <div class="hand sm" style="left:1365px;top:635px;--r:-3deg">highlights ↑</div>
+  <div class="card" style="left:110px;top:775px;width:340px;--r:1.5deg"><div class="typed" style="font-size:14px">buttons: <b>cocoa</b> = buy<br>pills: <b>rose</b> = new / community<br>outline = help, size guide</div></div>
+  <span class="pno">06</span>
 </section>
 
-<!-- STICKERS 1 -->
+<!-- 7 STICKERS I -->
 <section class="page">
-  <div class="bar"><div><div class="n">06 · The sticker pack</div><h2>A little gift in every order</h2></div><span class="r">Kiss-cut sheets · girly · collectible</span></div>
-  <div class="sg">
-    <div class="sk"><div class="im"><img src="assets/s-icons.jpg" alt=""></div><h3>Sheet 1 · The icons</h3><p>A-Bow, iced latte, mini bag, kiss, pearl heart, perfume, gold hoops. No words, so every girl uses them.</p></div>
-    <div class="sk"><div class="im"><img src="assets/s-phrases-en.jpg" alt=""></div><h3>Sheet 2 · Say it in English</h3><p>"main character energy", "it's giving ARVERNA", "outfit repeater &amp; proud", "treat yourself, habibti".</p></div>
-    <div class="sk"><div class="im"><img src="assets/s-phrases-ar.jpg" alt=""></div><h3>Sheet 3 · قوليها بالعربي</h3><p>The things girls actually say: <span dir="rtl" lang="ar" style="font-family:var(--ar)">من وين؟ · حبيبتي · شو ألبس؟ · يلا نطلع · بنت أرفيرنا · طلبت كمان مرة</span></p></div>
-    <div class="side">
-      <h3>How it works</h3>
-      <ul>
-        <li><b>Every order</b>One A6 sheet in a cream envelope that says "a little gift for you".</li>
-        <li><b>Rotate monthly</b>A new sheet each month, so repeat customers get something new and want the full set.</li>
-        <li><b>Mix the languages</b>Alternate icon, English and Arabic sheets. The Arabic one will be the most posted.</li>
-        <li><b>Print spec</b>Glossy waterproof vinyl, kiss-cut, 2–3 mm white border, @arvernacom on the backing paper. Strong enough for laptops, phone cases and tumblers.</li>
-      </ul>
-    </div>
-  </div>
-  <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>07</span></div>
+  <span class="folio">06 — STICKERS</span>
+  <h2 class="ttl">A little gift <i>in every order</i></h2>
+  <div class="pr tape" style="left:72px;top:180px;width:450px;height:450px;--r:-2deg"><div class="ph"><img src="assets/s-icons.jpg" alt=""></div></div>
+  <div class="pr tape tr" style="left:560px;top:170px;width:450px;height:450px;--r:1.4deg"><div class="ph"><img src="assets/s-phrases-en.jpg" alt=""></div></div>
+  <div class="pr tape" style="left:1048px;top:186px;width:450px;height:450px;--r:-1deg"><div class="ph"><img src="assets/s-phrases-ar.jpg" alt=""></div></div>
+  <div class="hand" style="left:100px;top:665px;--r:-2deg">sheet 1 — icons, no words</div>
+  <div class="hand" style="left:600px;top:655px;--r:1deg">sheet 2 — english</div>
+  <div class="ruq" style="left:1100px;top:660px;font-size:34px;--r:-1deg">ورقة ٣ — بالعربي</div>
+  <div class="card lined" style="left:200px;top:755px;width:600px;--r:-1deg"><div class="typed" style="line-height:30px"><b>every order:</b> one A6 sheet, cream envelope<br><b>new sheet every month</b> → she wants the full set<br><b>print:</b> glossy waterproof vinyl, kiss-cut, 3 mm border</div></div>
+  <div class="hand sm" style="left:900px;top:790px;--r:3deg">the Arabic sheet will be the one<br>they post the most ♡</div>
+  <span class="pno">07</span>
 </section>
 
-<!-- STICKERS 2 -->
+<!-- 8 STICKERS II -->
 <section class="page">
-  <div class="bar"><div><div class="n">07 · How stickers spread</div><h2>Stickers that travel</h2></div><span class="r">Share · collect · post</span></div>
-  <div class="sp">
-    <div class="t"><img src="assets/s-bestie.jpg" alt=""><span class="lbl">Bestie split</span></div>
-    <div class="t"><img src="assets/s-collector.jpg" alt=""><span class="lbl">Collector card</span></div>
-    <div class="t"><img src="assets/s-unboxing.jpg" alt=""><span class="lbl">The gift moment</span></div>
-    <div class="t"><img src="assets/s-desk.jpg" alt=""><span class="lbl">Where they end up</span></div>
-    <div class="mech"><span class="k">Referral</span><h3>One for your bestie</h3><p>A heart split in two: "BEST" for her, "IE" for her friend. Print her referral code on the back of the "IE" half, so giving it away brings a new customer.</p></div>
-    <div class="mech"><span class="k">Loyalty</span><h3>Collect them all</h3><p>A collector card with 12 spots, one exclusive sticker per drop. A full card unlocks a reward, for example the A-Bow bag charm.</p></div>
-    <div class="mech"><span class="k">Unboxing</span><h3>Film the envelope</h3><p>The sticker envelope sits on top under the ribbon, so it's the first thing on camera in every unboxing video.</p></div>
-    <div class="mech"><span class="k">UGC</span><h3>#ArvernaStickers</h3><p>Ask girls to post where they stuck theirs: laptop, phone case, tumbler, planner. Repost the best and send a bonus sheet.</p></div>
-  </div>
-  <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>08</span></div>
+  <span class="folio">07 — STICKERS FOR THE SHOPAHOLIC</span>
+  <h2 class="ttl">Shopping is <i>her love language</i></h2>
+  <div class="pr tape" style="left:72px;top:180px;width:450px;height:450px;--r:1.6deg"><div class="ph"><img src="assets/s-shop-en.jpg" alt=""></div></div>
+  <div class="pr tape tl" style="left:560px;top:190px;width:450px;height:450px;--r:-1.8deg"><div class="ph"><img src="assets/s-shop-card.jpg" alt=""></div></div>
+  <div class="pr tape" style="left:1048px;top:172px;width:450px;height:450px;--r:1deg"><div class="ph"><img src="assets/s-shop-ar.jpg" alt=""></div></div>
+  <div class="hand" style="left:96px;top:668px;--r:-1deg">"it was on sale (it wasn't)"</div>
+  <div class="hand" style="left:600px;top:675px;--r:2deg">card jokes, no real card logos</div>
+  <div class="ruq" style="left:1100px;top:655px;font-size:36px;--r:-2deg">الفيزا بتعيّط</div>
+  <div class="card lined" style="left:96px;top:765px;width:600px;--r:1deg"><div class="typed" style="line-height:30px"><b>tone:</b> witty, chic, self-aware. never cheap.<br><b>she laughs at herself</b>, she never feels judged.<br><b>best for:</b> sale weeks, salary week, Eid orders</div></div>
+  <div class="card" style="left:790px;top:785px;width:380px;--r:-2deg"><div class="typed" style="font-size:14px">note for the designer:<br>remove the two circles on the card in<br>"الفيزا بتعيّط" — keep it generic</div></div>
+  <span class="a stamp" style="left:1300px;top:830px">SALARY WEEK</span>
+  <span class="pno">08</span>
 </section>
 
-<!-- 7 WORDS -->
+<!-- 9 STICKERS TRAVEL -->
 <section class="page">
-  <div class="bar"><div><div class="n">08 · Feels like / not like</div><h2>The vibe check</h2></div><span class="r">Use this before every shoot and post</span></div>
-  <div class="wg">
-    <div class="wb" style="background:var(--rose)">
-      <h3>ARVERNA feels like</h3>
-      <div class="wl"><span style="background:#FAF3EC">Soft glam</span><span style="background:#FAF3EC">Satin ribbon</span><span style="background:#4E342C;color:#FAF3EC">Iced Spanish latte</span><span style="background:#FAF3EC">Gold hoops</span><span style="background:#DDBFA8">Coquette, but grown up</span><span style="background:#FAF3EC">Nude knit sets</span><span style="background:#4E342C;color:#FAF3EC">Thursday drop</span><span style="background:#FAF3EC">Golden-hour light</span><span style="background:#DDBFA8">Girls' night</span><span style="background:#FAF3EC">Real laughs</span><span style="background:#FAF3EC">Unboxing on camera</span><span style="background:#DDBFA8">Pink roses</span></div>
-    </div>
-    <div class="wb" style="background:var(--cocoa);color:var(--cream)">
-      <h3>ARVERNA is not</h3>
-      <div class="wl"><span style="border:1.5px solid #8A6E62">Neon colours</span><span style="border:1.5px solid #8A6E62">Harsh pure black</span><span style="border:1.5px solid #8A6E62">Red "SALE!!" banners</span><span style="border:1.5px solid #8A6E62">Heavy beauty filters</span><span style="border:1.5px solid #8A6E62">Supplier photos</span><span style="border:1.5px solid #8A6E62">Mirror selfies</span><span style="border:1.5px solid #8A6E62">Fake small caps</span><span style="border:1.5px solid #8A6E62">Cartoonish cute</span></div>
-    </div>
-  </div>
-  <div class="close"><span class="q">Where's that from? <span class="logo" style="font-style:normal;font-size:30px">ARVERNA.</span></span><span class="qa" lang="ar">من وين؟ من أرڤيرنا</span></div>
-  <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>09</span></div>
+  <span class="folio">08 — HOW STICKERS SPREAD</span>
+  <h2 class="ttl">Stickers that <i>travel</i></h2>
+  <div class="pr pol tape" style="left:72px;top:185px;width:340px;height:380px;--r:-2.4deg"><div class="ph"><img src="assets/film/s-bestie.jpg" alt=""></div><span class="cap">one for you, one for her</span></div>
+  <div class="pr pol pin" style="left:440px;top:165px;width:330px;height:420px;--r:1.6deg"><div class="ph"><img src="assets/film/s-collector.jpg" alt=""></div><span class="cap">12 drops, 12 stickers</span></div>
+  <div class="pr pol tape" style="left:800px;top:180px;width:340px;height:420px;--r:-1.2deg"><div class="ph"><img src="assets/film/s-unboxing.jpg" alt=""></div><span class="cap">first thing on camera</span></div>
+  <div class="pr pol tape tr" style="left:1170px;top:160px;width:360px;height:440px;--r:2.2deg"><div class="ph"><img src="assets/film/s-desk.jpg" alt=""></div><span class="cap">where they end up</span></div>
+  <div class="card" style="left:80px;top:665px;width:330px;--r:1deg"><div class="typed" style="font-size:14px"><b>referral</b><br>her code printed on the back<br>of the "IE" half</div></div>
+  <div class="card" style="left:450px;top:677px;width:320px;--r:-1.4deg"><div class="typed" style="font-size:14px"><b>loyalty</b><br>full card = the A-Bow charm</div></div>
+  <div class="card" style="left:810px;top:670px;width:320px;--r:1.2deg"><div class="typed" style="font-size:14px"><b>unboxing</b><br>envelope on top, under the ribbon</div></div>
+  <div class="card" style="left:1180px;top:681px;width:340px;--r:-1deg"><div class="typed" style="font-size:14px"><b>#ArvernaStickers</b><br>repost her laptop, send a bonus sheet</div></div>
+  <div class="hand" style="left:520px;top:845px;--r:-2deg">every sticker is a tiny ad she chose to keep</div>
+  <span class="pno">09</span>
+</section>
+
+<!-- 10 YES / NO -->
+<section class="page">
+  <span class="folio">09 — YES / NO</span>
+  <h2 class="ttl">Before every shoot <i>and post</i></h2>
+  <div class="card lined" style="left:110px;top:200px;width:620px;height:600px;--r:-1.4deg;padding:24px 34px;background-image:repeating-linear-gradient(#FBF8F3 0 59px,#E4D6C6 59px 60px)"><div style="font-family:var(--hand);font-size:40px;line-height:60px;color:var(--pencil)"><span style="font-size:58px;color:#B8707F">yes ♡</span><br>soft glam, real skin<br>satin ribbon, nude knit<br>iced latte, gold hoops<br>golden-hour light<br>friends laughing, mid-step<br>the bow in every frame</div></div>
+  <div class="card lined" style="left:860px;top:220px;width:620px;height:600px;--r:1.2deg;padding:24px 34px;background-image:repeating-linear-gradient(#FBF8F3 0 59px,#E4D6C6 59px 60px)"><div style="font-family:var(--hand);font-size:40px;line-height:60px;color:var(--pencil)"><span style="font-size:58px;color:var(--cocoa)">no</span><br>neon, harsh pure black<br>red "SALE!!" banners<br>heavy beauty filters<br>supplier photos<br>mirror selfies in other studios<br>cartoon-cute anything</div></div>
+  <div class="pr tape" style="left:700px;top:660px;width:200px;height:200px;--r:-6deg"><div class="ph"><img src="assets/film/a-bow-icon.jpg" alt=""></div></div>
+  <div class="a" style="left:110px;top:885px;font-family:var(--display);font-style:italic;font-size:34px">Where's that from? <span class="logo" style="font-style:normal;font-size:22px">ARVERNA.</span></div>
+  <div class="ruq" style="left:1060px;top:880px;font-size:40px;--r:-1deg">من وين؟ من أرڤيرنا</div>
+  <span class="pno">10</span>
 </section>
 
 </body>
