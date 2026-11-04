@@ -103,6 +103,23 @@ html,body{background:var(--cream);color:var(--cocoa);font-family:var(--body);-we
 .close{display:flex;justify-content:space-between;align-items:center;gap:24px;background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:26px 32px}
 .close .q{font-family:var(--display);font-style:italic;font-weight:500;font-size:44px;line-height:1}
 .close .qa{font-family:var(--ar-d);font-weight:700;font-size:36px;color:var(--rose)}
+/* stickers */
+.sg{flex:1;display:grid;grid-template-columns:1fr 1fr 1fr 330px;gap:12px;min-height:0}
+.sk{display:flex;flex-direction:column;gap:10px;min-height:0}
+.sk .im{flex:1;min-height:0;border-radius:3px;overflow:hidden;background:#F4EDE3;display:flex;align-items:center}
+.sk .im img{width:100%;height:100%;object-fit:contain;display:block}
+.sk h3{font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.sk p{font-size:14px;line-height:1.4;color:var(--muted)}
+.side{background:var(--cocoa);color:var(--cream);border-radius:3px;padding:26px;display:flex;flex-direction:column;gap:14px}
+.side h3{font-family:var(--display);font-style:italic;font-weight:500;font-size:34px;line-height:1}
+.side ul{list-style:none;display:grid;gap:10px;font-size:14.5px;line-height:1.4;color:#EADBD0}
+.side li b{color:var(--rose);display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.sp{flex:1;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr auto;gap:12px;min-height:0}
+.sp .t{grid-row:1}
+.mech{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:18px 18px 20px;display:grid;gap:6px;align-content:start}
+.mech .k{font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose)}
+.mech h3{font-family:var(--display);font-style:italic;font-weight:500;font-size:28px;line-height:1}
+.mech p{font-size:14px;line-height:1.45;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -117,7 +134,7 @@ html,body{background:var(--cream);color:var(--cocoa);font-family:var(--body);-we
       <div class="ar" lang="ar">مربوطة بالوردي</div>
     </div>
     <ol>
-      <li>The mood</li><li>The icon in use</li><li>The palette</li><li>The type</li><li>Type and details in use</li><li>Feels like / not like</li>
+      <li>The mood</li><li>The icon in use</li><li>The palette</li><li>The type</li><li>Type and details in use</li><li>The sticker pack</li><li>How stickers spread</li><li>Feels like / not like</li>
     </ol>
   </div>
   <div class="r">
@@ -232,9 +249,45 @@ html,body{background:var(--cream);color:var(--cocoa);font-family:var(--body);-we
   <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>06</span></div>
 </section>
 
+<!-- STICKERS 1 -->
+<section class="page">
+  <div class="bar"><div><div class="n">06 · The sticker pack</div><h2>A little gift in every order</h2></div><span class="r">Kiss-cut sheets · girly · collectible</span></div>
+  <div class="sg">
+    <div class="sk"><div class="im"><img src="assets/s-icons.jpg" alt=""></div><h3>Sheet 1 · The icons</h3><p>A-Bow, iced latte, mini bag, kiss, pearl heart, perfume, gold hoops. No words, so every girl uses them.</p></div>
+    <div class="sk"><div class="im"><img src="assets/s-phrases-en.jpg" alt=""></div><h3>Sheet 2 · Say it in English</h3><p>"main character energy", "it's giving ARVERNA", "outfit repeater &amp; proud", "treat yourself, habibti".</p></div>
+    <div class="sk"><div class="im"><img src="assets/s-phrases-ar.jpg" alt=""></div><h3>Sheet 3 · قوليها بالعربي</h3><p>The things girls actually say: <span dir="rtl" lang="ar" style="font-family:var(--ar)">من وين؟ · حبيبتي · شو ألبس؟ · يلا نطلع · بنت أرفيرنا · طلبت كمان مرة</span></p></div>
+    <div class="side">
+      <h3>How it works</h3>
+      <ul>
+        <li><b>Every order</b>One A6 sheet in a cream envelope that says "a little gift for you".</li>
+        <li><b>Rotate monthly</b>A new sheet each month, so repeat customers get something new and want the full set.</li>
+        <li><b>Mix the languages</b>Alternate icon, English and Arabic sheets. The Arabic one will be the most posted.</li>
+        <li><b>Print spec</b>Glossy waterproof vinyl, kiss-cut, 2–3 mm white border, @arvernacom on the backing paper. Strong enough for laptops, phone cases and tumblers.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>07</span></div>
+</section>
+
+<!-- STICKERS 2 -->
+<section class="page">
+  <div class="bar"><div><div class="n">07 · How stickers spread</div><h2>Stickers that travel</h2></div><span class="r">Share · collect · post</span></div>
+  <div class="sp">
+    <div class="t"><img src="assets/s-bestie.jpg" alt=""><span class="lbl">Bestie split</span></div>
+    <div class="t"><img src="assets/s-collector.jpg" alt=""><span class="lbl">Collector card</span></div>
+    <div class="t"><img src="assets/s-unboxing.jpg" alt=""><span class="lbl">The gift moment</span></div>
+    <div class="t"><img src="assets/s-desk.jpg" alt=""><span class="lbl">Where they end up</span></div>
+    <div class="mech"><span class="k">Referral</span><h3>One for your bestie</h3><p>A heart split in two: "BEST" for her, "IE" for her friend. Print her referral code on the back of the "IE" half, so giving it away brings a new customer.</p></div>
+    <div class="mech"><span class="k">Loyalty</span><h3>Collect them all</h3><p>A collector card with 12 spots, one exclusive sticker per drop. A full card unlocks a reward, for example the A-Bow bag charm.</p></div>
+    <div class="mech"><span class="k">Unboxing</span><h3>Film the envelope</h3><p>The sticker envelope sits on top under the ribbon, so it's the first thing on camera in every unboxing video.</p></div>
+    <div class="mech"><span class="k">UGC</span><h3>#ArvernaStickers</h3><p>Ask girls to post where they stuck theirs: laptop, phone case, tumbler, planner. Repost the best and send a bonus sheet.</p></div>
+  </div>
+  <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>08</span></div>
+</section>
+
 <!-- 7 WORDS -->
 <section class="page">
-  <div class="bar"><div><div class="n">06 · Feels like / not like</div><h2>The vibe check</h2></div><span class="r">Use this before every shoot and post</span></div>
+  <div class="bar"><div><div class="n">08 · Feels like / not like</div><h2>The vibe check</h2></div><span class="r">Use this before every shoot and post</span></div>
   <div class="wg">
     <div class="wb" style="background:var(--rose)">
       <h3>ARVERNA feels like</h3>
@@ -246,7 +299,7 @@ html,body{background:var(--cream);color:var(--cocoa);font-family:var(--body);-we
     </div>
   </div>
   <div class="close"><span class="q">Where's that from? <span class="logo" style="font-style:normal;font-size:30px">ARVERNA.</span></span><span class="qa" lang="ar">من وين؟ من أرڤيرنا</span></div>
-  <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>07</span></div>
+  <div class="foot" style="bottom:20px"><span>ARVERNA · Moodboard</span><span>09</span></div>
 </section>
 
 </body>
