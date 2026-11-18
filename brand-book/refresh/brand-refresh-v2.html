@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ARVERNA Brand Refresh v2</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Alexandria:wght@300..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+@page{size:1600px 1000px;margin:0}
+:root{--mocha:#93755B;--mocha2:#927055;--esp:#2B1D17;--oat:#EFE6D8;--denim:#84A3C8;--gloss:#F2A2BE;--chrome:#C9CDD3;--line:rgba(43,29,23,.16);
+--d:'Archivo','Helvetica Neue',Arial,sans-serif;--ar:'Alexandria','Geeza Pro',Tahoma,sans-serif;--m:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--oat);color:var(--esp);font-family:var(--d);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:1600px;height:1000px;position:relative;overflow:hidden;break-after:page;page-break-after:always;background:var(--oat)}
+.page:last-child{break-after:auto;page-break-after:auto}
+.bg-mocha{background:var(--mocha);color:var(--oat)}.bg-esp{background:var(--esp);color:var(--oat)}.bg-denim{background:var(--denim)}.bg-gloss{background:var(--gloss)}
+.a{position:absolute}
+.mono{font-family:var(--m);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.top{position:absolute;left:64px;right:64px;top:44px;display:flex;justify-content:space-between;opacity:.7}
+.foot{position:absolute;left:64px;right:64px;bottom:36px;display:flex;justify-content:space-between;opacity:.6}
+.h{font-family:var(--d);font-stretch:125%;font-weight:800;text-transform:uppercase;line-height:.92;letter-spacing:-.01em}
+.ar{font-family:var(--ar);direction:rtl}
+.p{font-size:19px;line-height:1.5;font-stretch:100%}
+.chrome-t{background:linear-gradient(175deg,#F6F7F9 8%,#C9CDD3 30%,#FBFBFC 46%,#8B9097 54%,#70757D 64%,#D5D8DC 82%,#A4A9B0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.chrome-b{background:linear-gradient(160deg,#F6F7F9,#C9CDD3 30%,#FBFBFC 46%,#8B9097 56%,#D5D8DC 80%,#A4A9B0)}
+img{display:block}
+.cover-img{object-fit:cover;width:100%;height:100%}
+.ph{position:absolute;overflow:hidden;background:#cdbfae}
+.ph img{width:100%;height:100%;object-fit:cover}
+.cap{position:absolute;left:0;bottom:-26px;font-family:var(--m);font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7;white-space:nowrap}
+.pill{display:inline-flex;align-items:center;border-radius:999px;padding:6px 13px;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-stretch:112%}
+.num{font-family:var(--m);font-size:13px;letter-spacing:.08em}
+/* palette */
+.sw{position:absolute;top:210px;height:470px;padding:24px;display:flex;flex-direction:column;justify-content:space-between}
+.sw .n{font-stretch:125%;font-weight:800;font-size:25px;text-transform:uppercase;line-height:1}
+.sw .n span{display:block;font-family:var(--ar);font-weight:600;font-size:22px;margin-top:8px;text-transform:none}
+.sw .d{font-size:14.5px;line-height:1.45}
+.sw code{font-family:var(--m);font-size:13px;display:block;margin-top:10px}
+/* IG tiles */
+.tile{container-type:size;position:relative;overflow:hidden;aspect-ratio:3/4;background:#cdbfae}
+.tile>img.f{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile .c{position:absolute;inset:0;padding:8cqw;display:flex;flex-direction:column;justify-content:space-between}
+.tile .mk{position:absolute;right:5cqw;bottom:5cqw;width:9cqw}
+.tile .tg{font-family:var(--m);font-size:4.2cqw;letter-spacing:.08em;text-transform:uppercase}
+.tile .big{font-stretch:125%;font-weight:800;text-transform:uppercase;line-height:.9}
+.tile .arb{font-family:var(--ar);font-weight:800;direction:rtl;line-height:1.15}
+.tile .pl{display:inline-block;border-radius:99cqw;padding:1.6cqw 4cqw;font-weight:700;font-size:3.9cqw;letter-spacing:.08em;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(3,1fr)}
+/* phone */
+.phone{position:absolute;width:404px;height:880px;border-radius:52px;background:#16100d;padding:12px;box-shadow:0 40px 70px -30px rgba(43,29,23,.7)}
+.scr{width:100%;height:100%;border-radius:41px;overflow:hidden;background:#fff;color:#111;font-family:var(--d);position:relative}
+.scr .sb{display:flex;justify-content:space-between;padding:14px 26px 6px;font-weight:700;font-size:14px}
+.scr .tb{display:flex;justify-content:space-between;align-items:center;padding:6px 16px 10px;font-weight:800;font-size:19px}
+.scr .hd{display:flex;align-items:center;gap:22px;padding:4px 16px}
+.av{width:84px;height:84px;border-radius:50%;padding:3px;flex:none}
+.av div{width:100%;height:100%;border-radius:50%;border:3px solid #fff;background:var(--mocha);display:grid;place-items:center}
+.av img{width:46%}
+.st{display:flex;gap:26px;font-size:13px;text-align:left}
+.st b{display:block;font-size:17px;font-weight:800}
+.bio{padding:10px 16px 0;font-size:13.5px;line-height:1.42}
+.bio b{font-weight:800}
+.bio .ar{font-size:13.5px;text-align:left;direction:rtl;unicode-bidi:plaintext}
+.bt{display:grid;grid-template-columns:1fr 1fr 40px;gap:6px;padding:12px 16px 0}
+.bt span{background:#EFEFEF;border-radius:9px;text-align:center;padding:8px 0;font-weight:700;font-size:13.5px}
+.bt span:first-child{background:var(--esp);color:var(--oat)}
+.hl{display:flex;gap:13px;padding:14px 16px 10px}
+.hl div{width:62px;text-align:center;font-size:11px;display:grid;gap:5px;justify-items:center;flex:none}
+.hl i{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;overflow:hidden;box-shadow:0 0 0 2px #fff,0 0 0 3.2px #d9d2c8}
+.hl svg{width:26px;height:26px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hl img{width:100%;height:100%;object-fit:cover}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #e6e6e6;text-align:center;font-size:12px;font-weight:700;letter-spacing:.08em}
+.tabs span{padding:9px 0}.tabs span:first-child{border-top:1.5px solid #111;margin-top:-1px}
+.scr .grid{gap:2px}
+/* big hl */
+.hlb{display:grid;gap:10px;justify-items:center;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;font-stretch:112%}
+.hlb i{width:118px;height:118px;border-radius:50%;display:grid;place-items:center;overflow:hidden;box-shadow:0 0 0 5px var(--oat),0 0 0 7px rgba(43,29,23,.25)}
+.hlb svg{width:50px;height:50px;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.hlb img{width:100%;height:100%;object-fit:cover}
+.card{position:absolute;padding:22px 24px;display:grid;gap:8px;align-content:start}
+.card .k{font-family:var(--m);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.card h3{font-stretch:125%;font-weight:800;font-size:25px;text-transform:uppercase;line-height:1}
+.card p{font-size:17px;line-height:1.45}
+.card .ar{font-size:19px;font-weight:700}
+</style>
+</head>
+<body>
+
+<!-- 1 COVER -->
+<section class="page" style="background:#8d6d52;color:var(--oat)">
+  <img class="a" src="assets/faceA-chrome3d.jpg" style="right:0;top:0;height:1000px;width:1000px;object-fit:cover" alt="">
+  <div class="a" style="left:0;top:0;width:700px;height:1000px;background:linear-gradient(90deg,#8e6e53 80%,rgba(142,110,83,0))"></div>
+  <div class="top mono"><span>Brand refresh — update 02</span><span>2026</span></div>
+  <img class="a" src="assets/word-oat.png" style="left:64px;top:300px;width:600px" alt="ARVERNA">
+  <div class="a h" style="left:64px;top:410px;font-size:44px;width:700px">A softer icon.<br>Reem, animated.</div>
+  <div class="a ar" style="left:64px;top:530px;font-size:28px;font-weight:600;text-align:left">أيقونة أنعم. وريم بتتحرّك.</div>
+  <div class="a mono" style="left:64px;top:700px;line-height:2;opacity:.85">01 Icon A — The Gazelle A &nbsp;·&nbsp; 02 Icon B — The Profile<br>03 A or B &nbsp;·&nbsp; 04 Reem in 2D &nbsp;·&nbsp; 05 On Instagram</div>
+  <div class="foot mono"><span>Hebron</span><span>01</span></div>
+</section>
+
+<!-- 2 ICON A -->
+<section class="page">
+  <div class="top mono"><span>01 — Icon A</span><span>The Gazelle A</span></div>
+  <div class="a" style="left:64px;top:110px;width:620px;height:800px;background:var(--mocha);display:grid;place-items:center"><img src="assets/faceA-oat.png" style="width:380px" alt="The Gazelle A icon"></div>
+  <div class="a h" style="left:740px;top:110px;font-size:58px;width:800px">A letter with<br>a gazelle inside</div>
+  <p class="a p" style="left:740px;top:262px;width:780px">Two smooth horns meet to make the A of ARVERNA. Between them is her face, with two leaf-shaped ears. The spikes are gone; every line is a curve.</p>
+  <div class="a" style="left:740px;top:400px;width:796px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+    <div style="border-top:2px solid var(--esp);padding-top:12px;display:grid;gap:6px"><span class="mono">Why it's feminine</span><p style="font-size:15px;line-height:1.42">Tapered strokes, soft ears and a slim face. It reads like jewellery, not armour.</p></div>
+    <div style="border-top:2px solid var(--esp);padding-top:12px;display:grid;gap:6px"><span class="mono">Two readings</span><p style="font-size:15px;line-height:1.42">First you see an A. Then you see the gazelle. That second look is what makes people remember it.</p></div>
+    <div style="border-top:2px solid var(--esp);padding-top:12px;display:grid;gap:6px"><span class="mono">Best for</span><p style="font-size:15px;line-height:1.42">Profile picture, favicon, tags, embroidery. It stays clear when it is small.</p></div>
+  </div>
+  <div class="a" style="left:740px;top:610px;width:796px;display:grid;grid-template-columns:repeat(5,1fr);gap:8px">
+    <div style="aspect-ratio:1;background:var(--oat);border:1px solid var(--line);display:grid;place-items:center"><img src="assets/faceA-espresso.png" style="width:46%" alt=""></div>
+    <div style="aspect-ratio:1;background:var(--esp);display:grid;place-items:center"><img src="assets/faceA-chrome.png" style="width:46%" alt=""></div>
+    <div style="aspect-ratio:1;background:var(--denim);display:grid;place-items:center"><img src="assets/faceA-espresso.png" style="width:46%" alt=""></div>
+    <div style="aspect-ratio:1;background:var(--gloss);display:grid;place-items:center"><img src="assets/faceA-espresso.png" style="width:46%" alt=""></div>
+    <div style="aspect-ratio:1;background:var(--oat);border:1px solid var(--line);display:grid;place-items:center"><img src="assets/faceA-mocha.png" style="width:46%" alt=""></div>
+  </div>
+  <div class="a" style="left:740px;top:806px;width:796px;height:104px;background:var(--esp);display:flex;align-items:center;justify-content:space-between;padding:0 34px">
+    <div style="display:flex;align-items:center;gap:22px"><img src="assets/faceA-oat.png" style="height:66px" alt=""><img src="assets/word-oat.png" style="height:26px" alt=""></div>
+    <div style="display:flex;align-items:flex-end;gap:16px"><img src="assets/faceA-oat.png" style="height:48px" alt=""><img src="assets/faceA-oat.png" style="height:32px" alt=""><img src="assets/faceA-oat.png" style="height:20px" alt=""><span class="mono" style="font-size:11px;color:var(--chrome)">48 · 32 · 20 px</span></div>
+  </div>
+  <div class="foot mono"><span></span><span>02</span></div>
+</section>
+
+<!-- 3 ICON A IN USE -->
+<section class="page bg-esp">
+  <div class="top mono"><span>01 — Icon A</span><span>In use</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:60px">The Gazelle A, in real life</div>
+  <div class="ph" style="left:64px;top:200px;width:640px;height:640px"><img src="assets/faceA-chrome3d.jpg" alt=""></div>
+  <div class="ph" style="left:716px;top:200px;width:266px;height:640px"><img src="assets/faceA-tag.jpg" alt=""></div>
+  <div class="ph" style="left:994px;top:200px;width:266px;height:640px"><img src="assets/faceA-bag.jpg" alt=""></div>
+  <div class="ph" style="left:1272px;top:200px;width:264px;height:640px"><img src="assets/faceA-hoodie.jpg" alt="" style="object-position:62% center"></div>
+  <div class="a mono" style="left:64px;top:858px;color:var(--chrome)">Chrome — charm, zip pull, foil</div>
+  <div class="a mono" style="left:716px;top:858px">Swing tag</div>
+  <div class="a mono" style="left:994px;top:858px">Shopping bag</div>
+  <div class="a mono" style="left:1272px;top:858px">Embroidery</div>
+  <div class="foot mono"><span></span><span>03</span></div>
+</section>
+
+<!-- 4 ICON B -->
+<section class="page">
+  <div class="top mono"><span>02 — Icon B</span><span>The Profile</span></div>
+  <div class="a" style="left:64px;top:110px;width:620px;height:800px;background:var(--mocha);display:grid;place-items:center"><img src="assets/profile-oat.png" style="height:520px" alt="The Profile icon"></div>
+  <div class="a h" style="left:740px;top:110px;font-size:58px;width:800px">Her, in<br>four strokes</div>
+  <p class="a p" style="left:740px;top:262px;width:780px">A gazelle in profile: one long horn, a leaf ear, a slim face and a closed eye with lashes. Calm and confident, like a beauty-brand emblem.</p>
+  <div class="a" style="left:740px;top:400px;width:796px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+    <div style="border-top:2px solid var(--esp);padding-top:12px;display:grid;gap:6px"><span class="mono">Why it's feminine</span><p style="font-size:15px;line-height:1.42">The lashes and the sweeping horn. It is the most elegant of all the options.</p></div>
+    <div style="border-top:2px solid var(--esp);padding-top:12px;display:grid;gap:6px"><span class="mono">Trade-off</span><p style="font-size:15px;line-height:1.42">It is a picture, not a letter. And the fine lines fade below about 32 px, so it needs a bolder small-size version.</p></div>
+    <div style="border-top:2px solid var(--esp);padding-top:12px;display:grid;gap:6px"><span class="mono">Best for</span><p style="font-size:15px;line-height:1.42">Big uses: shopping bags, tissue paper, jewellery, back-neck prints, campaign posters.</p></div>
+  </div>
+  <div class="a" style="left:740px;top:610px;width:796px;display:grid;grid-template-columns:repeat(5,1fr);gap:8px">
+    <div style="aspect-ratio:1;background:var(--oat);border:1px solid var(--line);display:grid;place-items:center"><img src="assets/profile-espresso.png" style="width:40%" alt=""></div>
+    <div style="aspect-ratio:1;background:var(--esp);display:grid;place-items:center"><img src="assets/profile-chrome.png" style="width:40%" alt=""></div>
+    <div style="aspect-ratio:1;background:var(--denim);display:grid;place-items:center"><img src="assets/profile-espresso.png" style="width:40%" alt=""></div>
+    <div style="aspect-ratio:1;background:var(--gloss);display:grid;place-items:center"><img src="assets/profile-espresso.png" style="width:40%" alt=""></div>
+    <div style="aspect-ratio:1;background:var(--oat);border:1px solid var(--line);display:grid;place-items:center"><img src="assets/profile-mocha.png" style="width:40%" alt=""></div>
+  </div>
+  <div class="a" style="left:740px;top:806px;width:796px;height:104px;background:var(--esp);display:flex;align-items:center;justify-content:space-between;padding:0 34px">
+    <div style="display:flex;align-items:center;gap:22px"><img src="assets/profile-oat.png" style="height:74px" alt=""><img src="assets/word-oat.png" style="height:26px" alt=""></div>
+    <div style="display:flex;align-items:flex-end;gap:16px"><img src="assets/profile-oat.png" style="height:48px" alt=""><img src="assets/profile-oat.png" style="height:32px" alt=""><img src="assets/profile-oat.png" style="height:20px" alt=""><span class="mono" style="font-size:11px;color:var(--chrome)">48 · 32 · 20 px</span></div>
+  </div>
+  <div class="foot mono"><span></span><span>04</span></div>
+</section>
+
+<!-- 5 ICON B IN USE -->
+<section class="page bg-esp">
+  <div class="top mono"><span>02 — Icon B</span><span>In use</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:60px">The Profile, in real life</div>
+  <div class="ph" style="left:64px;top:200px;width:640px;height:640px"><img src="assets/profile-chrome3d.jpg" alt=""></div>
+  <div class="ph" style="left:716px;top:200px;width:266px;height:640px"><img src="assets/profile-tag.jpg" alt=""></div>
+  <div class="ph" style="left:994px;top:200px;width:266px;height:640px"><img src="assets/profile-bag.jpg" alt=""></div>
+  <div class="ph" style="left:1272px;top:200px;width:264px;height:640px"><img src="assets/profile-necklace.jpg" alt="" style="object-position:70% center"></div>
+  <div class="a mono" style="left:64px;top:858px;color:var(--chrome)">Chrome — brooch, bag hardware, foil</div>
+  <div class="a mono" style="left:716px;top:858px">Swing tag</div>
+  <div class="a mono" style="left:994px;top:858px">Shopping bag</div>
+  <div class="a mono" style="left:1272px;top:858px">Necklace for members</div>
+  <div class="foot mono"><span></span><span>05</span></div>
+</section>
+
+<!-- 6 A OR B -->
+<section class="page bg-mocha">
+  <div class="top mono"><span>03 — A or B</span><span>Recommendation</span></div>
+  <div class="a h" style="left:64px;top:100px;font-size:56px;width:1472px">You don't have to choose</div>
+  <p class="a p" style="left:64px;top:190px;width:900px">They are the same gazelle, seen from the front and from the side. Use them as a pair, each where it is strongest.</p>
+  <div class="a" style="left:64px;top:320px;width:724px;height:520px;background:var(--oat);color:var(--esp);padding:30px;display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center">
+    <img src="assets/faceA-espresso.png" style="width:200px" alt="">
+    <div style="display:grid;gap:12px"><span class="mono">The icon</span><div class="h" style="font-size:34px">Gazelle A</div><p style="font-size:16.5px;line-height:1.45">The main brand icon. It carries the letter, so it can stand alone without the wordmark.</p><p style="font-size:15px;line-height:1.5"><b>Use on:</b> profile picture, website favicon, swing tags, labels, embroidery, the corner mark on every photo, stickers.</p></div>
+  </div>
+  <div class="a" style="left:812px;top:320px;width:724px;height:520px;background:var(--esp);color:var(--oat);padding:30px;display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:center">
+    <img src="assets/profile-chrome.png" style="width:170px;justify-self:center" alt="">
+    <div style="display:grid;gap:12px"><span class="mono" style="color:var(--chrome)">The emblem</span><div class="h" style="font-size:34px">The Profile</div><p style="font-size:16.5px;line-height:1.45">The decorative mark, used large and always together with the wordmark or the icon.</p><p style="font-size:15px;line-height:1.5"><b>Use on:</b> shopping bags, tissue paper, box lids, jewellery and charms, campaign posters, the back-neck print.</p></div>
+  </div>
+  <div class="a mono" style="left:64px;top:870px;opacity:.85">If you want only one: Gazelle A. It works at every size and is the easier one to protect as a trademark with your name.</div>
+  <div class="foot mono"><span></span><span>06</span></div>
+</section>
+
+<!-- 7 REEM 2D -->
+<section class="page" style="background:#ece1cd">
+  <img class="a" src="assets/r2d-cel.jpg" style="left:0;top:0;width:800px;height:1000px;object-fit:cover" alt="Reem in 2D">
+  <div class="top mono" style="left:864px"><span>04 — Reem in 2D</span><span>Animation option</span></div>
+  <div class="a h" style="left:864px;top:100px;font-size:120px">Reem</div>
+  <div class="a ar" style="right:64px;top:118px;font-size:76px;font-weight:800;color:var(--mocha)">ريم</div>
+  <p class="a p" style="left:864px;top:260px;width:660px">The same Reem, drawn as a 2D animated character: clean lines, flat colour, big expressions. She moves, talks and reacts, so she can star in Reels, Stories and stickers.</p>
+  <div class="a" style="left:864px;top:410px;width:672px;display:grid;gap:0">
+    <div style="display:grid;grid-template-columns:150px 1fr;gap:16px;padding:13px 0;border-top:1px solid var(--line)"><span class="mono">Why 2D</span><span style="font-size:16px;line-height:1.4">Faster and cheaper to make every week than 3D, and easy to redraw in each new drop.</span></div>
+    <div style="display:grid;grid-template-columns:150px 1fr;gap:16px;padding:13px 0;border-top:1px solid var(--line)"><span class="mono">Kept</span><span style="font-size:16px;line-height:1.4">Mocha fur, silver horns, long lashes, the pink mini bag, and a full ARVERNA outfit every time.</span></div>
+    <div style="display:grid;grid-template-columns:150px 1fr;gap:16px;padding:13px 0;border-top:1px solid var(--line)"><span class="mono">Where</span><span style="font-size:16px;line-height:1.4">Animated drop announcements, "Find Reem" Stories, WhatsApp and Instagram GIF stickers, packaging illustrations.</span></div>
+    <div style="display:grid;grid-template-columns:150px 1fr;gap:16px;padding:13px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><span class="mono">With 3D</span><span style="font-size:16px;line-height:1.4">Both can live together: 2D Reem on screen, and the plush charm as the thing girls collect.</span></div>
+  </div>
+  <div class="a" style="left:864px;top:740px;width:672px;display:grid;grid-template-columns:1fr 1fr;gap:14px">
+    <div style="background:var(--esp);color:var(--oat);padding:18px 20px;display:grid;gap:6px"><span class="mono" style="color:var(--chrome)">Style 1 · shown here</span><b style="font-size:17px">Hand-drawn cartoon</b><span style="font-size:14.5px;line-height:1.4">Lines and soft shading. Warm, expressive, best for storytelling.</span></div>
+    <div style="background:var(--denim);padding:18px 20px;display:grid;gap:6px"><span class="mono">Style 2 · next pages</span><b style="font-size:17px">Flat motion graphic</b><span style="font-size:14.5px;line-height:1.4">No outlines, bold shapes. Sharper and more fashion-ad.</span></div>
+  </div>
+  <div class="foot mono" style="left:864px"><span></span><span>07</span></div>
+</section>
+
+<!-- 8 MODEL SHEET -->
+<section class="page">
+  <div class="top mono"><span>04 — Reem in 2D</span><span>Model sheet</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:60px">Same Reem from every side</div>
+  <div class="ph" style="left:64px;top:200px;width:730px;height:485px"><img src="assets/r2d-turn.jpg" alt=""></div>
+  <div class="ph" style="left:806px;top:200px;width:730px;height:485px"><img src="assets/r2d-expr.jpg" alt=""></div>
+  <div class="a mono" style="left:64px;top:700px;opacity:.75">Turnaround — front, three-quarter, side, back</div>
+  <div class="a mono" style="left:806px;top:700px;opacity:.75">Expressions — eight moods for stickers and replies</div>
+  <div class="a" style="left:64px;top:760px;width:1472px;display:grid;grid-template-columns:repeat(4,1fr);gap:28px">
+    <p style="font-size:15.5px;line-height:1.45"><b>What this is.</b> The sheet an animator or illustrator works from, so Reem looks the same in every post.</p>
+    <p style="font-size:15.5px;line-height:1.45"><b>Fixed features.</b> Two silver horns, long drooping ears, cream face mask, three lashes, pink cheeks.</p>
+    <p style="font-size:15.5px;line-height:1.45"><b>What changes.</b> Only the outfit and the mood. Her body and face never change.</p>
+    <p style="font-size:15.5px;line-height:1.45"><b>Sticker pack.</b> The eight expressions are ready to become WhatsApp and Instagram stickers.</p>
+  </div>
+  <div class="foot mono"><span></span><span>08</span></div>
+</section>
+
+<!-- 9 OUTFITS + MOTION -->
+<section class="page">
+  <div class="top mono"><span>04 — Reem in 2D</span><span>Wardrobe and motion</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:60px">She wears it, she moves</div>
+  <div class="ph" style="left:64px;top:200px;width:700px;height:465px"><img src="assets/r2d-outfits.jpg" alt=""></div>
+  <div class="a mono" style="left:64px;top:680px;opacity:.75">Wardrobe — leather bomber, knit set, trench, denim</div>
+  <div class="ph" style="left:788px;top:200px;width:748px;height:226px;background:#ece1cd"><img src="assets/anim-wave-strip.jpg" alt=""></div>
+  <div class="a mono" style="left:788px;top:438px;opacity:.75">Clip 1 — "Hi, ya ghazaleh": wave, blink, wink</div>
+  <div class="ph" style="left:788px;top:478px;width:748px;height:226px;background:#799bc7"><img src="assets/anim-walk-strip.jpg" alt=""></div>
+  <div class="a mono" style="left:788px;top:716px;opacity:.75">Clip 2 — the walk, in the flat motion-graphic style</div>
+  <div class="a" style="left:64px;top:770px;width:1472px;height:140px;background:var(--mocha);color:var(--oat);display:grid;grid-template-columns:1fr 1fr 1fr;gap:34px;padding:24px 30px;align-items:start">
+    <p style="font-size:15.5px;line-height:1.45"><b>The clips.</b> Two five-second test animations are delivered as video files with this deck. The frames above are taken from them.</p>
+    <p style="font-size:15.5px;line-height:1.45"><b>Weekly use.</b> One short Reem loop per drop: she walks in wearing the new piece, then the product photos follow.</p>
+    <p style="font-size:15.5px;line-height:1.45"><b>To produce it properly.</b> An animator rebuilds Reem as a rig from the model sheet. After that, each new clip takes hours, not days.</p>
+  </div>
+  <div class="foot mono"><span></span><span>09</span></div>
+</section>
+
+<!-- 10 INSTAGRAM -->
+<section class="page bg-esp">
+  <div class="top mono"><span>05 — On Instagram</span><span>New icon + 2D Reem</span></div>
+  <div class="phone" style="left:96px;top:70px">
+    <div class="scr">
+      <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+      <div class="tb"><span>arvernacom</span><span style="font-weight:400">≡</span></div>
+      <div class="hd"><div class="av chrome-b"><div><img src="assets/faceA-oat.png" style="width:50%" alt=""></div></div><div class="st"><div><b>1,204</b>posts</div><div><b>—</b>followers</div><div><b>312</b>following</div></div></div>
+      <div class="bio"><b>ARVERNA</b><br><span style="color:#737373">Clothing (Brand)</span><br>Everyday fits. New drop every Thursday, 8 PM.<br><span class="ar">يا غزالة، لبسك علينا · توصيل ٢–٣ أيام</span><br><span style="color:#00376B;font-weight:600">arvernaps.com</span></div>
+      <div class="bt"><span>Follow</span><span>Message</span><span>+</span></div>
+      <div class="hl">
+        <div><i style="background:var(--mocha)"><svg viewBox="0 0 24 24" stroke="#EFE6D8"><path d="M12 8.5c0-1.2 1.6-1.4 1.6-2.8A1.7 1.7 0 0 0 10.3 5M12 8.5l8.4 6.2a1 1 0 0 1-.6 1.8H4.2a1 1 0 0 1-.6-1.8z"/></svg></i>New in</div>
+        <div><i style="background:var(--esp)"><svg viewBox="0 0 24 24" stroke="#C9CDD3"><path d="M13 2.5 5 13.5h6l-1 8 8-11h-6z"/></svg></i>Drops</div>
+        <div><i><img src="assets/r2d-face.jpg" alt=""></i>Reem</div>
+        <div><i style="background:var(--denim)"><svg viewBox="0 0 24 24" stroke="#2B1D17"><path d="m3.5 16.5 13-13 4 4-13 13zM7 13l2 2M10 10l2 2M13 7l2 2"/></svg></i>Sizes</div>
+        <div><i style="background:var(--gloss)"><svg viewBox="0 0 24 24" stroke="#2B1D17"><path d="M12 20.5s-8-4.9-8-10.6A4.4 4.4 0 0 1 12 7.2a4.4 4.4 0 0 1 8 2.7c0 5.7-8 10.6-8 10.6z"/></svg></i>Reviews</div>
+      </div>
+      <div class="tabs"><span>GRID</span><span style="color:#999">REELS</span><span style="color:#999">TAGGED</span></div>
+      <div class="grid" id="g-phone"></div>
+    </div>
+  </div>
+  <div class="a grid" id="g-big" style="left:590px;top:60px;width:500px;gap:4px"></div>
+  <div class="a h" style="left:1150px;top:110px;font-size:36px;width:400px">How it looks on the feed</div>
+  <p class="a" style="left:1150px;top:250px;width:386px;font-size:16px;line-height:1.5;color:#E6DACA">Same checkerboard as before. The Gazelle A is now the profile picture and the corner mark on every photo. Reem appears in 2D on the brand tiles.</p>
+  <div class="a" style="left:1150px;top:440px;width:386px;display:grid;gap:0">
+    <div style="padding:13px 0;border-top:1px solid rgba(239,230,216,.25);font-size:15.5px;line-height:1.4"><b>Profile picture.</b> Gazelle A in oat on mocha.</div>
+    <div style="padding:13px 0;border-top:1px solid rgba(239,230,216,.25);font-size:15.5px;line-height:1.4"><b>Corner mark.</b> A small Gazelle A on each product photo.</div>
+    <div style="padding:13px 0;border-top:1px solid rgba(239,230,216,.25);font-size:15.5px;line-height:1.4"><b>Reem tiles.</b> 2D Reem on denim, gloss or oat. In Reels these tiles are the animated clips.</div>
+    <div style="padding:13px 0;border-top:1px solid rgba(239,230,216,.25);border-bottom:1px solid rgba(239,230,216,.25);font-size:15.5px;line-height:1.4"><b>"New in" tile.</b> The Profile emblem in chrome, used large.</div>
+  </div>
+  <div class="a mono" style="left:1150px;top:880px;width:386px;opacity:.6;font-size:11px;line-height:1.6">Follower and post numbers are placeholders. Product photos are from your current site.</div>
+  <div class="foot mono"><span></span><span>10</span></div>
+</section>
+
+<template id="tiles">
+  <div class="tile" data-t="b" style="background:#799bc7"><img src="assets/r2d-flat.jpg" alt="" style="position:absolute;left:17%;bottom:0;width:66%;height:70%;object-fit:cover;object-position:center top"><div class="c" style="justify-content:flex-start;gap:2cqw;color:#2B1D17"><span class="tg">Reem says</span><span class="arb" style="font-size:12.5cqw;color:#EFE6D8;white-space:nowrap">هاي يا غزالة</span></div></div>
+  <div class="tile" data-t="p"><img class="f" src="assets/ph-leather-brown.jpg" alt=""><img class="mk" src="assets/faceA-oat.png" alt=""></div>
+  <div class="tile" data-t="b" style="background:#93755B;color:#EFE6D8"><div class="c"><span class="tg">Just landed</span><img src="assets/profile-chrome.png" style="height:52cqw;align-self:center" alt=""><div><div class="big" style="font-size:15cqw">New in</div><div class="arb" style="font-size:8cqw;text-align:left;direction:rtl;unicode-bidi:plaintext">وصل جديد</div></div></div></div>
+  <div class="tile" data-t="p"><img class="f" src="assets/ph-balloon.jpg" alt=""><img class="mk" src="assets/faceA-oat.png" alt=""></div>
+  <div class="tile" data-t="b" style="background:#EFE6D8;color:#2B1D17;box-shadow:inset 0 0 0 1px rgba(43,29,23,.16)"><div class="c"><div style="display:flex;justify-content:space-between;align-items:center"><span class="tg">#يا_غزالة</span><img src="assets/faceA-espresso.png" style="width:10cqw" alt=""></div><div class="arb" style="font-size:22cqw">يا<br>غزالة،</div><div class="arb" style="font-size:9cqw;color:#93755B">لبسك علينا.</div></div></div>
+  <div class="tile" data-t="p"><img class="f" src="assets/ph-denim-jacket.jpg" alt=""><img class="mk" src="assets/faceA-oat.png" alt=""></div>
+  <div class="tile" data-t="b" style="background:#f09ebb"><img src="assets/r2d-bags.jpg" alt="" style="position:absolute;left:12%;bottom:0;width:76%;height:72%;object-fit:cover;object-position:center 55%"><div class="c" style="justify-content:flex-start;gap:1cqw;color:#2B1D17"><span class="tg">Payday</span><span class="arb" style="font-size:14cqw">الراتب نزل</span></div></div>
+  <div class="tile" data-t="p"><img class="f" src="assets/ph-trench.jpg" alt=""><div class="c" style="justify-content:flex-end;align-items:flex-start;gap:2cqw"><span class="pl" style="background:#F2A2BE;color:#2B1D17">Reem's pick</span><span class="pl" style="background:#EFE6D8;color:#2B1D17">Trench · 250 ₪ · S–XL</span></div><img class="mk" src="assets/faceA-oat.png" alt=""></div>
+  <div class="tile" data-t="b" style="background:#2B1D17;color:#EFE6D8"><div class="c"><div style="display:flex;justify-content:space-between;align-items:flex-start"><span class="tg" style="color:#C9CDD3">Drop</span><img src="assets/faceA-chrome.png" style="width:13cqw" alt=""></div><div class="big chrome-t" style="font-size:44cqw;letter-spacing:-.03em">01</div><div><div class="big" style="font-size:10.5cqw">Thu · 8 PM</div><div class="arb" style="font-size:7.5cqw;text-align:left;direction:rtl;unicode-bidi:plaintext;color:#C9CDD3">الخميس ٨ مساءً</div></div></div></div>
+  <div class="tile" data-t="p"><img class="f" src="assets/ph-bomber.jpg" alt=""><img class="mk" src="assets/faceA-oat.png" alt=""></div>
+  <div class="tile" data-t="b" style="background:#ece1cd"><img src="assets/r2d-cel.jpg" alt="" style="position:absolute;left:10%;bottom:0;width:80%;height:84%;object-fit:cover;object-position:center top"><div class="c" style="justify-content:flex-start;align-items:flex-start"><span class="pl" style="background:#84A3C8;color:#2B1D17">Fit check</span></div></div>
+  <div class="tile" data-t="p"><img class="f" src="assets/ph-leather-jeans.jpg" alt=""><img class="mk" src="assets/faceA-oat.png" alt=""></div>
+</template>
+<script>
+const T=[...document.getElementById('tiles').content.children];
+const put=(id,idx)=>{const g=document.getElementById(id);idx.forEach(i=>g.appendChild(T[i].cloneNode(true)))};
+put('g-phone',[0,1,2,3,4,5,6,7,8]);
+put('g-big',[0,1,2,3,4,5,6,7,8,9,10,11]);
+</script>
+</body>
+</html>
