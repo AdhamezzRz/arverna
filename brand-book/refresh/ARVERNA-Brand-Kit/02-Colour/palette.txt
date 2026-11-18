@@ -1,0 +1,10 @@
+ARVERNA colour palette
+
+Mocha          #93755B      RGB 147 117 91   30%   Signature: bags, boxes, profile picture
+Oat milk       #EFE6D8      RGB 239 230 216  35%   Replaces white: backgrounds, tags
+Espresso       #2B1D17      RGB 43 29 23     12%   Replaces black: text, buttons
+Washed denim   #84A3C8      RGB 132 163 200  12%   Everyday accent
+Gloss          #F2A2BE      RGB 242 162 190  6%    Pop: Reem, community, "new"
+Chrome         foil / metal                  5%    Finish only: foil logo, hardware
+
+Rules: one accent per post (denim or gloss). No pure black, no pure white, no red sale banners. Chrome is a finish, never a flat fill.

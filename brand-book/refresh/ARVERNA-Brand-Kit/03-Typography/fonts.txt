@@ -1,0 +1,9 @@
+ARVERNA typography (all free on Google Fonts)
+
+Logo ............ Use the wordmark file in 01-Logo. Never retype it.
+Headlines ....... Archivo, width 125 (Expanded), weight 800, uppercase   https://fonts.google.com/specimen/Archivo
+Arabic .......... Alexandria, 400-800                                     https://fonts.google.com/specimen/Alexandria
+Body ............ Archivo, normal width, 400 / 600
+Labels, prices .. IBM Plex Mono, 500                                      https://fonts.google.com/specimen/IBM+Plex+Mono
+Social handwriting Caveat, 700 (Instagram covers and notes only)         https://fonts.google.com/specimen/Caveat
+Receipts ........ Courier Prime (receipt posts only)                      https://fonts.google.com/specimen/Courier+Prime
