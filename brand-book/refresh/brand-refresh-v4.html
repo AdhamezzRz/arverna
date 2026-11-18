@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ARVERNA Brand Refresh v4</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Alexandria:wght@300..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+@page{size:1600px 1000px;margin:0}
+:root{--mocha:#93755B;--mocha2:#927055;--esp:#2B1D17;--oat:#EFE6D8;--denim:#84A3C8;--gloss:#F2A2BE;--chrome:#C9CDD3;--line:rgba(43,29,23,.16);
+--d:'Archivo','Helvetica Neue',Arial,sans-serif;--ar:'Alexandria','Geeza Pro',Tahoma,sans-serif;--m:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--oat);color:var(--esp);font-family:var(--d);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:1600px;height:1000px;position:relative;overflow:hidden;break-after:page;page-break-after:always;background:var(--oat)}
+.page:last-child{break-after:auto;page-break-after:auto}
+.bg-mocha{background:var(--mocha);color:var(--oat)}.bg-esp{background:var(--esp);color:var(--oat)}.bg-denim{background:var(--denim)}.bg-gloss{background:var(--gloss)}
+.a{position:absolute}
+.mono{font-family:var(--m);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.top{position:absolute;left:64px;right:64px;top:44px;display:flex;justify-content:space-between;opacity:.7}
+.foot{position:absolute;left:64px;right:64px;bottom:36px;display:flex;justify-content:space-between;opacity:.6}
+.h{font-family:var(--d);font-stretch:125%;font-weight:800;text-transform:uppercase;line-height:.92;letter-spacing:-.01em}
+.ar{font-family:var(--ar);direction:rtl}
+.p{font-size:19px;line-height:1.5;font-stretch:100%}
+.chrome-t{background:linear-gradient(175deg,#F6F7F9 8%,#C9CDD3 30%,#FBFBFC 46%,#8B9097 54%,#70757D 64%,#D5D8DC 82%,#A4A9B0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.chrome-b{background:linear-gradient(160deg,#F6F7F9,#C9CDD3 30%,#FBFBFC 46%,#8B9097 56%,#D5D8DC 80%,#A4A9B0)}
+img{display:block}
+.cover-img{object-fit:cover;width:100%;height:100%}
+.ph{position:absolute;overflow:hidden;background:#cdbfae}
+.ph img{width:100%;height:100%;object-fit:cover}
+.cap{position:absolute;left:0;bottom:-26px;font-family:var(--m);font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7;white-space:nowrap}
+.pill{display:inline-flex;align-items:center;border-radius:999px;padding:6px 13px;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-stretch:112%}
+.num{font-family:var(--m);font-size:13px;letter-spacing:.08em}
+/* palette */
+.sw{position:absolute;top:210px;height:470px;padding:24px;display:flex;flex-direction:column;justify-content:space-between}
+.sw .n{font-stretch:125%;font-weight:800;font-size:25px;text-transform:uppercase;line-height:1}
+.sw .n span{display:block;font-family:var(--ar);font-weight:600;font-size:22px;margin-top:8px;text-transform:none}
+.sw .d{font-size:14.5px;line-height:1.45}
+.sw code{font-family:var(--m);font-size:13px;display:block;margin-top:10px}
+/* IG tiles */
+.tile{container-type:size;position:relative;overflow:hidden;aspect-ratio:3/4;background:#cdbfae}
+.tile>img.f{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile .c{position:absolute;inset:0;padding:8cqw;display:flex;flex-direction:column;justify-content:space-between}
+.tile .mk{position:absolute;right:5cqw;bottom:5cqw;width:9cqw}
+.tile .tg{font-family:var(--m);font-size:4.2cqw;letter-spacing:.08em;text-transform:uppercase}
+.tile .big{font-stretch:125%;font-weight:800;text-transform:uppercase;line-height:.9}
+.tile .arb{font-family:var(--ar);font-weight:800;direction:rtl;line-height:1.15}
+.tile .pl{display:inline-block;border-radius:99cqw;padding:1.6cqw 4cqw;font-weight:700;font-size:3.9cqw;letter-spacing:.08em;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(3,1fr)}
+/* phone */
+.phone{position:absolute;width:404px;height:880px;border-radius:52px;background:#16100d;padding:12px;box-shadow:0 40px 70px -30px rgba(43,29,23,.7)}
+.scr{width:100%;height:100%;border-radius:41px;overflow:hidden;background:#fff;color:#111;font-family:var(--d);position:relative}
+.scr .sb{display:flex;justify-content:space-between;padding:14px 26px 6px;font-weight:700;font-size:14px}
+.scr .tb{display:flex;justify-content:space-between;align-items:center;padding:6px 16px 10px;font-weight:800;font-size:19px}
+.scr .hd{display:flex;align-items:center;gap:22px;padding:4px 16px}
+.av{width:84px;height:84px;border-radius:50%;padding:3px;flex:none}
+.av div{width:100%;height:100%;border-radius:50%;border:3px solid #fff;background:var(--mocha);display:grid;place-items:center}
+.av img{width:46%}
+.st{display:flex;gap:26px;font-size:13px;text-align:left}
+.st b{display:block;font-size:17px;font-weight:800}
+.bio{padding:10px 16px 0;font-size:13.5px;line-height:1.42}
+.bio b{font-weight:800}
+.bio .ar{font-size:13.5px;text-align:left;direction:rtl;unicode-bidi:plaintext}
+.bt{display:grid;grid-template-columns:1fr 1fr 40px;gap:6px;padding:12px 16px 0}
+.bt span{background:#EFEFEF;border-radius:9px;text-align:center;padding:8px 0;font-weight:700;font-size:13.5px}
+.bt span:first-child{background:var(--esp);color:var(--oat)}
+.hl{display:flex;gap:13px;padding:14px 16px 10px}
+.hl div{width:62px;text-align:center;font-size:11px;display:grid;gap:5px;justify-items:center;flex:none}
+.hl i{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;overflow:hidden;box-shadow:0 0 0 2px #fff,0 0 0 3.2px #d9d2c8}
+.hl svg{width:26px;height:26px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hl img{width:100%;height:100%;object-fit:cover}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #e6e6e6;text-align:center;font-size:12px;font-weight:700;letter-spacing:.08em}
+.tabs span{padding:9px 0}.tabs span:first-child{border-top:1.5px solid #111;margin-top:-1px}
+.scr .grid{gap:2px}
+/* big hl */
+.hlb{display:grid;gap:10px;justify-items:center;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;font-stretch:112%}
+.hlb i{width:118px;height:118px;border-radius:50%;display:grid;place-items:center;overflow:hidden;box-shadow:0 0 0 5px var(--oat),0 0 0 7px rgba(43,29,23,.25)}
+.hlb svg{width:50px;height:50px;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.hlb img{width:100%;height:100%;object-fit:cover}
+.card{position:absolute;padding:22px 24px;display:grid;gap:8px;align-content:start}
+.card .k{font-family:var(--m);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.card h3{font-stretch:125%;font-weight:800;font-size:25px;text-transform:uppercase;line-height:1}
+.card p{font-size:17px;line-height:1.45}
+.card .ar{font-size:19px;font-weight:700}
+
+/* v3 */
+.ic{position:absolute;top:4cqw;right:4cqw;width:7.5cqw;height:7.5cqw;filter:drop-shadow(0 0 1.2cqw rgba(0,0,0,.45))}
+.mk2{position:absolute;right:4.5cqw;bottom:4.5cqw;height:12cqw;width:auto;opacity:.95;filter:drop-shadow(0 0 1.6cqw rgba(0,0,0,.35))}
+.tagst{position:absolute;background:#EFE6D8;color:#2B1D17;border-radius:2.5cqw;padding:3.4cqw 4.4cqw 3.4cqw 9cqw;display:grid;gap:.6cqw;box-shadow:0 2cqw 4cqw -1.5cqw rgba(0,0,0,.45);transform:rotate(var(--r,-6deg))}
+.tagst::before{content:"";position:absolute;left:3cqw;top:50%;width:3cqw;height:3cqw;border-radius:50%;background:rgba(43,29,23,.85);transform:translateY(-50%)}
+.tagst .pr{font-stretch:125%;font-weight:800;font-size:8cqw;line-height:1}
+.tagst .nm{font-size:3.5cqw;font-weight:600;line-height:1.2}
+.tagst .ara{font-family:var(--ar);font-weight:700;font-size:4.2cqw;direction:rtl;line-height:1.2}
+.pill2{position:absolute;display:inline-flex;align-items:center;gap:1.5cqw;border-radius:99cqw;padding:1.8cqw 3.8cqw;font-weight:700;font-size:3.9cqw;letter-spacing:.06em;text-transform:uppercase;font-stretch:112%;white-space:nowrap;box-shadow:0 1.5cqw 3cqw -1cqw rgba(0,0,0,.35)}
+.pol{position:absolute;background:#FBF8F3;padding:2.4cqw 2.4cqw 8cqw;box-shadow:0 2cqw 4cqw -1.6cqw rgba(0,0,0,.45);transform:rotate(var(--r,0deg))}
+.pol img{display:block;width:100%;height:100%;object-fit:cover}
+.pol .pc{position:absolute;left:2.6cqw;right:2.6cqw;bottom:1.8cqw;font-family:var(--m);font-size:3.2cqw;color:#5b4a42;letter-spacing:.04em}
+.hand{font-family:'Caveat','Reenie Beanie',cursive}
+.half{position:absolute;top:0;bottom:0;width:50%;overflow:hidden}
+.half img{width:100%;height:100%;object-fit:cover}
+.numc{position:absolute;bottom:5cqw;width:11cqw;height:11cqw;border-radius:50%;background:#EFE6D8;color:#2B1D17;display:grid;place-items:center;font-stretch:125%;font-weight:800;font-size:6cqw;box-shadow:0 1.5cqw 3cqw -1cqw rgba(0,0,0,.4)}
+.zoom{position:absolute;border-radius:50%;border:1.2cqw solid #EFE6D8;box-shadow:0 2cqw 4cqw -1.5cqw rgba(0,0,0,.5);background-repeat:no-repeat}
+.dump{position:absolute;background:#FBF8F3;padding:1.6cqw;box-shadow:0 1.6cqw 3.2cqw -1.4cqw rgba(0,0,0,.5);transform:rotate(var(--r,0deg))}
+.dump img{display:block;width:100%;height:100%;object-fit:cover}
+.sh{font-family:var(--m);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase}
+.fmt{display:grid;grid-template-columns:196px 1fr;gap:16px;align-items:start}
+.fmt .tile{width:196px}
+.fmt h3{font-stretch:125%;font-weight:800;font-size:17px;text-transform:uppercase;line-height:1;margin-bottom:6px}
+.fmt p{font-size:14px;line-height:1.42}
+.fmt .why{font-family:var(--m);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#93755B;margin-top:8px}
+.story{position:absolute;width:300px;height:533px;border-radius:22px;overflow:hidden;box-shadow:0 34px 60px -28px rgba(0,0,0,.65);container-type:size}
+.story .bars{position:absolute;left:3cqw;right:3cqw;top:2.5cqh;display:flex;gap:1.5cqw;z-index:3}
+.story .bars i{flex:1;height:.5cqh;border-radius:2px;background:rgba(255,255,255,.45)}
+.story .bars i.on{background:#fff}
+.story .who{position:absolute;left:4cqw;top:4.2cqh;display:flex;align-items:center;gap:2.5cqw;color:#fff;font-weight:700;font-size:4.2cqw;z-index:3;text-shadow:0 1px 3px rgba(0,0,0,.4)}
+.story .who b{width:9cqw;height:9cqw;border-radius:50%;background:#93755B;display:grid;place-items:center;box-shadow:0 0 0 1.5px #fff}
+.story .who b img{width:55%}
+.hlr{display:flex;gap:13px;padding:14px 16px 10px}
+.hlr div{width:62px;text-align:center;font-size:11px;display:grid;gap:5px;justify-items:center;flex:none}
+.hlr i{width:60px;height:60px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 2px #fff,0 0 0 3.2px #d9d2c8;display:grid;place-items:center}
+.hlr img{width:100%;height:100%;object-fit:cover}
+</style>
+</head>
+<body>
+<section class="page" style="background:#93755B;color:var(--oat)">
+  <div class="top mono"><span>Brand refresh — update 04</span><span>The final mark</span></div>
+  <img class="a" src="assets/lockup-gazelle-oat.png" style="left:64px;top:150px;width:470px" alt="ARVERNA">
+  <div class="a h" style="left:64px;top:590px;font-size:34px;width:680px">The gazelle, with a natural horn.<br>Above the name you already have.</div>
+  <div class="a ar" style="left:64px;top:770px;font-size:26px;font-weight:600;text-align:left">غزالة بقرون طبيعية، فوق اسمك.</div>
+  <img class="a" src="assets/reem-poses/peace.png" style="right:140px;bottom:0;height:800px" alt="">
+  <div class="a mono" style="left:64px;top:870px;width:700px;line-height:1.8;opacity:.85">01 The horn · 02 The lockup · 03 On packaging · 04 On Instagram · 05 Reem: 12 poses · 06 Reem: 16 expressions</div><div style="display:none;line-height:2;opacity:.85">01 The horn<br>02 The lockup<br>03 On packaging<br>04 On Instagram<br>05 Reem: 12 poses<br>06 Reem: 16 expressions</div>
+  <div class="foot mono"><span>Hebron</span><span>01</span></div>
+</section><section class="page">
+  <div class="top mono"><span>01 — The horn</span><span>Before / after</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:52px">Same gazelle. A real horn.</div>
+  <div class="a" style="left:64px;top:190px;width:460px;height:560px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);display:grid;place-items:center"><img src="assets/profile-espresso.png" style="height:420px" alt=""></div>
+  <div class="a" style="left:548px;top:190px;width:460px;height:560px;background:#93755B;display:grid;place-items:center"><img src="assets/gazelle-oat.png" style="height:440px" alt=""></div>
+  <div class="a" style="left:1032px;top:190px;width:504px;height:560px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);display:grid;place-items:center"><img src="assets/gazelle-alt-espresso.png" style="height:420px" alt=""></div>
+  <div class="a mono" style="left:64px;top:766px">Before — one long sweeping horn</div>
+  <div class="a mono" style="left:548px;top:766px">After · recommended — two ringed horns</div>
+  <div class="a mono" style="left:1032px;top:766px">Option — one ringed horn</div>
+  <div class="a" style="left:64px;top:820px;width:1472px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px">
+    <p style="font-size:15.5px;line-height:1.45"><b>What changed.</b> Only the horn. The ear, the closed eye with lashes, the muzzle and the long neck line are the ones you chose.</p>
+    <p style="font-size:15.5px;line-height:1.45"><b>Why it looks real now.</b> Gazelle horns grow from just above the eye, rise, curve back, and hook forward at the tip, with rings along the front. Seen from the side you see two.</p>
+    <p style="font-size:15.5px;line-height:1.45"><b>Pick one.</b> Two horns is the most natural and balanced. One horn is lighter and simpler at very small sizes.</p>
+  </div>
+  <div class="foot mono"><span></span><span>02</span></div>
+</section><section class="page">
+  <div class="top mono"><span>02 — The lockup</span><span>Icon above the wordmark</span></div>
+  <div class="a" style="left:64px;top:96px;width:620px;height:820px;background:#93755B;display:grid;place-items:center"><img src="assets/lockup-gazelle-oat.png" style="width:440px" alt=""></div>
+  <div class="a h" style="left:740px;top:96px;font-size:48px;width:800px">The main logo</div>
+  <p class="a p" style="left:740px;top:160px;width:790px">The gazelle sits centred above your existing ARVERNA wordmark, which stays exactly as it is. Use this stacked version on Instagram, bags, boxes, tags and the website.</p>
+  <div class="a" style="left:740px;top:260px;width:796px;display:grid;grid-template-columns:repeat(5,1fr);gap:8px"><div style="aspect-ratio:4/5;background:#93755B;display:grid;place-items:center"><img src="assets/lockup-gazelle-oat.png" style="width:62%" alt=""></div><div style="aspect-ratio:4/5;background:#EFE6D8;box-shadow:inset 0 0 0 1px var(--line);display:grid;place-items:center"><img src="assets/lockup-gazelle-espresso.png" style="width:62%" alt=""></div><div style="aspect-ratio:4/5;background:#2B1D17;display:grid;place-items:center"><img src="assets/lockup-gazelle-chrome.png" style="width:62%" alt=""></div><div style="aspect-ratio:4/5;background:#84A3C8;display:grid;place-items:center"><img src="assets/lockup-gazelle-espresso.png" style="width:62%" alt=""></div><div style="aspect-ratio:4/5;background:#EFE6D8;box-shadow:inset 0 0 0 1px var(--line);display:grid;place-items:center"><img src="assets/lockup-gazelle-mocha.png" style="width:62%" alt=""></div></div>
+  <div class="a mono" style="left:740px;top:462px;opacity:.7;font-size:11.5px">Oat on mocha (main) · espresso on oat · chrome foil on espresso · on denim · mocha on oat</div>
+  <div class="a" style="left:740px;top:500px;width:796px;height:140px;background:#2B1D17;display:flex;align-items:center;justify-content:center"><img src="assets/lockuph-gazelle-oat.png" style="height:70px" alt=""></div>
+  <div class="a mono" style="left:740px;top:652px;opacity:.7">Horizontal version — website header, receipts, email</div>
+  <div class="a" style="left:740px;top:700px;width:796px;display:flex;align-items:flex-end;gap:34px"><div style="display:grid;gap:8px;justify-items:center"><div style="width:180px;height:180px;border-radius:50%;background:#93755B;display:grid;place-items:center;box-shadow:0 0 0 3px #fff,0 0 0 4px #d9d2c8"><img src="assets/lockup-gazelle-oat.png" style="width:64%" alt=""></div><span class="mono" style="font-size:11px">180 px</span></div><div style="display:grid;gap:8px;justify-items:center"><div style="width:110px;height:110px;border-radius:50%;background:#93755B;display:grid;place-items:center;box-shadow:0 0 0 3px #fff,0 0 0 4px #d9d2c8"><img src="assets/lockup-gazelle-oat.png" style="width:64%" alt=""></div><span class="mono" style="font-size:11px">110 px</span></div><div style="display:grid;gap:8px;justify-items:center"><div style="width:64px;height:64px;border-radius:50%;background:#93755B;display:grid;place-items:center;box-shadow:0 0 0 3px #fff,0 0 0 4px #d9d2c8"><img src="assets/lockup-gazelle-oat.png" style="width:64%" alt=""></div><span class="mono" style="font-size:11px">64 px</span></div><p style="font-size:15px;line-height:1.45;max-width:330px;align-self:center"><b>Instagram profile picture.</b> The stacked lockup on mocha. At the smallest sizes the gazelle carries it; the name stays readable from about 110 px.</p></div>
+  <div class="foot mono"><span></span><span>03</span></div>
+</section><section class="page bg-esp">
+  <div class="top mono"><span>03 — On packaging</span><span>Exact logo placed on the pieces</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:52px">Everything she carries home</div>
+  <div class="ph" style="left:64px;top:190px;width:560px;height:700px"><img src="assets/pack-bag.jpg" alt=""></div>
+  <div class="ph" style="left:640px;top:190px;width:290px;height:342px"><img src="assets/pack-bagstreet.jpg" alt="" style="object-position:center 40%"></div>
+  <div class="ph" style="left:946px;top:190px;width:290px;height:342px"><img src="assets/pack-tag.jpg" alt=""></div>
+  <div class="ph" style="left:1252px;top:190px;width:284px;height:342px"><img src="assets/pack-seal.jpg" alt=""></div>
+  <div class="ph" style="left:640px;top:548px;width:896px;height:342px"><img src="assets/pack-box.jpg" alt="" style="object-position:center 45%"></div>
+  <div class="a mono" style="left:64px;top:906px">Shopping bag</div>
+  <div class="a mono" style="left:640px;top:906px;color:var(--chrome)">Street bag · swing tag · tissue seal · gift box</div>
+  <div class="foot mono"><span></span><span>04</span></div>
+</section><section class="page">
+  <div class="top mono"><span>04 — On Instagram</span><span>New profile picture and corner mark</span></div>
+  <div class="phone" style="left:96px;top:70px">
+    <div class="scr">
+      <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+      <div class="tb"><span>arvernacom</span><span style="font-weight:400">≡</span></div>
+      <div class="hd"><div class="av" style="background:#d9cbb8"><div><img src="assets/lockup-gazelle-oat.png" style="width:66%" alt=""></div></div><div class="st"><div><b>1,204</b>posts</div><div><b>—</b>followers</div><div><b>312</b>following</div></div></div>
+      <div class="bio"><b>ARVERNA</b><br><span style="color:#737373">Clothing (Brand)</span><br>Everyday fits. New drop every Thursday, 8 PM.<br><span class="ar">يا غزالة، لبسك علينا · توصيل ٢–٣ أيام</span><br><span style="color:#00376B;font-weight:600">arvernaps.com</span></div>
+      <div class="bt"><span>Follow</span><span>Message</span><span>+</span></div>
+      <div class="hlr">
+ <div><i><img src="assets/ig/r13_0.jpg" alt="" style="object-position:center 30%"></i>New in</div>
+ <div><i><img src="assets/reem-bigbag.jpg" alt="" style="object-position:center 30%"></i>Drops</div>
+ <div><i><img src="assets/reem-face.jpg" alt=""></i>Reem</div>
+ <div><i><img src="assets/ig/r19_0.jpg" alt="" style="object-position:center 70%"></i>Sizes</div>
+ <div><i><img src="assets/reem-faces/love.jpg" alt=""></i>Reviews</div>
+</div>
+      <div class="tabs"><span>GRID</span><span style="color:#999">REELS</span><span style="color:#999">TAGGED</span></div>
+      <div class="grid" style=""><div class="tile"><img class="f" src="assets/ig/r05_0.jpg" alt=""><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="7" y="2.5" width="14.5" height="14.5" rx="2.5"/><path d="M17 21.5H5.2a2.7 2.7 0 0 1-2.7-2.7V7"/></svg><img class="mk2" src="assets/gazelle-oat.png" alt=""></div><div class="tile" style="background:#EFE6D8;color:#2B1D17;box-shadow:inset 0 0 0 1px rgba(43,29,23,.14)">
+ <div class="c" style="padding:6cqw;justify-content:space-between;z-index:3">
+  <div style="display:flex;justify-content:space-between;align-items:center"><span class="tg">Outfit formula</span><span style="font-family:var(--ar);font-weight:700;font-size:4.4cqw">معادلة اللبسة</span></div>
+ </div>
+ <div class="pol" style="left:5cqw;top:17cqw;width:42cqw;height:56cqw;--r:-4deg"><img src="assets/ig/r26_1.jpg" alt=""><span class="pc">leather · 300 ₪</span></div>
+ <div class="pol" style="left:52cqw;top:21cqw;width:42cqw;height:58cqw;--r:4deg"><img src="assets/ig/r13_1.jpg" alt=""><span class="pc">balloon · 150 ₪</span></div>
+ <div style="position:absolute;left:43cqw;top:43cqw;width:14cqw;height:14cqw;border-radius:50%;background:#2B1D17;color:#EFE6D8;display:grid;place-items:center;font-weight:800;font-size:9cqw;z-index:2">+</div>
+ <div style="position:absolute;left:6cqw;right:6cqw;bottom:6cqw;display:flex;justify-content:space-between;align-items:flex-end;color:#2B1D17"><div class="big" style="font-size:12cqw">= 450 ₪</div><img src="assets/gazelle-espresso.png" style="height:13cqw" alt=""></div>
+</div><div class="tile"><img class="f" src="assets/ig/r14_1.jpg" alt="">
+ <div class="tagst" style="left:6cqw;bottom:8cqw;--r:-7deg"><span class="pr" style="display:flex;align-items:center;gap:2.4cqw">250 ₪<img src="assets/gazelle-espresso.png" style="height:8cqw" alt=""></span><span class="nm">Croc leather jacket</span><span class="ara">جاكيت جلد</span></div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="7" y="2.5" width="14.5" height="14.5" rx="2.5"/><path d="M17 21.5H5.2a2.7 2.7 0 0 1-2.7-2.7V7"/></svg></div><div class="tile"><img class="f" src="assets/ig/r37_0.jpg" alt=""><img src="assets/st-peek.png" style="position:absolute;right:-6cqw;bottom:-1cqw;width:58cqw" alt=""><span class="pill2" style="left:5cqw;top:5cqw;background:#EFE6D8;color:#2B1D17">spotted in London</span></div><div class="tile"><div class="half" style="left:0"><img src="assets/ig/r32_1.jpg" alt=""></div><div class="half" style="right:0"><img src="assets/ig/r26_0.jpg" alt=""></div>
+ <div style="position:absolute;left:50%;top:0;bottom:0;width:1cqw;background:#EFE6D8;transform:translateX(-50%)"></div>
+ <div class="pill2" style="left:50%;top:6cqw;transform:translateX(-50%);background:#2B1D17;color:#EFE6D8;flex-direction:column;gap:.4cqw;padding:2.4cqw 5cqw;border-radius:5cqw"><span>this or that?</span><span style="font-family:var(--ar);text-transform:none;letter-spacing:0;font-size:4.6cqw">هاي ولا هاي؟</span></div>
+ <div class="numc" style="left:19cqw">1</div><div class="numc" style="right:19cqw">2</div></div><div class="tile"><img class="f" src="assets/ig/r15_0.jpg" alt=""><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="7" y="2.5" width="14.5" height="14.5" rx="2.5"/><path d="M17 21.5H5.2a2.7 2.7 0 0 1-2.7-2.7V7"/></svg><img class="mk2" src="assets/gazelle-oat.png" alt=""></div><div class="tile"><img class="f" src="assets/reem-wears-leather.jpg" alt=""><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><path d="M2.5 8.5h19M9 2.5l3 6M15 2.5l3 6"/><path d="M10 12v5.5l4.6-2.75z" fill="#fff"/></svg>
+ <span class="pill2" style="left:5cqw;bottom:5cqw;background:#2B1D17;color:#EFE6D8">Reem wears the drop</span></div><div class="tile" style="background:#93755B">
+ <span class="tg" style="position:absolute;left:6cqw;top:5cqw;color:#EFE6D8">photo dump · drop 12</span>
+ <div class="dump" style="left:6cqw;top:14cqw;width:42cqw;height:44cqw;--r:-3deg"><img src="assets/ig/r34_0.jpg" alt=""></div>
+ <div class="dump" style="left:52cqw;top:12cqw;width:42cqw;height:44cqw;--r:3deg"><img src="assets/ig/r36_0.jpg" alt=""></div>
+ <div class="dump" style="left:7cqw;top:63cqw;width:42cqw;height:44cqw;--r:2.5deg"><img src="assets/ig/r29_0.jpg" alt=""></div>
+ <div class="dump" style="left:51cqw;top:61cqw;width:42cqw;height:44cqw;--r:-2deg"><img src="assets/ig/r52_0.jpg" alt=""></div>
+ <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="7" y="2.5" width="14.5" height="14.5" rx="2.5"/><path d="M17 21.5H5.2a2.7 2.7 0 0 1-2.7-2.7V7"/></svg></div><div class="tile"><img class="f" src="assets/ig/r16_0.jpg" alt="">
+ <span class="pill2" style="left:5cqw;top:5cqw;background:#F2A2BE;color:#2B1D17">back in stock</span>
+ <span class="pill2" style="left:5cqw;bottom:5cqw;background:#EFE6D8;color:#2B1D17">S · M · L &nbsp;·&nbsp; 180 ₪</span><img class="mk2" src="assets/gazelle-oat.png" alt=""></div></div>
+    </div>
+  </div>
+  <div class="a h" style="left:590px;top:96px;font-size:40px;width:946px">The profile, with the new logo</div>
+  <div class="a" style="left:590px;top:170px;width:340px;display:grid;gap:14px;justify-items:center">
+    <div style="width:300px;height:300px;border-radius:50%;background:#93755B;display:grid;place-items:center;box-shadow:0 0 0 6px #fff,0 0 0 8px #d9d2c8"><img src="assets/lockup-gazelle-oat.png" style="width:66%" alt=""></div>
+    <span class="mono">Profile picture</span>
+  </div>
+  <div class="a" style="left:980px;top:180px;width:556px;display:grid;gap:0">
+    <div style="border-top:2px solid var(--esp);padding:14px 0;display:grid;gap:6px"><span class="mono">Profile picture</span><p style="font-size:15.5px;line-height:1.45">The stacked logo: gazelle above ARVERNA, oat on mocha.</p></div>
+    <div style="border-top:1px solid var(--line);padding:14px 0;display:grid;gap:6px"><span class="mono">Corner mark</span><p style="font-size:15.5px;line-height:1.45">The gazelle alone, small, in the bottom corner of each product photo.</p></div>
+    <div style="border-top:1px solid var(--line);padding:14px 0;display:grid;gap:6px"><span class="mono">Grid</span><p style="font-size:15.5px;line-height:1.45">Same real-photo grid as update 03, now carrying the new mark.</p></div>
+  </div>
+  <div class="a grid" style="left:590px;top:560px;width:946px;gap:5px;grid-template-columns:repeat(6,1fr)"><div class="tile"><img class="f" src="assets/ig/r05_0.jpg" alt=""><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="7" y="2.5" width="14.5" height="14.5" rx="2.5"/><path d="M17 21.5H5.2a2.7 2.7 0 0 1-2.7-2.7V7"/></svg><img class="mk2" src="assets/gazelle-oat.png" alt=""></div><div class="tile"><img class="f" src="assets/ig/r14_1.jpg" alt="">
+ <div class="tagst" style="left:6cqw;bottom:8cqw;--r:-7deg"><span class="pr" style="display:flex;align-items:center;gap:2.4cqw">250 ₪<img src="assets/gazelle-espresso.png" style="height:8cqw" alt=""></span><span class="nm">Croc leather jacket</span><span class="ara">جاكيت جلد</span></div><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="7" y="2.5" width="14.5" height="14.5" rx="2.5"/><path d="M17 21.5H5.2a2.7 2.7 0 0 1-2.7-2.7V7"/></svg></div><div class="tile"><img class="f" src="assets/ig/r15_0.jpg" alt=""><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="7" y="2.5" width="14.5" height="14.5" rx="2.5"/><path d="M17 21.5H5.2a2.7 2.7 0 0 1-2.7-2.7V7"/></svg><img class="mk2" src="assets/gazelle-oat.png" alt=""></div><div class="tile"><img class="f" src="assets/ig/r16_0.jpg" alt="">
+ <span class="pill2" style="left:5cqw;top:5cqw;background:#F2A2BE;color:#2B1D17">back in stock</span>
+ <span class="pill2" style="left:5cqw;bottom:5cqw;background:#EFE6D8;color:#2B1D17">S · M · L &nbsp;·&nbsp; 180 ₪</span><img class="mk2" src="assets/gazelle-oat.png" alt=""></div><div class="tile"><img class="f" src="assets/ig/r55_0.jpg" alt=""><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="7" y="2.5" width="14.5" height="14.5" rx="2.5"/><path d="M17 21.5H5.2a2.7 2.7 0 0 1-2.7-2.7V7"/></svg><img class="mk2" src="assets/gazelle-oat.png" alt=""></div><div class="tile"><img class="f" src="assets/ig/r33_0.jpg" alt=""><span class="pill2" style="left:5cqw;bottom:5cqw;background:#EFE6D8;color:#2B1D17">Suede belted · 200 ₪</span><img class="mk2" src="assets/gazelle-oat.png" alt=""></div></div>
+  <div class="foot mono"><span>Follower and post numbers are placeholders</span><span>05</span></div>
+</section><section class="page" style="background:#EFE6D8">
+  <div class="top mono"><span>05 — Reem</span><span>12 poses · transparent PNGs</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:52px">Reem, twelve ways</div>
+  <div class="a" style="left:64px;top:180px;width:1472px;display:grid;grid-template-columns:repeat(6,1fr);gap:22px 18px"><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:250px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/reem-poses/heart.png" style="max-height:250px;max-width:100%" alt=""></div><b style="font-size:14px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Heart hands</b><span class="mono" style="font-size:11px;opacity:.75">thank you, reviews</span></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:250px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/reem-poses/peace.png" style="max-height:250px;max-width:100%" alt=""></div><b style="font-size:14px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Peace + wink</b><span class="mono" style="font-size:11px;opacity:.75">greetings, new in</span></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:250px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/reem-poses/jump.png" style="max-height:250px;max-width:100%" alt=""></div><b style="font-size:14px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Jump for joy</b><span class="mono" style="font-size:11px;opacity:.75">drop is live</span></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:250px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/reem-poses/shock.png" style="max-height:250px;max-width:100%" alt=""></div><b style="font-size:14px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Shocked</b><span class="mono" style="font-size:11px;opacity:.75">sale, restock</span></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:250px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/reem-poses/think.png" style="max-height:250px;max-width:100%" alt=""></div><b style="font-size:14px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Thinking</b><span class="mono" style="font-size:11px;opacity:.75">this or that</span></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:250px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/reem-poses/runway.png" style="max-height:250px;max-width:100%" alt=""></div><b style="font-size:14px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Runway</b><span class="mono" style="font-size:11px;opacity:.75">outfit posts</span></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:250px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/reem-poses/kiss.png" style="max-height:250px;max-width:100%" alt=""></div><b style="font-size:14px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Blowing a kiss</b><span class="mono" style="font-size:11px;opacity:.75">goodnight, thanks</span></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:250px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/reem-poses/thumbs.png" style="max-height:250px;max-width:100%" alt=""></div><b style="font-size:14px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Thumbs up</b><span class="mono" style="font-size:11px;opacity:.75">order confirmed</span></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:250px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/reem-poses/shy.png" style="max-height:250px;max-width:100%" alt=""></div><b style="font-size:14px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Shy</b><span class="mono" style="font-size:11px;opacity:.75">sorry, sold out</span></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:250px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/reem-poses/bags.png" style="max-height:250px;max-width:100%" alt=""></div><b style="font-size:14px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Shopping bags</b><span class="mono" style="font-size:11px;opacity:.75">payday, haul</span></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:250px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/reem-poses/camera.png" style="max-height:250px;max-width:100%" alt=""></div><b style="font-size:14px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Camera</b><span class="mono" style="font-size:11px;opacity:.75">tag us, UGC</span></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:250px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/reem-poses/dance.png" style="max-height:250px;max-width:100%" alt=""></div><b style="font-size:14px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Happy dance</b><span class="mono" style="font-size:11px;opacity:.75">Eid, celebrations</span></div></div>
+  <div class="foot mono"><span>Each pose is labelled with when to use it</span><span>06</span></div>
+</section><section class="page">
+  <div class="top mono"><span>06 — Reem</span><span>16 expressions</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:52px">Sixteen moods</div>
+  <div class="a" style="left:64px;top:160px;width:1472px;display:grid;grid-template-columns:repeat(8,1fr);gap:14px 12px"><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/happy.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">happy</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">مبسوطة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/wink.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">wink</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">غمزة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/laugh.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">laugh</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">بتضحك</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/surprised.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">surprised</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">منبهرة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/love.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">love</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">مغرومة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/smug.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">smug</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">واثقة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/pout.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">pout</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">زعلانة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/touched.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">touched</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">متأثرة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/sleepy.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">sleepy</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">نعسانة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/shocked.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">shocked</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">مصدومة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/side-eye.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">side eye</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">شاكّة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/shy.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">shy</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">مستحية</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/cool.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">cool</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">كول</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/squeal.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">squeal</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">متحمسة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/eye-roll.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">eye roll</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">ملّانة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/reem-faces/dreamy.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">dreamy</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">سرحانة</span></div></div></div>
+  <div class="a" style="left:64px;top:660px;width:1472px;height:250px;background:#2B1D17;color:var(--oat);display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:30px 34px">
+    <div style="display:grid;gap:10px;align-content:start"><span class="mono" style="color:var(--chrome)">WhatsApp · order confirmed</span><div style="display:flex;gap:14px;align-items:flex-end"><img src="assets/reem-faces/love.jpg" style="width:110px;border-radius:14px" alt=""><div style="background:#EFE6D8;color:#2B1D17;border-radius:4px 14px 14px 14px;padding:12px 14px;font-family:var(--ar);font-size:16px;direction:rtl">وصل طلبك يا غزالة! بيوصلك خلال ٢–٣ أيام</div></div></div>
+    <div style="display:grid;gap:10px;align-content:start"><span class="mono" style="color:var(--chrome)">DM · "is it still in stock?"</span><div style="display:flex;gap:14px;align-items:flex-end"><img src="assets/reem-faces/shy.jpg" style="width:110px;border-radius:14px" alt=""><div style="background:#EFE6D8;color:#2B1D17;border-radius:4px 14px 14px 14px;padding:12px 14px;font-family:var(--ar);font-size:16px;direction:rtl">آسفين، خلص مقاس M. بنحكيلك أول ما يرجع</div></div></div>
+    <div style="display:grid;gap:10px;align-content:start"><span class="mono" style="color:var(--chrome)">Comment reply · customer photo</span><div style="display:flex;gap:14px;align-items:flex-end"><img src="assets/reem-faces/squeal.jpg" style="width:110px;border-radius:14px" alt=""><div style="background:#EFE6D8;color:#2B1D17;border-radius:4px 14px 14px 14px;padding:12px 14px;font-family:var(--ar);font-size:16px;direction:rtl">طالعة تجنني! بدنا نعمل ريبوست</div></div></div>
+  </div>
+  <div class="foot mono"><span>For Story stickers, WhatsApp replies and comment reactions</span><span>07</span></div>
+</section><section class="page bg-esp">
+  <div class="top mono"><span>06 — Reem in use</span><span>Poses on real photos</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:52px">The right Reem for every moment</div>
+  <div class="story" style="left:110px;top:190px;background:#2B1D17">
+  <img src="assets/ig/r13_0.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <div class="bars"><i class="on"></i><i></i></div><div class="who"><b><img src="assets/gazelle-oat.png" alt="" style="width:3.4cqw;height:auto"></b>arvernacom <span style="font-weight:400;opacity:.8">now</span></div>
+  <div style="position:absolute;left:8cqw;top:16cqh;background:#EFE6D8;color:#2B1D17;border-radius:4cqw;padding:3cqw 4.5cqw;display:grid;gap:.6cqh;box-shadow:0 2cqw 5cqw -2cqw rgba(0,0,0,.5);max-width:70cqw"><b style="font-stretch:112%;font-size:6cqw;text-transform:uppercase;line-height:1.05">Restocked!</b><span style="font-family:var(--ar);font-weight:700;font-size:5.4cqw;direction:rtl;text-align:left">رجع للستوك</span></div>
+  <img src="assets/reem-poses/shock.png" style="position:absolute;right:-4cqw;bottom:-1cqh;height:40cqh" alt="">
+</div><div class="story" style="left:460px;top:190px;background:#2B1D17">
+  <img src="assets/ig/r26_0.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <div class="bars"><i class="on"></i><i></i></div><div class="who"><b><img src="assets/gazelle-oat.png" alt="" style="width:3.4cqw;height:auto"></b>arvernacom <span style="font-weight:400;opacity:.8">now</span></div>
+  <div style="position:absolute;left:8cqw;top:16cqh;background:#EFE6D8;color:#2B1D17;border-radius:4cqw;padding:3cqw 4.5cqw;display:grid;gap:.6cqh;box-shadow:0 2cqw 5cqw -2cqw rgba(0,0,0,.5);max-width:70cqw"><b style="font-stretch:112%;font-size:6cqw;text-transform:uppercase;line-height:1.05">1 or 2?</b><span style="font-family:var(--ar);font-weight:700;font-size:5.4cqw;direction:rtl;text-align:left">هاي ولا هاي؟</span></div>
+  <img src="assets/reem-poses/think.png" style="position:absolute;right:-3cqw;bottom:-1cqh;height:40cqh" alt="">
+</div><div class="story" style="left:810px;top:190px;background:#2B1D17">
+  <img src="assets/ig/r15_0.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+  <div class="bars"><i class="on"></i><i></i></div><div class="who"><b><img src="assets/gazelle-oat.png" alt="" style="width:3.4cqw;height:auto"></b>arvernacom <span style="font-weight:400;opacity:.8">now</span></div>
+  <div style="position:absolute;left:8cqw;top:16cqh;background:#EFE6D8;color:#2B1D17;border-radius:4cqw;padding:3cqw 4.5cqw;display:grid;gap:.6cqh;box-shadow:0 2cqw 5cqw -2cqw rgba(0,0,0,.5);max-width:70cqw"><b style="font-stretch:112%;font-size:6cqw;text-transform:uppercase;line-height:1.05">Your order is on the way</b><span style="font-family:var(--ar);font-weight:700;font-size:5.4cqw;direction:rtl;text-align:left">طلبك بالطريق</span></div>
+  <img src="assets/reem-poses/thumbs.png" style="position:absolute;left:-4cqw;bottom:-1cqh;height:38cqh" alt="">
+</div>
+  <div class="a mono" style="left:110px;top:740px;color:var(--chrome)">Shocked · restock</div>
+  <div class="a mono" style="left:460px;top:740px;color:var(--chrome)">Thinking · poll</div>
+  <div class="a mono" style="left:810px;top:740px;color:var(--chrome)">Thumbs up · order update</div>
+  <div class="a" style="left:1160px;top:190px;width:376px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px"><div style="aspect-ratio:400/531;overflow:hidden;border-radius:8px"><img src="assets/reem-faces/love.jpg" style="width:100%;height:100%;object-fit:cover" alt=""></div><div style="aspect-ratio:400/531;overflow:hidden;border-radius:8px"><img src="assets/reem-faces/wink.jpg" style="width:100%;height:100%;object-fit:cover" alt=""></div><div style="aspect-ratio:400/531;overflow:hidden;border-radius:8px"><img src="assets/reem-faces/squeal.jpg" style="width:100%;height:100%;object-fit:cover" alt=""></div><div style="aspect-ratio:400/531;overflow:hidden;border-radius:8px"><img src="assets/reem-faces/cool.jpg" style="width:100%;height:100%;object-fit:cover" alt=""></div><div style="aspect-ratio:400/531;overflow:hidden;border-radius:8px"><img src="assets/reem-faces/shocked.jpg" style="width:100%;height:100%;object-fit:cover" alt=""></div><div style="aspect-ratio:400/531;overflow:hidden;border-radius:8px"><img src="assets/reem-faces/side-eye.jpg" style="width:100%;height:100%;object-fit:cover" alt=""></div><div style="aspect-ratio:400/531;overflow:hidden;border-radius:8px"><img src="assets/reem-faces/shy.jpg" style="width:100%;height:100%;object-fit:cover" alt=""></div><div style="aspect-ratio:400/531;overflow:hidden;border-radius:8px"><img src="assets/reem-faces/touched.jpg" style="width:100%;height:100%;object-fit:cover" alt=""></div></div>
+  <div class="a" style="left:1160px;top:440px;width:376px;display:grid;gap:0">
+    <div style="border-top:1px solid rgba(239,230,216,.25);padding:14px 0;font-size:15px;line-height:1.45"><b>Poses</b> go on Stories and posts, always smaller than the clothes.</div>
+    <div style="border-top:1px solid rgba(239,230,216,.25);padding:14px 0;font-size:15px;line-height:1.45"><b>Faces</b> become a GIPHY sticker pack and WhatsApp stickers for replies.</div>
+    <div style="border-top:1px solid rgba(239,230,216,.25);border-bottom:1px solid rgba(239,230,216,.25);padding:14px 0;font-size:15px;line-height:1.45"><b>Same outfit</b> in every pose for now; swap it for the drop's hero piece each Thursday.</div>
+  </div>
+  <div class="foot mono"><span></span><span>08</span></div>
+</section>
+</body>
+</html>
