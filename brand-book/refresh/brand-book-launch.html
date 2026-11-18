@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ARVERNA Brand Book · Launch Edition</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Alexandria:wght@300..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+@page{size:1600px 1000px;margin:0}
+:root{--mocha:#93755B;--mocha2:#927055;--esp:#2B1D17;--oat:#EFE6D8;--denim:#84A3C8;--gloss:#F2A2BE;--chrome:#C9CDD3;--line:rgba(43,29,23,.16);
+--d:'Archivo','Helvetica Neue',Arial,sans-serif;--ar:'Alexandria','Geeza Pro',Tahoma,sans-serif;--m:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--oat);color:var(--esp);font-family:var(--d);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:1600px;height:1000px;position:relative;overflow:hidden;break-after:page;page-break-after:always;background:var(--oat)}
+.page:last-child{break-after:auto;page-break-after:auto}
+.bg-mocha{background:var(--mocha);color:var(--oat)}.bg-esp{background:var(--esp);color:var(--oat)}.bg-denim{background:var(--denim)}.bg-gloss{background:var(--gloss)}
+.a{position:absolute}
+.mono{font-family:var(--m);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.top{position:absolute;left:64px;right:64px;top:44px;display:flex;justify-content:space-between;opacity:.7}
+.foot{position:absolute;left:64px;right:64px;bottom:36px;display:flex;justify-content:space-between;opacity:.6}
+.h{font-family:var(--d);font-stretch:125%;font-weight:800;text-transform:uppercase;line-height:.92;letter-spacing:-.01em}
+.ar{font-family:var(--ar);direction:rtl}
+.p{font-size:19px;line-height:1.5;font-stretch:100%}
+.chrome-t{background:linear-gradient(175deg,#F6F7F9 8%,#C9CDD3 30%,#FBFBFC 46%,#8B9097 54%,#70757D 64%,#D5D8DC 82%,#A4A9B0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.chrome-b{background:linear-gradient(160deg,#F6F7F9,#C9CDD3 30%,#FBFBFC 46%,#8B9097 56%,#D5D8DC 80%,#A4A9B0)}
+img{display:block}
+.cover-img{object-fit:cover;width:100%;height:100%}
+.ph{position:absolute;overflow:hidden;background:#cdbfae}
+.ph img{width:100%;height:100%;object-fit:cover}
+.cap{position:absolute;left:0;bottom:-26px;font-family:var(--m);font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7;white-space:nowrap}
+.pill{display:inline-flex;align-items:center;border-radius:999px;padding:6px 13px;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-stretch:112%}
+.num{font-family:var(--m);font-size:13px;letter-spacing:.08em}
+/* palette */
+.sw{position:absolute;top:210px;height:470px;padding:24px;display:flex;flex-direction:column;justify-content:space-between}
+.sw .n{font-stretch:125%;font-weight:800;font-size:25px;text-transform:uppercase;line-height:1}
+.sw .n span{display:block;font-family:var(--ar);font-weight:600;font-size:22px;margin-top:8px;text-transform:none}
+.sw .d{font-size:14.5px;line-height:1.45}
+.sw code{font-family:var(--m);font-size:13px;display:block;margin-top:10px}
+/* IG tiles */
+.tile{container-type:size;position:relative;overflow:hidden;aspect-ratio:3/4;background:#cdbfae}
+.tile>img.f{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile .c{position:absolute;inset:0;padding:8cqw;display:flex;flex-direction:column;justify-content:space-between}
+.tile .mk{position:absolute;right:5cqw;bottom:5cqw;width:9cqw}
+.tile .tg{font-family:var(--m);font-size:4.2cqw;letter-spacing:.08em;text-transform:uppercase}
+.tile .big{font-stretch:125%;font-weight:800;text-transform:uppercase;line-height:.9}
+.tile .arb{font-family:var(--ar);font-weight:800;direction:rtl;line-height:1.15}
+.tile .pl{display:inline-block;border-radius:99cqw;padding:1.6cqw 4cqw;font-weight:700;font-size:3.9cqw;letter-spacing:.08em;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(3,1fr)}
+/* phone */
+.phone{position:absolute;width:404px;height:880px;border-radius:52px;background:#16100d;padding:12px;box-shadow:0 40px 70px -30px rgba(43,29,23,.7)}
+.scr{width:100%;height:100%;border-radius:41px;overflow:hidden;background:#fff;color:#111;font-family:var(--d);position:relative}
+.scr .sb{display:flex;justify-content:space-between;padding:14px 26px 6px;font-weight:700;font-size:14px}
+.scr .tb{display:flex;justify-content:space-between;align-items:center;padding:6px 16px 10px;font-weight:800;font-size:19px}
+.scr .hd{display:flex;align-items:center;gap:22px;padding:4px 16px}
+.av{width:84px;height:84px;border-radius:50%;padding:3px;flex:none}
+.av div{width:100%;height:100%;border-radius:50%;border:3px solid #fff;background:var(--mocha);display:grid;place-items:center}
+.av img{width:46%}
+.st{display:flex;gap:26px;font-size:13px;text-align:left}
+.st b{display:block;font-size:17px;font-weight:800}
+.bio{padding:10px 16px 0;font-size:13.5px;line-height:1.42}
+.bio b{font-weight:800}
+.bio .ar{font-size:13.5px;text-align:left;direction:rtl;unicode-bidi:plaintext}
+.bt{display:grid;grid-template-columns:1fr 1fr 40px;gap:6px;padding:12px 16px 0}
+.bt span{background:#EFEFEF;border-radius:9px;text-align:center;padding:8px 0;font-weight:700;font-size:13.5px}
+.bt span:first-child{background:var(--esp);color:var(--oat)}
+.hl{display:flex;gap:13px;padding:14px 16px 10px}
+.hl div{width:62px;text-align:center;font-size:11px;display:grid;gap:5px;justify-items:center;flex:none}
+.hl i{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;overflow:hidden;box-shadow:0 0 0 2px #fff,0 0 0 3.2px #d9d2c8}
+.hl svg{width:26px;height:26px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hl img{width:100%;height:100%;object-fit:cover}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #e6e6e6;text-align:center;font-size:12px;font-weight:700;letter-spacing:.08em}
+.tabs span{padding:9px 0}.tabs span:first-child{border-top:1.5px solid #111;margin-top:-1px}
+.scr .grid{gap:2px}
+/* big hl */
+.hlb{display:grid;gap:10px;justify-items:center;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;font-stretch:112%}
+.hlb i{width:118px;height:118px;border-radius:50%;display:grid;place-items:center;overflow:hidden;box-shadow:0 0 0 5px var(--oat),0 0 0 7px rgba(43,29,23,.25)}
+.hlb svg{width:50px;height:50px;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.hlb img{width:100%;height:100%;object-fit:cover}
+.card{position:absolute;padding:22px 24px;display:grid;gap:8px;align-content:start}
+.card .k{font-family:var(--m);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.card h3{font-stretch:125%;font-weight:800;font-size:25px;text-transform:uppercase;line-height:1}
+.card p{font-size:17px;line-height:1.45}
+.card .ar{font-size:19px;font-weight:700}
+
+/* v3 */
+.ic{position:absolute;top:4cqw;right:4cqw;width:7.5cqw;height:7.5cqw;filter:drop-shadow(0 0 1.2cqw rgba(0,0,0,.45))}
+.mk2{position:absolute;right:4.5cqw;bottom:4.5cqw;width:8.5cqw;opacity:.95;filter:drop-shadow(0 0 1.6cqw rgba(0,0,0,.35))}
+.tagst{position:absolute;background:#EFE6D8;color:#2B1D17;border-radius:2.5cqw;padding:3.4cqw 4.4cqw 3.4cqw 9cqw;display:grid;gap:.6cqw;box-shadow:0 2cqw 4cqw -1.5cqw rgba(0,0,0,.45);transform:rotate(var(--r,-6deg))}
+.tagst::before{content:"";position:absolute;left:3cqw;top:50%;width:3cqw;height:3cqw;border-radius:50%;background:rgba(43,29,23,.85);transform:translateY(-50%)}
+.tagst .pr{font-stretch:125%;font-weight:800;font-size:8cqw;line-height:1}
+.tagst .nm{font-size:3.5cqw;font-weight:600;line-height:1.2}
+.tagst .ara{font-family:var(--ar);font-weight:700;font-size:4.2cqw;direction:rtl;line-height:1.2}
+.pill2{position:absolute;display:inline-flex;align-items:center;gap:1.5cqw;border-radius:99cqw;padding:1.8cqw 3.8cqw;font-weight:700;font-size:3.9cqw;letter-spacing:.06em;text-transform:uppercase;font-stretch:112%;white-space:nowrap;box-shadow:0 1.5cqw 3cqw -1cqw rgba(0,0,0,.35)}
+.pol{position:absolute;background:#FBF8F3;padding:2.4cqw 2.4cqw 8cqw;box-shadow:0 2cqw 4cqw -1.6cqw rgba(0,0,0,.45);transform:rotate(var(--r,0deg))}
+.pol img{display:block;width:100%;height:100%;object-fit:cover}
+.pol .pc{position:absolute;left:2.6cqw;right:2.6cqw;bottom:1.8cqw;font-family:var(--m);font-size:3.2cqw;color:#5b4a42;letter-spacing:.04em}
+.hand{font-family:'Caveat','Reenie Beanie',cursive}
+.half{position:absolute;top:0;bottom:0;width:50%;overflow:hidden}
+.half img{width:100%;height:100%;object-fit:cover}
+.numc{position:absolute;bottom:5cqw;width:11cqw;height:11cqw;border-radius:50%;background:#EFE6D8;color:#2B1D17;display:grid;place-items:center;font-stretch:125%;font-weight:800;font-size:6cqw;box-shadow:0 1.5cqw 3cqw -1cqw rgba(0,0,0,.4)}
+.zoom{position:absolute;border-radius:50%;border:1.2cqw solid #EFE6D8;box-shadow:0 2cqw 4cqw -1.5cqw rgba(0,0,0,.5);background-repeat:no-repeat}
+.dump{position:absolute;background:#FBF8F3;padding:1.6cqw;box-shadow:0 1.6cqw 3.2cqw -1.4cqw rgba(0,0,0,.5);transform:rotate(var(--r,0deg))}
+.dump img{display:block;width:100%;height:100%;object-fit:cover}
+.sh{font-family:var(--m);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase}
+.fmt{display:grid;grid-template-columns:196px 1fr;gap:16px;align-items:start}
+.fmt .tile{width:196px}
+.fmt h3{font-stretch:125%;font-weight:800;font-size:17px;text-transform:uppercase;line-height:1;margin-bottom:6px}
+.fmt p{font-size:14px;line-height:1.42}
+.fmt .why{font-family:var(--m);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#93755B;margin-top:8px}
+.story{position:absolute;width:300px;height:533px;border-radius:22px;overflow:hidden;box-shadow:0 34px 60px -28px rgba(0,0,0,.65);container-type:size}
+.story .bars{position:absolute;left:3cqw;right:3cqw;top:2.5cqh;display:flex;gap:1.5cqw;z-index:3}
+.story .bars i{flex:1;height:.5cqh;border-radius:2px;background:rgba(255,255,255,.45)}
+.story .bars i.on{background:#fff}
+.story .who{position:absolute;left:4cqw;top:4.2cqh;display:flex;align-items:center;gap:2.5cqw;color:#fff;font-weight:700;font-size:4.2cqw;z-index:3;text-shadow:0 1px 3px rgba(0,0,0,.4)}
+.story .who b{width:9cqw;height:9cqw;border-radius:50%;background:#93755B;display:grid;place-items:center;box-shadow:0 0 0 1.5px #fff}
+.story .who b img{width:55%}
+.hlr{display:flex;gap:13px;padding:14px 16px 10px}
+.hlr div{width:62px;text-align:center;font-size:11px;display:grid;gap:5px;justify-items:center;flex:none}
+.hlr i{width:60px;height:60px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 2px #fff,0 0 0 3.2px #d9d2c8;display:grid;place-items:center}
+.hlr img{width:100%;height:100%;object-fit:cover}
+
+.lt{container-type:size;position:relative;overflow:hidden;aspect-ratio:4/5;background:#93755B}
+.lt>img.f{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lt .cp{position:absolute;left:7cqw;right:7cqw;display:grid;gap:1.2cqw}
+.lt .en{font-family:var(--d);font-stretch:125%;font-weight:800;text-transform:uppercase;line-height:.95;font-size:8.5cqw;color:#EFE6D8}
+.lt .arx{font-family:var(--ar);font-weight:800;direction:rtl;text-align:left;unicode-bidi:plaintext;font-size:7cqw;color:#EFE6D8;line-height:1.2}
+.lt .sm{font-family:var(--m);font-size:3.4cqw;letter-spacing:.1em;text-transform:uppercase;color:#EFE6D8;opacity:.85}
+.lt .lk{position:absolute;right:6cqw;bottom:6cqw;width:20cqw}
+.lt .num{position:absolute;left:6cqw;top:6cqw;font-family:var(--m);font-size:3.4cqw;letter-spacing:.1em;color:#EFE6D8}
+.shadowtxt{text-shadow:0 .4cqw 2cqw rgba(0,0,0,.35)}
+.cap2{font-family:var(--m);font-size:12px;letter-spacing:.07em;text-transform:uppercase;opacity:.75;margin-top:8px}
+.copy{font-size:14px;line-height:1.45;margin-top:4px}
+.copy .ar{font-family:var(--ar);direction:rtl;text-align:left;unicode-bidi:plaintext}
+.strip{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.strip img{width:100%;min-width:0;aspect-ratio:3/4;object-fit:cover;display:block}
+.grad{position:absolute;left:0;right:0;bottom:0;height:55%;background:linear-gradient(transparent,rgba(30,20,15,.78))}
+.strip.v img{aspect-ratio:9/16}
+.row{display:grid;gap:0}
+.row>div{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:12px 0;border-top:1px solid var(--line)}
+.row>div:last-child{border-bottom:1px solid var(--line)}
+.row .k{font-family:var(--m);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding-top:3px}
+.dk .row>div{border-color:rgba(239,230,216,.22)}
+.day{display:grid;grid-template-columns:118px 1fr 210px;gap:18px;align-items:center;padding:12px 0;border-top:1px solid rgba(239,230,216,.2)}
+.day .d1{font-family:var(--d);font-stretch:125%;font-weight:800;font-size:18px;text-transform:uppercase;line-height:1.05}
+.day .d1 span{display:block;font-family:var(--m);font-weight:400;font-size:11.5px;letter-spacing:.08em;opacity:.7;margin-top:3px}
+.day p{font-size:15px;line-height:1.4}
+.day .th{display:flex;gap:6px;justify-content:flex-end}
+.day .th img{height:62px;aspect-ratio:4/5;object-fit:cover;border-radius:3px}
+.phase{display:inline-block;font-family:var(--m);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:99px;margin-left:8px;vertical-align:2px}
+</style>
+</head>
+<body>
+<section class="page" style="background:#8f6f55;color:var(--oat)">
+  <img class="a" src="assets/v5/launch/t-portrait.jpg" style="right:0;top:0;width:800px;height:1000px;object-fit:cover" alt="">
+  <div class="a" style="left:740px;top:0;width:140px;height:1000px;background:linear-gradient(90deg,#8f6f55,rgba(143,111,85,0))"></div>
+  <div class="top mono" style="right:864px"><span>Brand book · launch edition</span><span></span></div>
+  <img class="a" src="assets/lockup-oat.png" style="left:64px;top:130px;width:380px" alt="ARVERNA">
+  <div class="a h" style="left:64px;top:520px;font-size:52px;width:720px;white-space:nowrap">Born graceful.</div>
+  <div class="a ar" style="left:64px;top:600px;font-size:46px;font-weight:800;text-align:left">غزالة من يومك.</div>
+  <div class="a mono" style="left:64px;top:770px;width:640px;line-height:2;opacity:.85">Slogan · Story · Why the gazelle · Meet Reem · Poses & moods<br>The launch: teasers, reveal, animations, 10-day plan</div>
+  <div class="foot mono" style="right:864px"><span>Hebron</span><span>01</span></div>
+</section><section class="page bg-esp">
+  <div class="top mono"><span>01 — The slogan</span><span>What we say</span></div>
+  <div class="a h" style="left:64px;top:150px;font-size:112px;line-height:.9;width:860px">Born<br>graceful.</div>
+  <div class="a ar" style="left:64px;top:390px;font-size:84px;font-weight:800;text-align:left;color:#C9A98A">غزالة من يومك.</div>
+  <p class="a p" style="left:64px;top:580px;width:760px;color:#E6DACA">"You've been a gazelle since day one." It's the compliment every girl here already knows, turned into a promise: you don't need to become anything. You were born graceful. We just dress it.</p>
+  <div class="a" style="left:960px;top:150px;width:576px;display:grid;gap:0" class="dk">
+    <div style="border-top:1px solid rgba(239,230,216,.25);padding:18px 0;display:grid;gap:6px"><span class="mono" style="color:var(--chrome)">Slogan</span><span style="font-size:22px;font-weight:700">Born graceful. · غزالة من يومك.</span><span style="font-size:14.5px;opacity:.8">Bags, Reels endings, the website hero, the packaging insert.</span></div>
+    <div style="border-top:1px solid rgba(239,230,216,.25);padding:18px 0;display:grid;gap:6px"><span class="mono" style="color:var(--chrome)">Greeting</span><span style="font-size:22px;font-weight:700">يا غزالة</span><span style="font-size:14.5px;opacity:.8">How Reem and the brand say hi, in captions, DMs and WhatsApp.</span></div>
+    <div style="border-top:1px solid rgba(239,230,216,.25);padding:18px 0;display:grid;gap:6px"><span class="mono" style="color:var(--chrome)">Descriptor</span><span style="font-size:22px;font-weight:700">Everyday fits for every gazelle.</span><span style="font-size:14.5px;opacity:.8">Instagram bio and Google description.</span></div>
+    <div style="border-top:1px solid rgba(239,230,216,.25);border-bottom:1px solid rgba(239,230,216,.25);padding:18px 0;display:grid;gap:6px"><span class="mono" style="color:var(--chrome)">Alternatives</span><span style="font-size:16px;line-height:1.5">Walk like a gazelle. · امشي زي الغزالة<br>Light on your feet. · خفيفة وأنيقة</span></div>
+  </div>
+  <img class="a" src="assets/mark-oat.png" style="right:64px;bottom:60px;height:150px;opacity:.9" alt="">
+  <div class="foot mono"><span></span><span>02</span></div>
+</section><section class="page">
+  <div class="top mono"><span>02 — The brand story</span><span>For the About page, the launch Reel and the order card</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:52px">The girl they call a gazelle</div>
+  <div class="a" style="left:64px;top:190px;width:700px;display:grid;gap:16px;font-size:18px;line-height:1.65">
+    <p>In the hills around Hebron lives the mountain gazelle. Light on her feet, quick, alert, impossible not to watch.</p>
+    <p>Here, we've always used her name as the best compliment. When a girl walks in and the room turns, someone says it: <b>«يا غزالة»</b>.</p>
+    <p>ARVERNA was born in the same city, for that same girl. She has a full day: campus at 8, coffee at 4, a night out at 9. She saves looks from everywhere and wants them now, not in three weeks.</p>
+    <p>So we bring them to her door in two to three days. New pieces every Thursday. Real fits, honest prices, and a friend called Reem who always knows what's new.</p>
+    <p style="font-family:var(--d);font-stretch:125%;font-weight:800;text-transform:uppercase;font-size:24px;line-height:1.1;margin-top:6px">You were born graceful.<br>We just dress it.</p>
+  </div>
+  <div class="a" style="left:836px;top:190px;width:700px;display:grid;gap:16px;font-family:var(--ar);direction:rtl;text-align:right;font-size:19px;line-height:1.95">
+    <p>بجبال الخليل بتعيش الغزالة الجبلية. خفيفة، سريعة، منتبهة، وما بتقدر ما تطّلع عليها.</p>
+    <p>وعنّا، اسمها هو أحلى مدح. لمّا بنت تفوت وكل العيون تلتفت، دايمًا في حدا بيقول: <b>«يا غزالة»</b>.</p>
+    <p>أرڤيرنا انولدت بنفس المدينة، لنفس البنت. يومها مليان: جامعة الساعة ٨، قهوة الساعة ٤، وطلعة الساعة ٩. بتحفظ لوكات من كل مكان، وبدها إياها هلّق، مش بعد ثلاث أسابيع.</p>
+    <p>فإحنا بنوصّلها لباب بيتها خلال ٢–٣ أيام. قطع جديدة كل خميس، مقاسات حقيقية، أسعار واضحة، وصاحبة اسمها ريم بتعرف دايمًا شو الجديد.</p>
+    <p style="font-weight:800;font-size:26px;line-height:1.5;margin-top:6px">إنتِ غزالة من يومك.<br>وإحنا بس بنلبّسك.</p>
+  </div>
+  <div class="a" style="left:64px;top:700px;width:1472px;height:210px;background:#93755B;color:var(--oat);display:grid;grid-template-columns:300px 1fr 1fr;gap:34px;align-items:center;padding:0 34px 0 0;overflow:hidden">
+    <img src="assets/v5/launch/t-city.jpg" style="width:300px;height:210px;object-fit:cover" alt="">
+    <div style="display:grid;gap:8px"><span class="mono">One-line version · bio, website</span><span style="font-size:20px;font-weight:700;line-height:1.35">Everyday fits from Hebron, at your door in 2–3 days. Born graceful.</span></div>
+    <div style="display:grid;gap:8px"><span class="mono">Order card</span><span style="font-family:var(--ar);font-size:20px;font-weight:700;line-height:1.6;direction:rtl;text-align:right">وصلك طلبك يا غزالة 🤎<br>إنتِ غزالة من يومك، وإحنا بس بنلبّسك.</span></div>
+  </div>
+  <div class="foot mono"><span>Have a native speaker read the Arabic before publishing</span><span>03</span></div>
+</section><section class="page">
+  <div class="top mono"><span>03 — Why the gazelle</span><span>The icon</span></div>
+  <div class="a" style="left:64px;top:96px;width:560px;height:820px;background:#93755B;display:grid;place-items:center"><img src="assets/mark-oat.png" style="height:500px" alt=""></div>
+  <div class="a h" style="left:690px;top:96px;font-size:52px;width:846px">Four reasons it's a gazelle</div>
+  <div class="a" style="left:690px;top:200px;width:846px;display:grid;grid-template-columns:1fr 1fr;gap:34px 34px"><div style="border-top:2px solid var(--esp);padding-top:14px;display:grid;gap:8px;align-content:start"><span class="mono">01</span><h3 style="font-stretch:125%;font-weight:800;font-size:22px;text-transform:uppercase;line-height:1">It's from here</h3><p style="font-size:15.5px;line-height:1.45">The mountain gazelle is native to the hills of Palestine, around Hebron included. Our symbol comes from our own landscape, not a stock idea.</p><span style="font-family:var(--ar);font-weight:700;font-size:18px;color:var(--mocha)">من أرضنا</span></div><div style="border-top:2px solid var(--esp);padding-top:14px;display:grid;gap:8px;align-content:start"><span class="mono">02</span><h3 style="font-stretch:125%;font-weight:800;font-size:22px;text-transform:uppercase;line-height:1">It's our compliment</h3><p style="font-size:15.5px;line-height:1.45">«يا غزالة» is what girls here already say to each other. Every time someone says it, they say our brand.</p><span style="font-family:var(--ar);font-weight:700;font-size:18px;color:var(--mocha)">من كلامنا</span></div><div style="border-top:2px solid var(--esp);padding-top:14px;display:grid;gap:8px;align-content:start"><span class="mono">03</span><h3 style="font-stretch:125%;font-weight:800;font-size:22px;text-transform:uppercase;line-height:1">It moves like her</h3><p style="font-size:15.5px;line-height:1.45">Light, quick, confident. That's everyday fashion: clothes that keep up with her day.</p><span style="font-family:var(--ar);font-weight:700;font-size:18px;color:var(--mocha)">زي حركتها</span></div><div style="border-top:2px solid var(--esp);padding-top:14px;display:grid;gap:8px;align-content:start"><span class="mono">04</span><h3 style="font-stretch:125%;font-weight:800;font-size:22px;text-transform:uppercase;line-height:1">It's rare</h3><p style="font-size:15.5px;line-height:1.45">The mountain gazelle is now endangered. It makes the mark precious, and gives the brand a real cause if you want one later.</p><span style="font-family:var(--ar);font-weight:700;font-size:18px;color:var(--mocha)">نادرة</span></div></div>
+  <div class="a" style="left:690px;top:720px;width:846px;background:#EFE6D8;box-shadow:inset 0 0 0 1px var(--line);padding:22px 26px;display:grid;gap:8px"><span class="mono">And the details</span><p style="font-size:15.5px;line-height:1.5">The closed eye with long lashes makes it hers, not a hunting emblem. One sweeping horn reads as motion. The neck line falls like fabric. She looks calm and sure of herself, which is exactly how we want customers to feel in our clothes.</p></div>
+  <div class="foot mono"><span>Conservation status: mountain gazelle listed as endangered</span><span>04</span></div>
+</section><section class="page bg-esp">
+  <div class="top mono"><span>04 — The logo</span><span>Bags: wordmark only · tags, boxes, seals: with the gazelle</span></div>
+  <div class="a" style="left:64px;top:96px;width:470px;height:560px;background:#93755B;display:grid;place-items:center"><img src="assets/lockup-oat.png" style="width:300px" alt=""></div>
+  <div class="a" style="left:64px;top:672px;width:470px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+    <div style="aspect-ratio:1;background:#EFE6D8;display:grid;place-items:center"><img src="assets/lockup-espresso.png" style="width:66%" alt=""></div>
+    <div style="aspect-ratio:1;background:#1c130f;display:grid;place-items:center;box-shadow:inset 0 0 0 1px #4a3830"><img src="assets/lockup-chrome.png" style="width:66%" alt=""></div>
+    <div style="aspect-ratio:1;background:#84A3C8;display:grid;place-items:center"><img src="assets/lockup-espresso.png" style="width:66%" alt=""></div>
+  </div>
+  <div class="ph" style="left:560px;top:96px;width:420px;height:525px"><img src="assets/pack-bag.jpg" alt=""></div>
+  <div class="ph" style="left:996px;top:96px;width:265px;height:525px"><img src="assets/pack-tag.jpg" alt=""></div>
+  <div class="ph" style="left:1277px;top:96px;width:259px;height:525px"><img src="assets/pack-bagstreet.jpg" alt="" style="object-position:center 35%"></div>
+  <div class="ph" style="left:560px;top:637px;width:600px;height:280px"><img src="assets/pack-box.jpg" alt="" style="object-position:center 45%"></div>
+  <div class="ph" style="left:1176px;top:637px;width:360px;height:280px"><img src="assets/pack-seal.jpg" alt="" style="object-position:center 45%"></div>
+  <div class="foot mono"><span>Logo placed exactly on the photos, not redrawn by AI · shopping bags carry only the ARVERNA wordmark</span><span>05</span></div>
+</section><section class="page" style="background:#8a6a50;color:var(--oat)">
+  <img class="a" src="assets/v5/launch/hero.jpg" style="left:0;top:0;width:760px;height:1000px;object-fit:cover" alt="Reem">
+  <div class="top mono" style="left:824px"><span>05 — Meet Reem</span><span>The face of ARVERNA</span></div>
+  <div class="a h" style="left:824px;top:92px;font-size:120px">Reem</div>
+  <div class="a ar" style="right:64px;top:100px;font-size:80px;font-weight:800;color:#F2C6D2">ريم</div>
+  <div class="a dk" style="left:824px;top:250px;width:712px"><div class="row">
+    <div><span class="k">Name</span><span style="font-size:16px;line-height:1.4">Reem means gazelle in Arabic. The brand icon, brought to life.</span></div>
+    <div><span class="k">From</span><span style="font-size:16px;line-height:1.4">The old city of Hebron. Knows every stone alley and every café.</span></div>
+    <div><span class="k">Personality</span><span style="font-size:16px;line-height:1.4">Confident, funny, a little dramatic, always first to the Thursday drop. Honest about fit.</span></div>
+    <div><span class="k">Loves</span><span style="font-size:16px;line-height:1.4">Wide jeans, leather jackets, iced Spanish latte, voice notes to her friends.</span></div>
+    <div><span class="k">Says</span><span style="font-size:16px;line-height:1.4"><span class="ar" style="font-weight:700">«يا غزالة»</span> to everyone. <span class="ar" style="font-weight:700">«نزل الدروب!»</span> on Thursdays.</span></div>
+    <div><span class="k">Look</span><span style="font-size:16px;line-height:1.4">Soft mocha fur, real gazelle horns, long lashes like the logo, oat hoodie, pink mini bag.</span></div>
+  </div></div>
+  <div class="a" style="left:824px;top:740px;width:712px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+    <div style="background:var(--oat);color:var(--esp);padding:16px;display:grid;gap:6px;align-content:start"><b style="font-stretch:112%;text-transform:uppercase;font-size:14px">A face</b><span style="font-size:13.5px;line-height:1.4">The community talks to someone, not a logo.</span></div>
+    <div style="background:var(--oat);color:var(--esp);padding:16px;display:grid;gap:6px;align-content:start"><b style="font-stretch:112%;text-transform:uppercase;font-size:14px">A model</b><span style="font-size:13.5px;line-height:1.4">She wears every drop, so new pieces get a story.</span></div>
+    <div style="background:var(--oat);color:var(--esp);padding:16px;display:grid;gap:6px;align-content:start"><b style="font-stretch:112%;text-transform:uppercase;font-size:14px">Ours only</b><span style="font-size:13.5px;line-height:1.4">Suppliers share photos. Nobody else has Reem.</span></div>
+  </div>
+  <div class="foot mono" style="left:824px"><span></span><span>06</span></div>
+</section><section class="page" style="background:#EFE6D8">
+  <div class="top mono"><span>06 — Reem</span><span>16 poses · transparent PNGs · natural horns</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:52px">Sixteen poses</div>
+  <div class="a" style="left:64px;top:190px;width:1472px;display:grid;grid-template-columns:repeat(8,1fr);gap:44px 16px"><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/heart.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Heart hands</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/peace.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Peace + wink</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/jump.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Jump for joy</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/shock.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Shocked</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/think.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Thinking</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/runway.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Runway</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/kiss.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Blowing a kiss</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/thumbs.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Thumbs up</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/shy.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Shy</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/bags.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Shopping bags</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/camera.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Camera</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/dance.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Happy dance</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/point.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Look!</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/sign.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Holding a sign</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/phone.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Scrolling</b></div><div style="display:grid;gap:6px;justify-items:center;text-align:center"><div style="height:270px;display:flex;align-items:flex-end;justify-content:center"><img src="assets/v5/poses/latte.png" style="max-height:270px;max-width:100%" alt=""></div><b style="font-size:13px;font-stretch:112%;text-transform:uppercase;letter-spacing:.04em">Latte break</b></div></div>
+  <div class="foot mono"><span>Cut-outs ready for posts, Stories and stickers</span><span>07</span></div>
+</section><section class="page">
+  <div class="top mono"><span>06 — Reem</span><span>16 expressions</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:52px">Sixteen moods</div>
+  <div class="a" style="left:64px;top:170px;width:1472px;display:grid;grid-template-columns:repeat(8,1fr);gap:16px 12px"><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/happy.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">happy</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">مبسوطة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/wink.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">wink</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">غمزة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/laugh.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">laugh</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">بتضحك</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/surprised.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">surprised</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">منبهرة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/love.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">love</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">مغرومة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/smug.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">smug</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">واثقة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/pout.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">pout</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">زعلانة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/touched.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">touched</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">متأثرة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/sleepy.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">sleepy</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">نعسانة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/shocked.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">shocked</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">مصدومة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/side-eye.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">side eye</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">شاكّة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/shy.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">shy</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">مستحية</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/cool.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">cool</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">كول</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/squeal.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">squeal</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">متحمسة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/eye-roll.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">eye roll</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">ملّانة</span></div></div><div style="display:grid;gap:6px"><div style="aspect-ratio:400/450;overflow:hidden"><img src="assets/v5/faces/dreamy.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt=""></div><div style="display:flex;justify-content:space-between;align-items:baseline"><span class="mono" style="font-size:11.5px">dreamy</span><span style="font-family:var(--ar);font-weight:700;font-size:14px">سرحانة</span></div></div></div>
+  <div class="a" style="left:64px;top:690px;width:1472px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px">
+    <p style="font-size:15.5px;line-height:1.45"><b>Sticker pack.</b> All sixteen become a GIPHY pack for Instagram Stories and a WhatsApp sticker pack girls can download.</p>
+    <p style="font-size:15.5px;line-height:1.45"><b>Replies.</b> The team answers DMs and comments with Reem's faces: love for a tagged photo, shy for sold out, squeal for a big order.</p>
+    <p style="font-size:15.5px;line-height:1.45"><b>Reactions.</b> Shocked for price drops, side-eye for "still thinking about it?", cool for new arrivals.</p>
+  </div>
+  <div class="foot mono"><span></span><span>08</span></div>
+</section><section class="page bg-esp">
+  <div class="top mono"><span>06 — Reem</span><span>She wears what we sell</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:52px">Her wardrobe is our collection</div>
+  <div class="ph" style="left:64px;top:190px;width:900px;height:600px;background:#EFE6D8"><img src="assets/v5/launch/t-lineup.jpg" alt=""></div>
+  <div class="ph" style="left:980px;top:190px;width:270px;height:340px"><img src="assets/ig/r26_0.jpg" alt=""></div>
+  <div class="ph" style="left:1266px;top:190px;width:270px;height:340px"><img src="assets/v5/launch/o-leather.jpg" alt=""></div>
+  <div class="ph" style="left:980px;top:546px;width:270px;height:244px"><img src="assets/ig/r10_0.jpg" alt="" style="object-position:center 30%"></div>
+  <div class="ph" style="left:1266px;top:546px;width:270px;height:244px"><img src="assets/v5/launch/o-skirt.jpg" alt="" style="object-position:center 40%"></div>
+  <div class="a" style="left:64px;top:820px;width:1472px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px">
+    <p style="font-size:15.5px;line-height:1.45;color:#E6DACA"><b style="color:var(--oat)">Made from real pieces.</b> The leather jacket, balloon jeans and denim maxi skirt come from your real product photos.</p>
+    <p style="font-size:15.5px;line-height:1.45;color:#E6DACA"><b style="color:var(--oat)">One hero piece a week.</b> Each Thursday Reem wears the drop's best piece, next to the real photo.</p>
+    <p style="font-size:15.5px;line-height:1.45;color:#E6DACA"><b style="color:var(--oat)">Always fully covered.</b> Modest, real outfits she could actually wear in Hebron.</p>
+  </div>
+  <div class="foot mono"><span></span><span>09</span></div>
+</section><section class="page bg-esp">
+  <div class="top mono"><span>07 — The launch</span><span>Three posts · one week</span></div>
+  <div class="a h" style="left:64px;top:100px;font-size:60px;width:1200px">Three posts. One week.</div>
+  <p class="a p" style="left:64px;top:186px;width:980px;color:#E6DACA">Tease her on Tuesday, reveal her on Thursday at 8 PM like a drop, and show her in our clothes on Saturday. Everything else (the shadow, the eye, the box) goes in Stories, so the grid stays clean.</p>
+  <div class="a" style="left:64px;top:300px;width:1472px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px"><div style="display:grid;grid-template-columns:200px 1fr;gap:20px;background:#84A3C8;color:#2B1D17;padding:18px;align-items:start"><img src="assets/v5/launch/t-horns.jpg" style="width:200px;height:250px;object-fit:cover" alt=""><div style="display:grid;gap:10px;align-content:start"><span class="mono">Post 1 · Tue · 8 PM · Reel</span><div class="h" style="font-size:30px">Tease</div><p style="font-size:15.5px;line-height:1.45">Only her horns peek in and duck away. Nobody knows who she is yet.</p></div></div><div style="display:grid;grid-template-columns:200px 1fr;gap:20px;background:#F2A2BE;color:#2B1D17;padding:18px;align-items:start"><img src="assets/v5/launch/t-portrait.jpg" style="width:200px;height:250px;object-fit:cover" alt=""><div style="display:grid;gap:10px;align-content:start"><span class="mono">Post 2 · Thu · 8 PM · Carousel</span><div class="h" style="font-size:30px">Reveal</div><p style="font-size:15.5px;line-height:1.45">The reveal animation as slide 1, then her name, her city, her style.</p></div></div><div style="display:grid;grid-template-columns:200px 1fr;gap:20px;background:#C9A98A;color:#2B1D17;padding:18px;align-items:start"><img src="assets/v5/launch/o-leather.jpg" style="width:200px;height:250px;object-fit:cover" alt=""><div style="display:grid;gap:10px;align-content:start"><span class="mono">Post 3 · Sat · 8 PM · Reel</span><div class="h" style="font-size:30px">Her wardrobe</div><p style="font-size:15.5px;line-height:1.45">One spin and her hoodie becomes our leather jacket. Plus a giveaway.</p></div></div></div>
+  <div class="a" style="left:64px;top:640px;width:1472px;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;color:#E6DACA">
+    <p style="font-size:15.5px;line-height:1.45"><b style="color:var(--oat)">Why only three.</b> Three posts make one complete row on the grid: the whole story sits together at the top of the profile.</p>
+    <p style="font-size:15.5px;line-height:1.45"><b style="color:var(--oat)">Why Thursday 8 PM.</b> It's already your drop time. Reem arrives the way every collection does, so she's linked to new clothes from day one.</p>
+    <p style="font-size:15.5px;line-height:1.45"><b style="color:var(--oat)">Stories fill the gaps.</b> Daily clues and a countdown in Stories keep people curious between posts without crowding the feed.</p>
+  </div>
+  <div class="foot mono"><span></span><span>10</span></div>
+</section><section class="page">
+  <div class="top mono"><span>07 — Post 1 · Tease</span><span>Tuesday · 8 PM · Reel</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:52px">Post 1: someone's coming</div>
+  <div class="a" style="left:64px;top:180px;width:440px"><div class="lt" style=""><img class="f" src="assets/v5/launch/t-horns.jpg" alt="" style=""><div class="cp" style="top:20cqw"><span class="en">Someone's coming.</span><span class="arx">في حدا جاي...</span><span class="sm" style="margin-top:2cqw">Thursday · 8 PM</span></div></div></div>
+  <div class="a" style="left:64px;top:742px;width:440px;display:grid;gap:6px"><span class="mono">Reel · the peek clip</span><p style="font-size:15px;line-height:1.45">Horns rise, her eyes peek over the edge, she blinks and ducks away. Caption: «في حدا جاي... 👀 الخميس الساعة ٨» Someone's coming. Thursday, 8 PM.</p></div>
+  <div class="a mono" style="left:560px;top:186px">Between posts: Stories only</div>
+  <div class="a" style="left:560px;top:216px;width:976px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px"><div style="min-width:0"><div style="aspect-ratio:9/16;overflow:hidden;border-radius:12px"><img src="assets/v5/launch/t-shadow.jpg" style="width:100%;height:100%;object-fit:cover" alt=""></div><div class="cap2">Wed · Story</div><p class="copy"><b>Her shadow by our rail</b><br><span style="opacity:.8">«شايفينها؟» Can you see her?</span></p></div><div style="min-width:0"><div style="aspect-ratio:9/16;overflow:hidden;border-radius:12px"><img src="assets/v5/launch/t-eye.jpg" style="width:100%;height:100%;object-fit:cover" alt=""></div><div class="cap2">Wed · Story</div><p class="copy"><b>One eye, with the logo's lashes</b><br><span style="opacity:.8">Poll: «مين برأيكم؟» Who is it?</span></p></div><div style="min-width:0"><div style="aspect-ratio:9/16;overflow:hidden;border-radius:12px"><img src="assets/v5/launch/t-hoof.jpg" style="width:100%;height:100%;object-fit:cover" alt=""></div><div class="cap2">Thu morning · Story</div><p class="copy"><b>Hoofprints to our bag</b><br><span style="opacity:.8">Countdown sticker to 8 PM</span></p></div><div style="min-width:0"><div style="aspect-ratio:9/16;overflow:hidden;border-radius:12px"><img src="assets/v5/launch/t-box.jpg" style="width:100%;height:100%;object-fit:cover" alt=""></div><div class="cap2">Thu 7 PM · Story</div><p class="copy"><b>Horns in the box (clip)</b><br><span style="opacity:.8">«ساعة وحدة» One hour.</span></p></div></div>
+  <div class="a" style="left:560px;top:800px;width:976px;background:#EFE6D8;box-shadow:inset 0 0 0 1px var(--line);padding:16px 22px;font-size:15px;line-height:1.45"><b>Comments game.</b> Pin the best guess under Post 1. The first person to guess "a gazelle" wins the first Reem plush charm.</div>
+  <div class="foot mono"><span></span><span>11</span></div>
+</section><section class="page" style="background:#EFE6D8">
+  <div class="top mono"><span>07 — Post 2 · Reveal</span><span>Thursday · 8 PM · carousel</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:52px">Post 2: meet Reem</div>
+  <div class="a" style="left:64px;top:180px;width:1472px;display:grid;grid-template-columns:repeat(5,1fr);gap:14px"><div style="min-width:0"><div class="lt" style=""><img class="f" src="assets/v5/launch/t-portrait.jpg" alt="" style=""><div class="grad"></div><div class="cp" style="bottom:7cqw;right:30cqw"><span class="sm">The face of ARVERNA</span><span class="en" style="font-size:10cqw">Meet Reem.</span><span class="arx" style="font-size:7.5cqw">تعرّفوا على ريم</span></div><img class="lk" src="assets/lockup-oat.png" alt=""></div></div><div style="min-width:0"><div class="lt" style="background:#EFE6D8;color:#2B1D17"><span class="num" style="color:#93755B">02</span><div class="cp" style="top:14cqw;color:#2B1D17"><span class="en" style="color:#2B1D17;font-size:11cqw">Reem</span><span class="arx" style="color:#93755B;font-size:14cqw">ريم</span><span style="font-size:4.4cqw;line-height:1.35;margin-top:2cqw">An Arabic girl's name that means gazelle.</span><span class="arx" style="color:#2B1D17;font-size:4.6cqw;font-weight:600">اسم بنت معناه غزالة.</span></div><img src="assets/v5/faces/love.jpg" alt="" style="position:absolute;right:6cqw;bottom:6cqw;width:34cqw;border-radius:3cqw"></div></div><div style="min-width:0"><div class="lt" style=""><img class="f" src="assets/v5/launch/t-city.jpg" alt="" style=""><span class="num">03</span><div class="grad"></div><div class="cp shadowtxt" style="bottom:7cqw"><span class="en" style="font-size:7cqw">Born in the old city.</span><span class="arx" style="font-size:6cqw">بنت البلدة القديمة</span></div></div></div><div style="min-width:0"><div class="lt" style="background:#EFE6D8"><img class="f" src="assets/v5/launch/t-lineup.jpg" alt="" style="object-fit:cover;object-position:center 30%"><span class="num" style="color:#2B1D17">04</span><div class="cp" style="bottom:5cqw;background:#EFE6D8;padding:3.5cqw 4cqw;border-radius:2cqw;left:5cqw;right:5cqw"><span class="en" style="color:#2B1D17;font-size:6.4cqw">Wears every drop first.</span><span class="arx" style="color:#93755B;font-size:5.4cqw">بتلبس الدروب قبل الكل</span></div></div></div><div style="min-width:0"><div class="lt" style="background:#93755B;color:#2B1D17"><span class="num">05</span><div class="cp" style="top:12cqw"><span class="en" style="font-size:9cqw">Say hi to her.</span><span class="arx" style="font-size:7cqw">قولولها «يا غزالة» بالكومنتات</span></div><img src="assets/v5/poses/peace.png" alt="" style="position:absolute;left:50%;bottom:0;height:58cqw;transform:translateX(-50%)"></div></div></div>
+  <div class="a" style="left:64px;top:560px;width:1472px;display:grid;grid-template-columns:repeat(5,1fr);gap:14px">
+    <span class="cap2">1 · Reveal animation (video slide)</span><span class="cap2">2 · Her name</span><span class="cap2">3 · Her city</span><span class="cap2">4 · Her style</span><span class="cap2">5 · Say hi</span>
+  </div>
+  <div class="a" style="left:64px;top:620px;width:1472px;display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:34px">
+    <div style="display:grid;gap:8px"><span class="mono">Caption</span><p style="font-size:15.5px;line-height:1.5">«هي اللي كنتو تستنوها 🤎 تعرّفوا على ريم، غزالة أرڤيرنا. بنت البلدة القديمة، بتلبس الدروب قبل الكل، وبتحكي معكم كل يوم. قولولها يا غزالة 👇»</p><p style="font-size:14px;opacity:.75">She's the one you were waiting for. Meet Reem, ARVERNA's gazelle. Say hi below.</p></div>
+    <div style="display:grid;gap:8px"><span class="mono">Slide 1 is the video</span><p style="font-size:15.5px;line-height:1.5">The reveal animation (she walks into the spotlight, waves and winks) opens the carousel, so the reveal and the intro are one post.</p></div>
+    <div style="display:grid;gap:8px"><span class="mono">At the same moment</span><p style="font-size:15.5px;line-height:1.5">Switch the profile picture to the new logo and add a "Reem" highlight. Pin this post for the launch month.</p></div>
+  </div>
+  <div class="foot mono"><span></span><span>12</span></div>
+</section><section class="page bg-esp">
+  <div class="top mono"><span>07 — Post 3 · Her wardrobe</span><span>Saturday · 8 PM · Reel + giveaway</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:52px">Post 3: her wardrobe is ours</div>
+  <div class="a" style="left:64px;top:180px;width:440px"><div class="lt" style="background:#EFE6D8"><img class="f" src="assets/v5/launch/o-leather.jpg" alt="" style=""><div class="cp" style="top:6cqw"><span class="en" style="color:#2B1D17;font-size:7cqw">She wears<br>what we sell.</span><span class="arx" style="color:#93755B;font-size:5.6cqw">بتلبس من عنّا</span></div></div></div>
+  <div class="a" style="left:560px;top:180px;width:976px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px">
+    <img src="assets/v5/clips/spin-1.jpg" style="width:100%;aspect-ratio:3/4;object-fit:cover" alt=""><img src="assets/v5/clips/spin-2.jpg" style="width:100%;aspect-ratio:3/4;object-fit:cover" alt=""><img src="assets/v5/clips/spin-3.jpg" style="width:100%;aspect-ratio:3/4;object-fit:cover" alt=""><img src="assets/v5/clips/spin-4.jpg" style="width:100%;aspect-ratio:3/4;object-fit:cover" alt="">
+  </div>
+  <div class="a mono" style="left:560px;top:520px;color:var(--chrome)">The Reel · one spin, hoodie → our leather jacket and balloon jeans</div>
+  <div class="a" style="left:560px;top:570px;width:976px;display:grid;grid-template-columns:1fr 1fr;gap:34px;color:#E6DACA">
+    <div style="display:grid;gap:8px"><span class="mono" style="color:var(--chrome)">Caption + giveaway</span><p style="font-size:15.5px;line-height:1.5">«ريم اختارت لبستها الأولى من عنّا 🤎 علّقي "يا غزالة" وتاغي صاحبتك، وثلاث غزلان بيربحوا نفس اللبسة»</p><p style="font-size:14px;opacity:.75">Reem picked her first outfit from us. Comment «يا غزالة» and tag a friend; three winners get the same outfit.</p></div>
+    <div style="display:grid;gap:8px"><span class="mono" style="color:var(--chrome)">Tag the products</span><p style="font-size:15.5px;line-height:1.5">Tag the real leather jacket and jeans in the post so the Reel sells. Next Thursday, Reem wears the new drop's hero piece, and that becomes the weekly habit.</p></div>
+  </div>
+  <div class="a" style="left:64px;top:742px;width:440px;display:grid;gap:6px;color:#E6DACA"><span class="mono" style="color:var(--chrome)">Cover image</span><p style="font-size:15px;line-height:1.45">Reem in the real leather jacket and balloon jeans.</p></div>
+  <div class="foot mono"><span>Giveaway terms and prizes are for you to set</span><span>13</span></div>
+</section><section class="page bg-esp">
+  <div class="top mono"><span>07 — Animations</span><span>Three for the posts, two for Stories</span></div>
+  <div class="a h" style="left:64px;top:84px;font-size:46px">She moves</div>
+  <div class="a" style="left:64px;top:160px;width:1472px;display:grid;grid-template-columns:repeat(5,1fr);gap:18px"><div style="display:grid;gap:10px;align-content:start;min-width:0"><div class="h" style="font-size:17px">Post 1 · Reel</div><p style="font-size:13.5px;line-height:1.4;color:#E6DACA;min-height:38px">Horns rise, eyes peek, she blinks and ducks away.</p><div class="strip"><img src="assets/v5/clips/peek-1.jpg" alt=""><img src="assets/v5/clips/peek-2.jpg" alt=""><img src="assets/v5/clips/peek-3.jpg" alt=""><img src="assets/v5/clips/peek-4.jpg" alt=""></div></div><div style="display:grid;gap:10px;align-content:start;min-width:0"><div class="h" style="font-size:17px">Post 2 · slide 1</div><p style="font-size:13.5px;line-height:1.4;color:#E6DACA;min-height:38px">She walks into the spotlight, waves and winks.</p><div class="strip"><img src="assets/v5/clips/reveal-1.jpg" alt=""><img src="assets/v5/clips/reveal-2.jpg" alt=""><img src="assets/v5/clips/reveal-3.jpg" alt=""><img src="assets/v5/clips/reveal-4.jpg" alt=""></div></div><div style="display:grid;gap:10px;align-content:start;min-width:0"><div class="h" style="font-size:17px">Post 3 · Reel</div><p style="font-size:13.5px;line-height:1.4;color:#E6DACA;min-height:38px">One spin and the hoodie becomes our leather jacket.</p><div class="strip"><img src="assets/v5/clips/spin-1.jpg" alt=""><img src="assets/v5/clips/spin-2.jpg" alt=""><img src="assets/v5/clips/spin-3.jpg" alt=""><img src="assets/v5/clips/spin-4.jpg" alt=""></div></div><div style="display:grid;gap:10px;align-content:start;min-width:0"><div class="h" style="font-size:17px">Story · Thu 7 PM</div><p style="font-size:13.5px;line-height:1.4;color:#E6DACA;min-height:38px">The box lid pops off and she jumps out.</p><div class="strip"><img src="assets/v5/clips/box-1.jpg" alt=""><img src="assets/v5/clips/box-2.jpg" alt=""><img src="assets/v5/clips/box-3.jpg" alt=""><img src="assets/v5/clips/box-4.jpg" alt=""></div></div><div style="display:grid;gap:10px;align-content:start;min-width:0"><div class="h" style="font-size:17px">Story · after launch</div><p style="font-size:13.5px;line-height:1.4;color:#E6DACA;min-height:38px">She walks through the old city with our bag.</p><div class="strip"><img src="assets/v5/clips/city-1.jpg" alt=""><img src="assets/v5/clips/city-2.jpg" alt=""><img src="assets/v5/clips/city-3.jpg" alt=""><img src="assets/v5/clips/city-4.jpg" alt=""></div></div></div>
+  <div class="a" style="left:64px;top:760px;width:1472px;display:grid;grid-template-columns:repeat(4,1fr);gap:26px;border-top:1px solid rgba(239,230,216,.25);padding-top:16px">
+    <div style="display:grid;gap:6px"><span class="mono" style="color:var(--chrome)">Sound</span><span style="font-size:14.5px;line-height:1.45">Add a trending audio in the Instagram app. A soft "ding" and footsteps for the teaser.</span></div>
+    <div style="display:grid;gap:6px"><span class="mono" style="color:var(--chrome)">Text on screen</span><span style="font-size:14.5px;line-height:1.45">«في حدا جاي...» on the peek, «تعرّفوا على ريم» on the reveal.</span></div>
+    <div style="display:grid;gap:6px"><span class="mono" style="color:var(--chrome)">End card</span><span style="font-size:14.5px;line-height:1.45">Every clip ends on the logo with «غزالة من يومك».</span></div>
+    <div style="display:grid;gap:6px"><span class="mono" style="color:var(--chrome)">Versions</span><span style="font-size:14.5px;line-height:1.45">These are 5–8 second test clips. An animator can polish the final versions from the same Reem model.</span></div>
+  </div>
+  <div class="foot mono"><span>Frames taken from the generated clips</span><span>14</span></div>
+</section><section class="page">
+  <div class="top mono"><span>07 — The week</span><span>Grid on Saturday night, newest first</span></div>
+  <div class="a" style="left:64px;top:96px;width:580px;display:grid;grid-template-columns:repeat(3,1fr);gap:4px"><div class="lt" style="background:#EFE6D8"><img class="f" src="assets/v5/launch/o-leather.jpg" alt="" style=""><div class="cp" style="top:6cqw"><span class="en" style="color:#2B1D17;font-size:7cqw">She wears<br>what we sell.</span><span class="arx" style="color:#93755B;font-size:5.6cqw">بتلبس من عنّا</span></div></div><div class="lt" style=""><img class="f" src="assets/v5/launch/t-portrait.jpg" alt="" style=""><div class="grad"></div><div class="cp" style="bottom:7cqw;right:30cqw"><span class="sm">The face of ARVERNA</span><span class="en" style="font-size:10cqw">Meet Reem.</span><span class="arx" style="font-size:7.5cqw">تعرّفوا على ريم</span></div><img class="lk" src="assets/lockup-oat.png" alt=""></div><div class="lt" style=""><img class="f" src="assets/v5/launch/t-horns.jpg" alt="" style=""><div class="cp" style="top:20cqw"><span class="en">Someone's coming.</span><span class="arx">في حدا جاي...</span><span class="sm" style="margin-top:2cqw">Thursday · 8 PM</span></div></div><div class="lt" style=""><img class="f" src="assets/ig/r05_0.jpg" alt="" style=""><img src="assets/mark-oat.png" alt="" style="position:absolute;right:4cqw;bottom:4cqw;height:12cqw"></div><div class="lt" style=""><img class="f" src="assets/ig/r14_1.jpg" alt="" style=""><img src="assets/mark-oat.png" alt="" style="position:absolute;right:4cqw;bottom:4cqw;height:12cqw"></div><div class="lt" style=""><img class="f" src="assets/ig/r15_0.jpg" alt="" style=""><img src="assets/mark-oat.png" alt="" style="position:absolute;right:4cqw;bottom:4cqw;height:12cqw"></div><div class="lt" style=""><img class="f" src="assets/ig/r16_0.jpg" alt="" style=""><img src="assets/mark-oat.png" alt="" style="position:absolute;right:4cqw;bottom:4cqw;height:12cqw"></div><div class="lt" style=""><img class="f" src="assets/ig/r55_0.jpg" alt="" style=""><img src="assets/mark-oat.png" alt="" style="position:absolute;right:4cqw;bottom:4cqw;height:12cqw"></div><div class="lt" style=""><img class="f" src="assets/ig/r33_0.jpg" alt="" style=""><img src="assets/mark-oat.png" alt="" style="position:absolute;right:4cqw;bottom:4cqw;height:12cqw"></div></div>
+  <div class="a h" style="left:720px;top:92px;font-size:44px;width:816px">One row tells the whole story</div>
+  <p class="a p" style="left:720px;top:160px;width:800px">After Saturday, the top row reads right to left: the teaser, the reveal, her wardrobe. Your normal product posts continue underneath.</p>
+  <div class="a" style="left:720px;top:270px;width:816px"><div style="display:grid;grid-template-columns:90px 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--line)"><div class="h" style="font-size:18px">Tue<span style="display:block;font-family:var(--m);font-weight:400;font-size:11px;letter-spacing:.08em;opacity:.7;margin-top:3px">8 PM</span></div><div><span class="phase" style="background:#84A3C8;color:#2B1D17;margin-left:0">Post 1 · teaser Reel</span><p style="font-size:14.5px;line-height:1.4;margin-top:6px">Story: poll «مين برأيكم؟»</p></div></div><div style="display:grid;grid-template-columns:90px 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--line)"><div class="h" style="font-size:18px">Wed<span style="display:block;font-family:var(--m);font-weight:400;font-size:11px;letter-spacing:.08em;opacity:.7;margin-top:3px">all day</span></div><div><span class="phase" style="background:#84A3C8;color:#2B1D17;margin-left:0">Stories only</span><p style="font-size:14.5px;line-height:1.4;margin-top:6px">Her shadow, then the eye. Countdown sticker starts.</p></div></div><div style="display:grid;grid-template-columns:90px 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--line)"><div class="h" style="font-size:18px">Thu<span style="display:block;font-family:var(--m);font-weight:400;font-size:11px;letter-spacing:.08em;opacity:.7;margin-top:3px">8 PM</span></div><div><span class="phase" style="background:#F2A2BE;color:#2B1D17;margin-left:0">Post 2 · reveal carousel</span><p style="font-size:14.5px;line-height:1.4;margin-top:6px">Stories: hoofprints in the morning, box clip at 7 PM. New profile picture at 8.</p></div></div><div style="display:grid;grid-template-columns:90px 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--line)"><div class="h" style="font-size:18px">Fri<span style="display:block;font-family:var(--m);font-weight:400;font-size:11px;letter-spacing:.08em;opacity:.7;margin-top:3px">all day</span></div><div><span class="phase" style="background:#C9A98A;color:#2B1D17;margin-left:0">Stories only</span><p style="font-size:14.5px;line-height:1.4;margin-top:6px">Reem's faces answer comments. Sticker pack goes live.</p></div></div><div style="display:grid;grid-template-columns:90px 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--line)"><div class="h" style="font-size:18px">Sat<span style="display:block;font-family:var(--m);font-weight:400;font-size:11px;letter-spacing:.08em;opacity:.7;margin-top:3px">8 PM</span></div><div><span class="phase" style="background:#C9A98A;color:#2B1D17;margin-left:0">Post 3 · wardrobe Reel + giveaway</span><p style="font-size:14.5px;line-height:1.4;margin-top:6px">Story: the old-city clip. Winners on Monday.</p></div></div><div style="border-top:1px solid var(--line)"></div></div>
+  <div class="a" style="left:720px;top:790px;width:816px;background:#93755B;color:var(--oat);padding:18px 24px;font-size:15px;line-height:1.45"><b>After launch:</b> Reem wears the hero piece every Thursday, and her poses and faces show up in Stories and replies every day.</div>
+  <div class="foot mono"><span></span><span>15</span></div>
+</section><section class="page" style="background:#93755B;color:var(--oat)">
+  <img class="a" src="assets/v5/poses/heart.png" style="right:120px;bottom:0;height:760px" alt="">
+  <img class="a" src="assets/lockup-oat.png" style="left:64px;top:140px;width:360px" alt="">
+  <div class="a h" style="left:64px;top:560px;font-size:76px;width:900px">Born graceful.</div>
+  <div class="a ar" style="left:64px;top:650px;font-size:56px;font-weight:800;text-align:left">غزالة من يومك.</div>
+  <div class="a mono" style="left:64px;top:820px;width:820px;line-height:1.9;opacity:.85">Next: a designer redraws the icon as a vector · a 3D artist locks Reem's model · a native speaker checks the Arabic copy</div>
+  <div class="foot mono"><span>Reem images are concept visuals</span><span>16</span></div>
+</section>
+</body>
+</html>
