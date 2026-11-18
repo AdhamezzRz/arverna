@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ARVERNA Brand Refresh</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Alexandria:wght@300..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+@page{size:1600px 1000px;margin:0}
+:root{--mocha:#93755B;--mocha2:#927055;--esp:#2B1D17;--oat:#EFE6D8;--denim:#84A3C8;--gloss:#F2A2BE;--chrome:#C9CDD3;--line:rgba(43,29,23,.16);
+--d:'Archivo','Helvetica Neue',Arial,sans-serif;--ar:'Alexandria','Geeza Pro',Tahoma,sans-serif;--m:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--oat);color:var(--esp);font-family:var(--d);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:1600px;height:1000px;position:relative;overflow:hidden;break-after:page;page-break-after:always;background:var(--oat)}
+.page:last-child{break-after:auto;page-break-after:auto}
+.bg-mocha{background:var(--mocha);color:var(--oat)}.bg-esp{background:var(--esp);color:var(--oat)}.bg-denim{background:var(--denim)}.bg-gloss{background:var(--gloss)}
+.a{position:absolute}
+.mono{font-family:var(--m);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.top{position:absolute;left:64px;right:64px;top:44px;display:flex;justify-content:space-between;opacity:.7}
+.foot{position:absolute;left:64px;right:64px;bottom:36px;display:flex;justify-content:space-between;opacity:.6}
+.h{font-family:var(--d);font-stretch:125%;font-weight:800;text-transform:uppercase;line-height:.92;letter-spacing:-.01em}
+.ar{font-family:var(--ar);direction:rtl}
+.p{font-size:19px;line-height:1.5;font-stretch:100%}
+.chrome-t{background:linear-gradient(175deg,#F6F7F9 8%,#C9CDD3 30%,#FBFBFC 46%,#8B9097 54%,#70757D 64%,#D5D8DC 82%,#A4A9B0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.chrome-b{background:linear-gradient(160deg,#F6F7F9,#C9CDD3 30%,#FBFBFC 46%,#8B9097 56%,#D5D8DC 80%,#A4A9B0)}
+img{display:block}
+.cover-img{object-fit:cover;width:100%;height:100%}
+.ph{position:absolute;overflow:hidden;background:#cdbfae}
+.ph img{width:100%;height:100%;object-fit:cover}
+.cap{position:absolute;left:0;bottom:-26px;font-family:var(--m);font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7;white-space:nowrap}
+.pill{display:inline-flex;align-items:center;border-radius:999px;padding:6px 13px;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-stretch:112%}
+.num{font-family:var(--m);font-size:13px;letter-spacing:.08em}
+/* palette */
+.sw{position:absolute;top:210px;height:470px;padding:24px;display:flex;flex-direction:column;justify-content:space-between}
+.sw .n{font-stretch:125%;font-weight:800;font-size:25px;text-transform:uppercase;line-height:1}
+.sw .n span{display:block;font-family:var(--ar);font-weight:600;font-size:22px;margin-top:8px;text-transform:none}
+.sw .d{font-size:14.5px;line-height:1.45}
+.sw code{font-family:var(--m);font-size:13px;display:block;margin-top:10px}
+/* IG tiles */
+.tile{container-type:size;position:relative;overflow:hidden;aspect-ratio:3/4;background:#cdbfae}
+.tile>img.f{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile .c{position:absolute;inset:0;padding:8cqw;display:flex;flex-direction:column;justify-content:space-between}
+.tile .mk{position:absolute;right:5cqw;bottom:5cqw;width:9cqw}
+.tile .tg{font-family:var(--m);font-size:4.2cqw;letter-spacing:.08em;text-transform:uppercase}
+.tile .big{font-stretch:125%;font-weight:800;text-transform:uppercase;line-height:.9}
+.tile .arb{font-family:var(--ar);font-weight:800;direction:rtl;line-height:1.15}
+.tile .pl{display:inline-block;border-radius:99cqw;padding:1.6cqw 4cqw;font-weight:700;font-size:3.9cqw;letter-spacing:.08em;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(3,1fr)}
+/* phone */
+.phone{position:absolute;width:404px;height:880px;border-radius:52px;background:#16100d;padding:12px;box-shadow:0 40px 70px -30px rgba(43,29,23,.7)}
+.scr{width:100%;height:100%;border-radius:41px;overflow:hidden;background:#fff;color:#111;font-family:var(--d);position:relative}
+.scr .sb{display:flex;justify-content:space-between;padding:14px 26px 6px;font-weight:700;font-size:14px}
+.scr .tb{display:flex;justify-content:space-between;align-items:center;padding:6px 16px 10px;font-weight:800;font-size:19px}
+.scr .hd{display:flex;align-items:center;gap:22px;padding:4px 16px}
+.av{width:84px;height:84px;border-radius:50%;padding:3px;flex:none}
+.av div{width:100%;height:100%;border-radius:50%;border:3px solid #fff;background:var(--mocha);display:grid;place-items:center}
+.av img{width:46%}
+.st{display:flex;gap:26px;font-size:13px;text-align:left}
+.st b{display:block;font-size:17px;font-weight:800}
+.bio{padding:10px 16px 0;font-size:13.5px;line-height:1.42}
+.bio b{font-weight:800}
+.bio .ar{font-size:13.5px;text-align:left;direction:rtl;unicode-bidi:plaintext}
+.bt{display:grid;grid-template-columns:1fr 1fr 40px;gap:6px;padding:12px 16px 0}
+.bt span{background:#EFEFEF;border-radius:9px;text-align:center;padding:8px 0;font-weight:700;font-size:13.5px}
+.bt span:first-child{background:var(--esp);color:var(--oat)}
+.hl{display:flex;gap:13px;padding:14px 16px 10px}
+.hl div{width:62px;text-align:center;font-size:11px;display:grid;gap:5px;justify-items:center;flex:none}
+.hl i{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;overflow:hidden;box-shadow:0 0 0 2px #fff,0 0 0 3.2px #d9d2c8}
+.hl svg{width:26px;height:26px;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hl img{width:100%;height:100%;object-fit:cover}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #e6e6e6;text-align:center;font-size:12px;font-weight:700;letter-spacing:.08em}
+.tabs span{padding:9px 0}.tabs span:first-child{border-top:1.5px solid #111;margin-top:-1px}
+.scr .grid{gap:2px}
+/* big hl */
+.hlb{display:grid;gap:10px;justify-items:center;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;font-stretch:112%}
+.hlb i{width:118px;height:118px;border-radius:50%;display:grid;place-items:center;overflow:hidden;box-shadow:0 0 0 5px var(--oat),0 0 0 7px rgba(43,29,23,.25)}
+.hlb svg{width:50px;height:50px;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.hlb img{width:100%;height:100%;object-fit:cover}
+.card{position:absolute;padding:22px 24px;display:grid;gap:8px;align-content:start}
+.card .k{font-family:var(--m);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.card h3{font-stretch:125%;font-weight:800;font-size:25px;text-transform:uppercase;line-height:1}
+.card p{font-size:17px;line-height:1.45}
+.card .ar{font-size:19px;font-weight:700}
+</style>
+</head>
+<body>
+
+<!-- 1 COVER -->
+<section class="page" style="background:#927055;color:var(--oat)">
+  <img class="a" src="assets/icon-chrome.jpg" style="right:0;top:0;height:1000px;width:1000px;object-fit:cover" alt="">
+  <div class="a" style="left:0;top:0;width:700px;height:1000px;background:linear-gradient(90deg,#927055 78%,rgba(146,112,85,0))"></div>
+  <div class="top mono"><span>Brand refresh</span><span>2026</span></div>
+  <img class="a" src="assets/word-oat.png" style="left:64px;top:300px;width:600px" alt="ARVERNA">
+  <div class="a h" style="left:64px;top:410px;font-size:44px;width:700px">The logo stays.<br>Everything around<br>it levels up.</div>
+  <div class="a ar" style="left:64px;top:566px;font-size:28px;font-weight:600;text-align:left">الشعار ثابت. وكل شيء حوله بيتجدّد.</div>
+  <div class="a mono" style="left:64px;top:700px;line-height:2;opacity:.85">01 Palette &nbsp;·&nbsp; 02 The icon &nbsp;·&nbsp; 03 Reem, the character<br>04 The community &nbsp;·&nbsp; 05 Instagram</div>
+  <div class="foot mono"><span>Hebron</span><span>01</span></div>
+</section>
+
+<!-- 2 WHAT STAYS -->
+<section class="page">
+  <div class="top mono"><span>ARVERNA — Brand refresh</span><span>What stays / what's new</span></div>
+  <div class="a" style="left:64px;top:110px;width:560px;height:380px;background:var(--mocha);display:grid;place-items:center"><img src="assets/word-oat.png" style="width:360px" alt=""></div>
+  <div class="a" style="left:64px;top:500px;width:560px;height:380px;background:var(--mocha);display:grid;place-items:center"><img src="assets/word-chrome.png" style="width:360px" alt=""></div>
+  <div class="a mono" style="left:64px;top:896px;opacity:.7">Untouched: your wordmark, in cream and in silver foil</div>
+  <div class="a h" style="left:700px;top:110px;font-size:76px;width:840px">Keep the name.<br>Add a world.</div>
+  <p class="a p" style="left:700px;top:290px;width:760px">The wordmark is strong and stays exactly as it is. What it has been missing is everything a modern everyday label uses around its name: a symbol, a colour system, a face for the community and a feed that looks like one brand.</p>
+  <div class="a" style="left:700px;top:450px;width:836px;display:grid;grid-template-columns:1fr 1fr;gap:14px">
+    <div style="background:var(--esp);color:var(--oat);padding:22px;display:grid;gap:8px"><span class="mono" style="color:var(--chrome)">New 01</span><div class="h" style="font-size:26px">The Horn A</div><p style="font-size:15px;line-height:1.4">An icon that reads as an A and as gazelle horns. For the profile picture, tags, bags and hardware.</p></div>
+    <div style="background:var(--mocha);color:var(--oat);padding:22px;display:grid;gap:8px"><span class="mono">New 02</span><div class="h" style="font-size:26px">Coffee, denim, gloss</div><p style="font-size:15px;line-height:1.4">A warm palette built on your own brown. No black, no white.</p></div>
+    <div style="background:var(--denim);padding:22px;display:grid;gap:8px"><span class="mono">New 03</span><div class="h" style="font-size:26px">Reem</div><p style="font-size:15px;line-height:1.4">A gazelle character who wears every drop and gives the community a face.</p></div>
+    <div style="background:var(--gloss);padding:22px;display:grid;gap:8px"><span class="mono">New 04</span><div class="h" style="font-size:26px">The feed</div><p style="font-size:15px;line-height:1.4">A profile, highlights and a grid system that make every post look like ARVERNA.</p></div>
+  </div>
+  <div class="foot mono"><span></span><span>02</span></div>
+</section>
+
+<!-- 3 PALETTE -->
+<section class="page">
+  <div class="top mono"><span>01 — Palette</span><span>Coffee, denim, gloss, chrome</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:70px">Warm, not black and white</div>
+  <div class="sw" style="left:64px;width:280px;background:var(--mocha);color:var(--oat)"><div class="n">Mocha<span>موكا</span></div><div class="d">Your own brown, taken from your logo board. The signature: bags, boxes, backgrounds, the profile picture.<code>#93755B · 30%</code></div></div>
+  <div class="sw" style="left:352px;width:270px;background:var(--oat);border:1px solid var(--line)"><div class="n">Oat milk<span>حليب الشوفان</span></div><div class="d">Replaces white. Website and post backgrounds, tags, tissue paper.<code>#EFE6D8 · 35%</code></div></div>
+  <div class="sw" style="left:630px;width:246px;background:var(--esp);color:var(--oat)"><div class="n">Espresso<span>إسبريسو</span></div><div class="d">Replaces black. Text, buttons, drop posters.<code>#2B1D17 · 12%</code></div></div>
+  <div class="sw" style="left:884px;width:236px;background:var(--denim)"><div class="n">Washed denim<span>جينز</span></div><div class="d">The everyday colour. Denim is your biggest daily category, so it becomes a brand colour.<code>#84A3C8 · 12%</code></div></div>
+  <div class="sw" style="left:1128px;width:200px;background:var(--gloss)"><div class="n">Gloss<span>غلوس</span></div><div class="d">The pop. Reem, community posts, "new".<code>#F2A2BE · 6%</code></div></div>
+  <div class="sw chrome-b" style="left:1336px;width:200px"><div class="n">Chrome<span>كروم</span></div><div class="d">A finish, not a fill. Your foil logo, the icon charm, zips and hardware.<code>foil / metal · 5%</code></div></div>
+  <div class="a" style="left:64px;top:700px;width:1472px;height:34px;display:flex"><div style="width:35%;background:var(--oat);border:1px solid var(--line)"></div><div style="width:30%;background:var(--mocha)"></div><div style="width:12%;background:var(--esp)"></div><div style="width:12%;background:var(--denim)"></div><div style="width:6%;background:var(--gloss)"></div><div class="chrome-b" style="width:5%"></div></div>
+  <div class="a" style="left:64px;top:770px;width:1472px;display:grid;grid-template-columns:repeat(4,1fr);gap:28px">
+    <p style="font-size:15.5px;line-height:1.45"><b>Why it fits.</b> Same energy as the high-street labels she already shops, but warmer and ownable. Their feeds are black and white; yours is coffee and denim.</p>
+    <p style="font-size:15.5px;line-height:1.45"><b>Why it's practical.</b> Most of what you sell is brown, beige, cream and blue denim. Product photos match the brand without editing.</p>
+    <p style="font-size:15.5px;line-height:1.45"><b>Pairs that always work.</b> Oat on mocha. Espresso on oat. Espresso on denim. Espresso on gloss. Chrome on mocha or espresso.</p>
+    <p style="font-size:15.5px;line-height:1.45"><b>Rules.</b> One accent per post: denim or gloss, never both. No pure black, no pure white, no red sale banners.</p>
+  </div>
+  <div class="foot mono"><span></span><span>03</span></div>
+</section>
+
+<!-- 4 ICON -->
+<section class="page">
+  <div class="top mono"><span>02 — The icon</span><span>The Horn A</span></div>
+  <div class="a" style="left:64px;top:110px;width:620px;height:800px;background:var(--mocha);display:grid;place-items:center"><img src="assets/icon-oat.png" style="width:400px" alt="The Horn A icon"></div>
+  <div class="a h" style="left:740px;top:110px;font-size:58px;width:800px">An A made of<br>gazelle horns</div>
+  <p class="a p" style="left:740px;top:262px;width:780px">Two ridged horns lean in and meet. Add a crossbar and it is the A of ARVERNA. The curved, pointed shape is deliberately the opposite of the wide, flat wordmark, so the two sit together without competing.</p>
+  <div class="a" style="left:740px;top:420px;width:796px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+    <div style="border-top:2px solid var(--esp);padding-top:12px;display:grid;gap:6px"><span class="mono">Why a gazelle</span><p style="font-size:15px;line-height:1.42">In Arabic, calling a girl a gazelle is the classic compliment. <span class="ar" style="font-weight:700">يا غزالة</span> is how she already talks to her friends.</p></div>
+    <div style="border-top:2px solid var(--esp);padding-top:12px;display:grid;gap:6px"><span class="mono">Why it's yours</span><p style="font-size:15px;line-height:1.42">The mountain gazelle lives in the hills of Palestine. It is local, graceful and fast, like the brand.</p></div>
+    <div style="border-top:2px solid var(--esp);padding-top:12px;display:grid;gap:6px"><span class="mono">Why it works</span><p style="font-size:15px;line-height:1.42">It is a letter, so it never needs explaining, and it holds at 16 px or as a metal charm.</p></div>
+  </div>
+  <div class="a" style="left:740px;top:650px;width:796px;display:grid;grid-template-columns:repeat(6,1fr);gap:8px">
+    <div style="aspect-ratio:1;background:var(--oat);border:1px solid var(--line);display:grid;place-items:center"><img src="assets/icon-espresso.png" style="width:52%" alt=""></div>
+    <div style="aspect-ratio:1;background:var(--esp);display:grid;place-items:center"><img src="assets/icon-chrome.png" style="width:52%" alt=""></div>
+    <div style="aspect-ratio:1;background:var(--denim);display:grid;place-items:center"><img src="assets/icon-espresso.png" style="width:52%" alt=""></div>
+    <div style="aspect-ratio:1;background:var(--gloss);display:grid;place-items:center"><img src="assets/icon-espresso.png" style="width:52%" alt=""></div>
+    <div style="aspect-ratio:1;background:var(--mocha);display:grid;place-items:center"><img src="assets/icon-chrome.png" style="width:52%" alt=""></div>
+    <div style="aspect-ratio:1;background:var(--oat);border:1px solid var(--line);display:grid;place-items:center"><img src="assets/icon-mocha.png" style="width:52%" alt=""></div>
+  </div>
+  <div class="a" style="left:740px;top:806px;width:796px;height:104px;background:var(--esp);display:flex;align-items:center;justify-content:space-between;padding:0 34px">
+    <div style="display:flex;align-items:center;gap:22px"><img src="assets/icon-oat.png" style="height:58px" alt=""><img src="assets/word-oat.png" style="height:26px" alt=""></div>
+    <div style="display:flex;align-items:flex-end;gap:16px"><img src="assets/icon-oat.png" style="height:44px" alt=""><img src="assets/icon-oat.png" style="height:28px" alt=""><img src="assets/icon-oat.png" style="height:16px" alt=""><span class="mono" style="font-size:11px;color:var(--chrome)">44 · 28 · 16 px</span></div>
+  </div>
+  <div class="foot mono"><span></span><span>04</span></div>
+</section>
+
+<!-- 5 ICON IN USE -->
+<section class="page bg-esp">
+  <div class="top mono"><span>02 — The icon</span><span>In use</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:70px">On everything she touches</div>
+  <div class="ph" style="left:64px;top:210px;width:350px;height:640px"><img src="assets/app-tag.jpg" alt=""></div>
+  <div class="ph" style="left:426px;top:210px;width:350px;height:640px"><img src="assets/app-bag.jpg" alt=""></div>
+  <div class="ph" style="left:788px;top:210px;width:350px;height:640px"><img src="assets/app-hoodie.jpg" alt=""></div>
+  <div class="ph" style="left:1150px;top:210px;width:386px;height:640px"><img src="assets/app-charm.jpg" alt=""></div>
+  <div class="a mono" style="left:64px;top:868px;width:350px">Swing tag — on every piece</div>
+  <div class="a mono" style="left:426px;top:868px;width:350px">Mocha bag — the icon alone</div>
+  <div class="a mono" style="left:788px;top:868px;width:350px">Embroidery — basics line</div>
+  <div class="a mono" style="left:1150px;top:868px;width:386px;color:var(--chrome)">Chrome charm — free over 500 ₪</div>
+  <div class="foot mono"><span></span><span>05</span></div>
+</section>
+
+<!-- 6 REEM -->
+<section class="page" style="background:#8a644a;color:var(--oat)">
+  <img class="a" src="assets/reem-hero.jpg" style="left:0;top:0;width:800px;height:1000px;object-fit:cover" alt="Reem">
+  <div class="top mono" style="left:864px"><span>03 — The character</span><span>Reem</span></div>
+  <div class="a h" style="left:864px;top:100px;font-size:132px">Reem</div>
+  <div class="a ar" style="right:64px;top:128px;font-size:76px;font-weight:800;color:var(--gloss)">ريم</div>
+  <p class="a p" style="left:864px;top:270px;width:660px">Reem is an Arabic girl's name that means gazelle. She is ARVERNA's character: a collectible figure with chrome horns who wears every new drop before anyone else.</p>
+  <div class="a" style="left:864px;top:400px;width:672px;display:grid;gap:0">
+    <div style="display:grid;grid-template-columns:150px 1fr;gap:16px;padding:13px 0;border-top:1px solid rgba(239,230,216,.35)"><span class="mono">Who</span><span style="font-size:16px;line-height:1.4">The stylish friend. Confident, funny, never mean. Obsessed with denim and iced coffee.</span></div>
+    <div style="display:grid;grid-template-columns:150px 1fr;gap:16px;padding:13px 0;border-top:1px solid rgba(239,230,216,.35)"><span class="mono">Look</span><span style="font-size:16px;line-height:1.4">Mocha, with chrome horns like the foil logo, long lashes, a gloss-pink mini bag. Always fully dressed in ARVERNA.</span></div>
+    <div style="display:grid;grid-template-columns:150px 1fr;gap:16px;padding:13px 0;border-top:1px solid rgba(239,230,216,.35)"><span class="mono">Voice</span><span style="font-size:16px;line-height:1.4">Short, warm, in dialect. <span class="ar" style="font-weight:700">«هاي يا غزالة، شوفي شو نزل»</span></span></div>
+    <div style="display:grid;grid-template-columns:150px 1fr;gap:16px;padding:13px 0;border-top:1px solid rgba(239,230,216,.35)"><span class="mono">Job</span><span style="font-size:16px;line-height:1.4">Announces drops, answers size questions, stars in Reels and stickers, and exists as a plush charm girls collect.</span></div>
+    <div style="display:grid;grid-template-columns:150px 1fr;gap:16px;padding:13px 0;border-top:1px solid rgba(239,230,216,.35);border-bottom:1px solid rgba(239,230,216,.35)"><span class="mono">Never</span><span style="font-size:16px;line-height:1.4">Babyish, sarcastic about customers, or dressed in something you don't sell.</span></div>
+  </div>
+  <div class="a" style="left:864px;top:770px;width:672px;background:var(--oat);color:var(--esp);padding:20px 24px;display:grid;gap:6px"><span class="mono">Why a character</span><p style="font-size:15.5px;line-height:1.45">Collectible characters on bags are what girls are buying and posting right now. A character can also post daily, never gets tired, and stays yours, unlike an influencer.</p></div>
+  <div class="foot mono" style="left:864px"><span></span><span>06</span></div>
+</section>
+
+<!-- 7 REEM'S WORLD -->
+<section class="page">
+  <div class="top mono"><span>03 — The character</span><span>Reem's world</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:70px">She wears the drop first</div>
+  <div class="ph" style="left:64px;top:210px;width:760px;height:504px"><img src="assets/reem-lineup.jpg" alt=""></div>
+  <div class="a mono" style="left:64px;top:728px;opacity:.75">Every Thursday: Reem in the new pieces — leather bomber, knit set, trench, denim</div>
+  <div class="ph" style="left:840px;top:210px;width:340px;height:425px"><img src="assets/reem-charm-bag.jpg" alt=""></div>
+  <div class="ph" style="left:1196px;top:210px;width:340px;height:425px"><img src="assets/reem-unbox.jpg" alt=""></div>
+  <div class="a mono" style="left:840px;top:649px;opacity:.75">Plush charm on her bag</div>
+  <div class="a mono" style="left:1196px;top:649px;opacity:.75">Inside the order</div>
+  <div class="ph" style="left:840px;top:690px;width:230px;height:230px"><img src="assets/reem-stickers.jpg" alt=""></div>
+  <div class="ph" style="left:1086px;top:690px;width:215px;height:230px"><img src="assets/reem-cafe.jpg" alt=""></div>
+  <div class="ph" style="left:1317px;top:690px;width:219px;height:230px"><img src="assets/reem-plush.jpg" alt=""></div>
+  <div class="a" style="left:64px;top:780px;width:760px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px">
+    <p style="font-size:15px;line-height:1.42"><b>Figure.</b> The hero version for campaigns, Reels and drop announcements.</p>
+    <p style="font-size:15px;line-height:1.42"><b>Plush charm.</b> The collectible. A new outfit each season so girls want the set.</p>
+    <p style="font-size:15px;line-height:1.42"><b>Stickers.</b> For Stories, WhatsApp and a sheet in every order.</p>
+  </div>
+  <div class="foot mono"><span></span><span>07</span></div>
+</section>
+
+<!-- 8 COMMUNITY -->
+<section class="page bg-denim">
+  <div class="top mono"><span>04 — The community</span><span>The Gazelles</span></div>
+  <div class="a h" style="left:64px;top:92px;font-size:84px">The Gazelles</div>
+  <div class="a ar" style="right:64px;top:104px;font-size:60px;font-weight:800;color:var(--oat)">غزلان أرڤيرنا</div>
+  <p class="a p" style="left:64px;top:210px;width:900px">Every customer is a gazelle, and Reem is the one who talks to them. One name, one greeting (<span class="ar" style="font-weight:700">يا غزالة</span>) and six simple habits that give girls a reason to follow, buy again and post.</p>
+  <div class="card" style="left:64px;top:330px;width:480px;height:272px;background:var(--oat)"><span class="k">Every Thursday, 8 PM</span><h3>Reem wears the drop</h3><p>Reem appears in the new pieces the night before. Members get the link an hour early.</p><p class="ar">ريم بتلبس الدروب أول</p></div>
+  <div class="card" style="left:560px;top:330px;width:480px;height:272px;background:var(--esp);color:var(--oat)"><span class="k" style="color:var(--chrome)">Weekly game</span><h3>Find Reem</h3><p>She hides in one Story or product photo each week. The first 20 girls to spot her get a code. It trains people to watch every Story.</p><p class="ar">وين ريم؟</p></div>
+  <div class="card" style="left:1056px;top:330px;width:480px;height:272px;background:var(--gloss)"><span class="k">Collectible</span><h3>Collect Reem</h3><p>A plush Reem charm in a new outfit each season. Free with orders over 500 ₪, so it also lifts basket size.</p><p class="ar">جمّعي ريم</p></div>
+  <div class="card" style="left:64px;top:618px;width:480px;height:272px;background:var(--mocha);color:var(--oat)"><span class="k">Customer photos</span><h3>#يا_غزالة</h3><p>Girls post their outfit with the hashtag. The best looks are reposted with a Reem sticker; one wins 200 ₪ each month.</p><p class="ar">صوّري لبستك وانزلي عنّا</p></div>
+  <div class="card" style="left:560px;top:618px;width:480px;height:272px;background:var(--oat)"><span class="k">Loyalty</span><h3>Three levels</h3><p><b>Gazelle</b> (free): early drop link. <b>Chrome</b> (3 orders): free delivery and the chrome charm. <b>Reem's Circle</b> (top 100): first pick and invites.</p></div>
+  <div class="card" style="left:1056px;top:618px;width:480px;height:272px;background:var(--esp);color:var(--oat)"><span class="k" style="color:var(--chrome)">Service</span><h3>Reem replies</h3><p>WhatsApp and DM answers come in Reem's voice, with her stickers. Size help feels like a friend, not a helpdesk.</p><p class="ar">ريم بتردّ عليكِ</p></div>
+  <div class="foot mono"><span></span><span>08</span></div>
+</section>
+
+<!-- 9 INSTAGRAM PROFILE -->
+<section class="page">
+  <div class="top mono"><span>05 — Instagram</span><span>The profile</span></div>
+  <div class="phone" style="left:96px;top:70px">
+    <div class="scr">
+      <div class="sb"><span>9:41</span><span>●●● ▮</span></div>
+      <div class="tb"><span>arvernacom</span><span style="font-weight:400">≡</span></div>
+      <div class="hd"><div class="av chrome-b"><div><img src="assets/icon-oat.png" alt=""></div></div><div class="st"><div><b>1,204</b>posts</div><div><b>—</b>followers</div><div><b>312</b>following</div></div></div>
+      <div class="bio"><b>ARVERNA</b><br><span style="color:#737373">Clothing (Brand)</span><br>Everyday fits. New drop every Thursday, 8 PM.<br><span class="ar">يا غزالة، لبسك علينا · توصيل ٢–٣ أيام</span><br><span style="color:#00376B;font-weight:600">arvernaps.com</span></div>
+      <div class="bt"><span>Follow</span><span>Message</span><span>+</span></div>
+      <div class="hl">
+        <div><i style="background:var(--mocha)"><svg viewBox="0 0 24 24" stroke="#EFE6D8"><path d="M12 8.5c0-1.2 1.6-1.4 1.6-2.8A1.7 1.7 0 0 0 10.3 5M12 8.5l8.4 6.2a1 1 0 0 1-.6 1.8H4.2a1 1 0 0 1-.6-1.8z"/></svg></i>New in</div>
+        <div><i style="background:var(--esp)"><svg viewBox="0 0 24 24" stroke="#C9CDD3"><path d="M13 2.5 5 13.5h6l-1 8 8-11h-6z"/></svg></i>Drops</div>
+        <div><i><img src="assets/reem-face.jpg" alt=""></i>Reem</div>
+        <div><i style="background:var(--denim)"><svg viewBox="0 0 24 24" stroke="#2B1D17"><path d="m3.5 16.5 13-13 4 4-13 13zM7 13l2 2M10 10l2 2M13 7l2 2"/></svg></i>Sizes</div>
+        <div><i style="background:var(--gloss)"><svg viewBox="0 0 24 24" stroke="#2B1D17"><path d="M12 20.5s-8-4.9-8-10.6A4.4 4.4 0 0 1 12 7.2a4.4 4.4 0 0 1 8 2.7c0 5.7-8 10.6-8 10.6z"/></svg></i>Reviews</div>
+      </div>
+      <div class="tabs"><span>GRID</span><span style="color:#999">REELS</span><span style="color:#999">TAGGED</span></div>
+      <div class="grid" id="g-phone"></div>
+    </div>
+  </div>
+  <div class="a h" style="left:590px;top:110px;font-size:50px;width:940px">One look at the profile.<br>She knows who you are.</div>
+  <div class="a" style="left:590px;top:290px;width:940px;display:grid;grid-template-columns:1fr 1fr;gap:26px 40px">
+    <div style="border-top:2px solid var(--esp);padding-top:12px;display:grid;gap:6px"><span class="mono">Profile picture</span><p style="font-size:15.5px;line-height:1.42">The Horn A in oat on mocha. The wordmark is too wide to read in a small circle; the icon is made for it.</p></div>
+    <div style="border-top:2px solid var(--esp);padding-top:12px;display:grid;gap:6px"><span class="mono">Bio</span><p style="font-size:15.5px;line-height:1.42">What you sell, when the drop is, and the delivery promise. One line in English, one in Arabic, then the link.</p></div>
+    <div style="border-top:2px solid var(--esp);padding-top:12px;display:grid;gap:6px"><span class="mono">Highlights</span><p style="font-size:15.5px;line-height:1.42">One palette colour and one simple symbol each. They answer the questions that fill your DMs.</p></div>
+    <div style="border-top:2px solid var(--esp);padding-top:12px;display:grid;gap:6px"><span class="mono">Grid</span><p style="font-size:15.5px;line-height:1.42">Brand tile, product photo, brand tile. The pattern on the next page.</p></div>
+  </div>
+  <div class="a" style="left:590px;top:600px;width:940px;display:flex;justify-content:space-between">
+    <div class="hlb"><i style="background:var(--mocha)"><svg viewBox="0 0 24 24" stroke="#EFE6D8"><path d="M12 8.5c0-1.2 1.6-1.4 1.6-2.8A1.7 1.7 0 0 0 10.3 5M12 8.5l8.4 6.2a1 1 0 0 1-.6 1.8H4.2a1 1 0 0 1-.6-1.8z"/></svg></i>New in</div>
+    <div class="hlb"><i style="background:var(--esp)"><svg viewBox="0 0 24 24" stroke="#C9CDD3"><path d="M13 2.5 5 13.5h6l-1 8 8-11h-6z"/></svg></i>Drops</div>
+    <div class="hlb"><i><img src="assets/reem-face.jpg" alt=""></i>Reem</div>
+    <div class="hlb"><i style="background:var(--denim)"><svg viewBox="0 0 24 24" stroke="#2B1D17"><path d="m3.5 16.5 13-13 4 4-13 13zM7 13l2 2M10 10l2 2M13 7l2 2"/></svg></i>Sizes</div>
+    <div class="hlb"><i style="background:var(--gloss)"><svg viewBox="0 0 24 24" stroke="#2B1D17"><path d="M12 20.5s-8-4.9-8-10.6A4.4 4.4 0 0 1 12 7.2a4.4 4.4 0 0 1 8 2.7c0 5.7-8 10.6-8 10.6z"/></svg></i>Reviews</div>
+    <div class="hlb"><i style="background:var(--oat);box-shadow:0 0 0 5px var(--oat),0 0 0 7px rgba(43,29,23,.25),inset 0 0 0 1px var(--line)"><svg viewBox="0 0 24 24" stroke="#2B1D17"><path d="m3 8 9-5 9 5v8l-9 5-9-5zM3 8l9 5 9-5M12 13v8"/></svg></i>Delivery</div>
+  </div>
+  <div class="a mono" style="left:590px;top:880px;opacity:.6">Follower and post numbers are placeholders. Product photos are from your current site.</div>
+  <div class="foot mono"><span></span><span>09</span></div>
+</section>
+
+<!-- 10 GRID -->
+<section class="page bg-esp">
+  <div class="top mono"><span>05 — Instagram</span><span>The grid</span></div>
+  <div class="a h" style="left:64px;top:110px;font-size:47px;width:600px">The<br>checkerboard</div>
+  <p class="a p" style="left:64px;top:240px;width:570px;color:#E6DACA">Brand tiles and product photos alternate. From far away the profile reads as one mocha, denim and oat pattern. Up close, every second post is something to buy.</p>
+  <div class="a" style="left:64px;top:440px;width:570px;display:grid;gap:0">
+    <div style="display:grid;grid-template-columns:40px 1fr;gap:12px;padding:12px 0;border-top:1px solid rgba(239,230,216,.25)"><span class="num" style="color:var(--chrome)">01</span><span style="font-size:15.5px;line-height:1.4"><b>Alternate.</b> Brand tile, product photo, brand tile. Never two graphics side by side.</span></div>
+    <div style="display:grid;grid-template-columns:40px 1fr;gap:12px;padding:12px 0;border-top:1px solid rgba(239,230,216,.25)"><span class="num" style="color:var(--chrome)">02</span><span style="font-size:15.5px;line-height:1.4"><b>Rotate the colours.</b> Denim, mocha, oat, gloss, espresso. No colour twice in a row.</span></div>
+    <div style="display:grid;grid-template-columns:40px 1fr;gap:12px;padding:12px 0;border-top:1px solid rgba(239,230,216,.25)"><span class="num" style="color:var(--chrome)">03</span><span style="font-size:15.5px;line-height:1.4"><b>Mark every photo.</b> A small Horn A in the bottom corner, so reposts still carry the brand.</span></div>
+    <div style="display:grid;grid-template-columns:40px 1fr;gap:12px;padding:12px 0;border-top:1px solid rgba(239,230,216,.25)"><span class="num" style="color:var(--chrome)">04</span><span style="font-size:15.5px;line-height:1.4"><b>Choose photos by colour.</b> Brown, beige, cream and denim pieces first. Loud colours go to Stories.</span></div>
+    <div style="display:grid;grid-template-columns:40px 1fr;gap:12px;padding:12px 0;border-top:1px solid rgba(239,230,216,.25);border-bottom:1px solid rgba(239,230,216,.25)"><span class="num" style="color:var(--chrome)">05</span><span style="font-size:15.5px;line-height:1.4"><b>Reem once per row.</b> Enough to be the face, not so much that the feed becomes a toy account.</span></div>
+  </div>
+  <div class="a grid" id="g-big" style="left:700px;top:38px;width:516px;gap:4px"></div>
+  <div class="a mono" style="left:1270px;top:112px;color:var(--chrome)">From far away</div>
+  <div class="a" style="left:1270px;top:146px;width:266px;display:grid;grid-template-columns:repeat(3,1fr);gap:3px">
+    <i style="aspect-ratio:3/4;background:var(--denim)"></i><i style="aspect-ratio:3/4;background:#5b4638"></i><i style="aspect-ratio:3/4;background:var(--mocha)"></i>
+    <i style="aspect-ratio:3/4;background:#5b4638"></i><i style="aspect-ratio:3/4;background:var(--oat)"></i><i style="aspect-ratio:3/4;background:#5b4638"></i>
+    <i style="aspect-ratio:3/4;background:var(--gloss)"></i><i style="aspect-ratio:3/4;background:#5b4638"></i><i style="aspect-ratio:3/4;background:#120c09;box-shadow:inset 0 0 0 1px #5b4638"></i>
+    <i style="aspect-ratio:3/4;background:#5b4638"></i><i style="aspect-ratio:3/4;background:#d9c9b4"></i><i style="aspect-ratio:3/4;background:#5b4638"></i>
+  </div>
+  <p class="a" style="left:1270px;top:640px;width:266px;font-size:14.5px;line-height:1.45;color:#E6DACA">Colour blocks are brand tiles. Dark blocks are product photos. The pattern stays the same however far she scrolls.</p>
+  <div class="a mono" style="left:1270px;top:780px;color:var(--chrome)">Posting rhythm</div>
+  <p class="a" style="left:1270px;top:810px;width:266px;font-size:14.5px;line-height:1.45;color:#E6DACA">Post in pairs: one brand tile and one photo, so the checkerboard never breaks.</p>
+  <div class="foot mono"><span></span><span>10</span></div>
+</section>
+
+<!-- 11 TEMPLATES -->
+<section class="page">
+  <div class="top mono"><span>05 — Instagram</span><span>Post templates</span></div>
+  <div class="a h" style="left:64px;top:100px;font-size:52px">Six templates run the whole feed</div>
+  <div class="a" id="g-tpl" style="left:64px;top:220px;width:1472px;display:grid;grid-template-columns:repeat(6,1fr);gap:16px"></div>
+  <div class="a" style="left:64px;top:560px;width:1472px;display:grid;grid-template-columns:repeat(6,1fr);gap:16px">
+    <div style="display:grid;gap:5px"><span class="mono">Reem says</span><p style="font-size:14.5px;line-height:1.4">Reem on a flat colour with one short line. For greetings, drops and jokes.</p></div>
+    <div style="display:grid;gap:5px"><span class="mono">New in</span><p style="font-size:14.5px;line-height:1.4">Chrome icon on mocha. Opens every new-arrivals carousel.</p></div>
+    <div style="display:grid;gap:5px"><span class="mono">Big word</span><p style="font-size:14.5px;line-height:1.4">One Arabic phrase, huge, on oat. The posts girls share to Stories.</p></div>
+    <div style="display:grid;gap:5px"><span class="mono">Drop poster</span><p style="font-size:14.5px;line-height:1.4">Espresso and chrome. Number, day, time. Posted Wednesday night.</p></div>
+    <div style="display:grid;gap:5px"><span class="mono">Reem's pick</span><p style="font-size:14.5px;line-height:1.4">Product photo with name, price and sizes on a pill. The post that sells.</p></div>
+    <div style="display:grid;gap:5px"><span class="mono">Fit check</span><p style="font-size:14.5px;line-height:1.4">Reem or a customer in a mirror shot, with the corner mark.</p></div>
+  </div>
+  <div class="a" style="left:64px;top:700px;width:1472px;height:210px;background:var(--mocha);color:var(--oat);display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;gap:34px;padding:28px 34px;align-items:start">
+    <div><div class="h" style="font-size:34px">Type on posts</div><p style="font-size:15px;line-height:1.45;margin-top:10px">The wordmark is never retyped. Headlines use a wide bold sans that matches it.</p></div>
+    <div style="display:grid;gap:6px"><span class="mono">English headlines</span><span class="h" style="font-size:30px">Drop day</span><span style="font-size:14px">Archivo Expanded, 800</span></div>
+    <div style="display:grid;gap:6px"><span class="mono">Arabic headlines</span><span class="ar" style="font-size:32px;font-weight:800;text-align:left">يا غزالة</span><span style="font-size:14px">Alexandria, 800</span></div>
+    <div style="display:grid;gap:6px"><span class="mono">Small labels</span><span class="mono" style="font-size:17px">THU · 8 PM · 160 ₪</span><span style="font-size:14px">IBM Plex Mono, 500</span></div>
+  </div>
+  <div class="foot mono"><span></span><span>11</span></div>
+</section>
+
+<!-- 12 NEXT -->
+<section class="page bg-mocha">
+  <div class="top mono"><span>Next steps</span><span>30 days</span></div>
+  <div class="a h" style="left:64px;top:110px;font-size:64px;width:1100px">From deck to feed in four weeks</div>
+  <div class="a" style="left:64px;top:300px;width:1472px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+    <div style="background:var(--oat);color:var(--esp);padding:24px;display:grid;gap:10px;align-content:start;height:300px"><span class="mono">Week 1</span><div class="h" style="font-size:28px">Lock it</div><p style="font-size:18px;line-height:1.45">Approve the icon, palette and Reem. A designer redraws the Horn A as a clean vector and checks it is free to register as a trademark.</p></div>
+    <div style="background:var(--oat);color:var(--esp);padding:24px;display:grid;gap:10px;align-content:start;height:300px"><span class="mono">Week 2</span><div class="h" style="font-size:28px">Make it</div><p style="font-size:18px;line-height:1.45">Order tags, mocha bags and stickers. Brief a toy maker on the plush Reem charm. Build the six post templates.</p></div>
+    <div style="background:var(--oat);color:var(--esp);padding:24px;display:grid;gap:10px;align-content:start;height:300px"><span class="mono">Week 3</span><div class="h" style="font-size:28px">Switch it</div><p style="font-size:18px;line-height:1.45">New profile picture, bio and highlights in one evening. Archive off-palette posts. Start the checkerboard with nine posts.</p></div>
+    <div style="background:var(--esp);color:var(--oat);padding:24px;display:grid;gap:10px;align-content:start;height:300px"><span class="mono" style="color:var(--chrome)">Week 4</span><div class="h" style="font-size:28px">Launch Reem</div><p style="font-size:18px;line-height:1.45">"Meet Reem" Reel, the first Find Reem game, and Drop 01 on Thursday at 8 PM with the early link for Gazelles.</p></div>
+  </div>
+  <div class="a" style="left:64px;top:700px;display:flex;align-items:center;gap:26px"><img src="assets/icon-chrome.png" style="height:96px" alt=""><img src="assets/word-oat.png" style="height:40px" alt=""></div>
+  <div class="a ar" style="right:64px;top:716px;font-size:44px;font-weight:800">يا غزالة، لبسك علينا</div>
+  <div class="foot mono"><span>Images are concept visuals</span><span>12</span></div>
+</section>
+
+<template id="tiles">
+  <!-- 0 Reem peek -->
+  <div class="tile" data-t="b"><img class="f" src="assets/reem-peek.jpg" alt=""><div class="c" style="justify-content:flex-start;gap:3cqw;color:#2B1D17"><span class="tg">Reem says</span><span class="arb" style="font-size:17cqw;color:#EFE6D8">هاي<br>يا غزالة</span></div></div>
+  <!-- 1 photo -->
+  <div class="tile" data-t="p"><img class="f" src="assets/ph-leather-brown.jpg" alt=""><img class="mk" src="assets/icon-oat.png" alt=""></div>
+  <!-- 2 new in -->
+  <div class="tile" data-t="b" style="background:#93755B;color:#EFE6D8"><div class="c"><span class="tg">Just landed</span><img src="assets/icon-chrome.png" style="width:52cqw;align-self:center" alt=""><div><div class="big" style="font-size:15cqw">New in</div><div class="arb" style="font-size:8cqw;text-align:left;direction:rtl;unicode-bidi:plaintext">وصل جديد</div></div></div></div>
+  <!-- 3 photo -->
+  <div class="tile" data-t="p"><img class="f" src="assets/ph-balloon.jpg" alt=""><img class="mk" src="assets/icon-oat.png" alt=""></div>
+  <!-- 4 big word -->
+  <div class="tile" data-t="b" style="background:#EFE6D8;color:#2B1D17;box-shadow:inset 0 0 0 1px rgba(43,29,23,.16)"><div class="c"><div style="display:flex;justify-content:space-between;align-items:center"><span class="tg">#يا_غزالة</span><img src="assets/icon-espresso.png" style="width:9cqw" alt=""></div><div class="arb" style="font-size:22cqw">يا<br>غزالة،</div><div class="arb" style="font-size:9cqw;color:#93755B">لبسك علينا.</div></div></div>
+  <!-- 5 photo -->
+  <div class="tile" data-t="p"><img class="f" src="assets/ph-denim-jacket.jpg" alt=""><img class="mk" src="assets/icon-oat.png" alt=""></div>
+  <!-- 6 Reem bags -->
+  <div class="tile" data-t="b" style="background:#F2A0BE"><img src="assets/reem-bags.jpg" alt="" style="position:absolute;left:10%;bottom:0;width:80%;height:80%;object-fit:cover;-webkit-mask-image:linear-gradient(transparent,#000 10%)"><div class="c" style="justify-content:flex-start;gap:1cqw;color:#2B1D17"><span class="tg">Payday</span><span class="arb" style="font-size:14cqw">الراتب نزل</span></div></div>
+  <!-- 7 photo pick -->
+  <div class="tile" data-t="p"><img class="f" src="assets/ph-trench.jpg" alt=""><div class="c" style="justify-content:flex-end;align-items:flex-start;gap:2cqw"><span class="pl" style="background:#F2A2BE;color:#2B1D17">Reem's pick</span><span class="pl" style="background:#EFE6D8;color:#2B1D17">Trench · 250 ₪ · S–XL</span></div><img class="mk" src="assets/icon-oat.png" alt=""></div>
+  <!-- 8 drop poster -->
+  <div class="tile" data-t="b" style="background:#2B1D17;color:#EFE6D8"><div class="c"><div style="display:flex;justify-content:space-between;align-items:flex-start"><span class="tg" style="color:#C9CDD3">Drop</span><img src="assets/icon-chrome.png" style="width:13cqw" alt=""></div><div class="big chrome-t" style="font-size:44cqw;letter-spacing:-.03em">01</div><div><div class="big" style="font-size:10.5cqw">Thu · 8 PM</div><div class="arb" style="font-size:7.5cqw;text-align:left;direction:rtl;unicode-bidi:plaintext;color:#C9CDD3">الخميس ٨ مساءً</div></div></div></div>
+  <!-- 9 photo -->
+  <div class="tile" data-t="p"><img class="f" src="assets/ph-bomber.jpg" alt=""><img class="mk" src="assets/icon-oat.png" alt=""></div>
+  <!-- 10 fit check -->
+  <div class="tile" data-t="b"><img class="f" src="assets/reem-selfie.jpg" alt=""><div class="c" style="justify-content:flex-end;align-items:flex-start"><span class="pl" style="background:#84A3C8;color:#2B1D17">Fit check</span></div><img class="mk" src="assets/icon-oat.png" alt=""></div>
+  <!-- 11 photo -->
+  <div class="tile" data-t="p"><img class="f" src="assets/ph-leather-jeans.jpg" alt=""><img class="mk" src="assets/icon-oat.png" alt=""></div>
+</template>
+<script>
+const T=[...document.getElementById('tiles').content.children];
+const put=(id,idx)=>{const g=document.getElementById(id);idx.forEach(i=>g.appendChild(T[i].cloneNode(true)))};
+put('g-phone',[0,1,2,3,4,5,6,7,8]);
+put('g-big',[0,1,2,3,4,5,6,7,8,9,10,11]);
+put('g-tpl',[0,2,4,8,7,10]);
+</script>
+</body>
+</html>
